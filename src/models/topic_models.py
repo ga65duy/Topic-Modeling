@@ -2,7 +2,6 @@ from sklearn.decomposition import NMF
 import sklearn as sk
 from gensim.models import LdaModel, CoherenceModel
 from gensim.models.callbacks import PerplexityMetric
-from wordcloud import WordCloud
 from gensim.corpora.dictionary import Dictionary
 from src.definitions import ROOT_DIR
 import pandas as pd
@@ -11,7 +10,6 @@ import numpy as np
 import pickle
 import os
 import logging
-import matplotlib.pyplot as plt
 import sys
 import io
 
@@ -258,30 +256,6 @@ class TopicModel(object):
         else:
             return u_mass.get_coherence()
 
-    def plot_topic_word_cloud(self, topic_id, num_top_tokens=50, path=None):
-        """
-        Plot a specific topic of the topic model as a word cloud. The size of the words in the word cloud represents the
-        importance of the term in the topic.
-
-        :param topic_id: The id of the topic to be visualized.
-        :param num_top_tokens: Number of terms to show in the wordcloud. Default is 50.
-        :param path: If a path is passed it will be appended to PROJECT_ROOT/reports/figures/wordclouds/<path>.
-
-        Make sure a valid extension is included in the path e.g. .png, .pdf, .jpg. If no path is provided,
-         the plot is directly shown.
-
-        """
-        df = self.get_topics_dataframe(num_top_tokens=num_top_tokens, values=True)
-        frequencies = df.iloc[[topic_id]].values[0]
-        plt.figure()
-        wc = WordCloud(background_color='white')
-        plt.imshow(wc.fit_words(frequencies))
-        plt.axis("off")
-        plt.tight_layout()
-        if path:
-            plt.savefig(path)
-        else:
-            plt.show()
 
 if __name__ == '__main__':
     # import src.visualization.visualize_tm as vis
