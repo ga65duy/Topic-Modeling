@@ -35,7 +35,7 @@ def _map_source_to_language(source):
         raise Exception('Source {} not included'.format(source))
 
 
-def get_articles_by_type(language, source_type,  metadata=None):
+def get_articles_by_type(language, source_type,  metadata=None, merge_paragraphs=True, kind="with_2bigramms"):
     """
     Return all article texts for editorial and blog sources. For forum threads use :py:func:`get_forum_threads_by_language`.
 
@@ -44,16 +44,18 @@ def get_articles_by_type(language, source_type,  metadata=None):
     """
 
     if language == 'german':
-        return get_articles_by_sources(german_types[source_type], metadata)
+        return get_articles_by_sources(german_types[source_type], metadata, merge_paragraphs, kind)
     elif language == 'english':
-        return get_articles_by_sources(english_types[source_type], metadata)
+        return get_articles_by_sources(english_types[source_type], metadata, merge_paragraphs, kind)
     else:
         raise Exception('Language {} not supported.'.format(language))
 
 
-def get_articles_by_sources(sources, metadata=None):
+def get_articles_by_sources(sources, metadata=None, merge_paragraphs=True, kind="with_2bigramms"):
     """
     Return all article texts of the specified sources and the corresponding metadata. The documents are returned in a dictionary.
+    The key 'article_texts' contains the text in the form specified by merge_paragraphs and 'source2articles' contains
+    a mapping of each source to the article ids (position in list).
 
     .. Note:: To load forum data use :py:func:`get_forum_threads_by_sources`.
 
@@ -61,6 +63,11 @@ def get_articles_by_sources(sources, metadata=None):
     :type sources: list
     :param metadata: List of meta information to load together with article texts. The possible values correspond to the fields of the json files
     :type metadata: list
+    :param merge_paragraphs: Describes whether a string containing the whole document or a list of strings with each list being one paragraph of the document.
+    :type merge_paragraphs: bool
+    :param kind: Specifies the kind of processing applied on the data. The possible values 'tokenize_lemmatize',
+     'stopwords', and 'processed' correspond to the folders of the data directory.
+     :type kind: str
     :returns: Dict {article_texts: [...], metadata_0: [...], metadata_1: [...], ...,
      source2articles: {'source0': [], 'source1': [] }}
 
@@ -71,7 +78,7 @@ def get_articles_by_sources(sources, metadata=None):
     for source in sources:
         ids = []
         lang = _map_source_to_language(source)
-        path = os.path.join(DATA_DIR, lang, source + '.json')  # possibly change to only have one german file
+        path = os.path.join(DATA_DIR, kind, lang, source + '.json')  # possibly change to only have one german file
         with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
@@ -80,9 +87,13 @@ def get_articles_by_sources(sources, metadata=None):
                 article_paragraphs = resource['article_text_tokenized']
                 article_text = []
 
-                for par in article_paragraphs:
-                    article_text.extend(par)
-                article_text = " ".join(article_text)
+                if merge_paragraphs:
+                    for par in article_paragraphs:
+                        article_text.extend(par)
+                    article_text = " ".join(article_text)
+                else:
+                    for par in article_paragraphs:
+                        article_text.append(" ".join(par))
                 results['article_texts'].append(article_text)
 
                 # Get the meta information
@@ -100,7 +111,7 @@ def get_articles_by_sources(sources, metadata=None):
     results['source2articles'] = source2articles
     return results
 
-def get_comments_by_type(language, source_type, aggregate='article'):
+def get_comments_by_type(language, source_type, aggregate='article', kind='with_2bigramms'):
     """
     Return all comment texts for editorial articles or blog posts. For forum threads use :py:func:`get_forum_threads_by_language`.
 
@@ -109,14 +120,14 @@ def get_comments_by_type(language, source_type, aggregate='article'):
     """
 
     if language == 'german':
-        return get_comments_by_sources(german_types[source_type], aggregate)
+        return get_comments_by_sources(german_types[source_type], aggregate,  kind)
     elif language == 'english':
-        return get_comments_by_sources(english_types[source_type], aggregate)
+        return get_comments_by_sources(english_types[source_type], aggregate,  kind)
     else:
         raise Exception('Language {} not supported.'.format(language))
 
 
-def get_comments_by_sources(sources, aggregate='article'):
+def get_comments_by_sources(sources, aggregate='article', kind="with_2bigramms"):
     """
     Get all comments for all articles of the specified sources. The documents are returned in a dictionary.
     The key 'comment_texts' contains the text in  a list and 'comment2articles' contains a mapping of each comment document to the article ids if :py:func:`get_articles_by_sources` is called with the  same sources in the same order.
@@ -131,7 +142,9 @@ def get_comments_by_sources(sources, aggregate='article'):
     :type sources: list
     :param aggregate: One of 'article', 'article_roots', 'only_root', and 'comments'
     :type aggregate: str
-    :returns: Dict{comment_texts: [...], comment2article: [...]}
+     :param kind: Specifies the kind of processing applied on the data. The possible values 'tokenize_lemmatize', 'stopwords', and 'processed' correspond to the folders of the data directory.
+     :type kind: str
+     :returns: Dict{comment_texts: [...], comment2article: [...]}
 
     """
     article_id = 0
@@ -140,7 +153,7 @@ def get_comments_by_sources(sources, aggregate='article'):
 
     for source in sources:
         lang = _map_source_to_language(source)
-        path = os.path.join(DATA_DIR, lang, source + '.json')
+        path = os.path.join(DATA_DIR, kind, lang, source + '.json')
         with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             for resource in data:
@@ -203,7 +216,7 @@ def _concatenate_comment(comment):
         comment_flat.extend(par)
     return " ".join(comment_flat)
 
-def get_forum_threads_by_language(language,  metadata=None):
+def get_forum_threads_by_language(language,  metadata=None, kind='with_2bigramms'):
     """
     Return all forum posts of the specified language.
 
@@ -211,22 +224,26 @@ def get_forum_threads_by_language(language,  metadata=None):
 
     """
     if language == 'german':
-        return get_forum_threads_by_sources(german_types['forum'], metadata)
+        return get_forum_threads_by_sources(german_types['forum'], metadata, kind)
     elif language == 'english':
-        return get_forum_threads_by_sources(english_types['forum'], metadata)
+        return get_forum_threads_by_sources(english_types['forum'], metadata, kind)
     else:
         raise Exception('Language {} not supported.'.format(language))
 
 
-def get_forum_threads_by_sources(sources,  metadata=None):
+def get_forum_threads_by_sources(sources,  metadata=None, kind='with_2bigramms',):
     """
     Return all threads of the specified sources and the corresponding metadata. Each document combines the article_title,
     article_text, and comments.  The documents are returned in a dictionary.
+    The key 'thread_texts' contains the text in the form specified by merge_paragraphs and 'source2threads' contains
+    a mapping of each source to the thread ids (position in list).
 
     :param sources: List of sources to load
     :type sources: list
     :param metadata: List of meta information to load together with the threads. The possible values correspond to the fields of the json files.
     :type metadata: list
+    :param kind: Specifies the kind of processing applied on the data. The possible values 'tokenize_lemmatize', 'stopwords', and 'processed' correspond to the folders of the data directory.
+     :type kind: str
     :returns: Dict {thread_texts: [...], metadata_0: [...], metadata_1: [...], ...,
      source2thread: {'source0': [], 'source1': [] }}
 
@@ -237,7 +254,7 @@ def get_forum_threads_by_sources(sources,  metadata=None):
     for source in sources:
         ids = []
         lang = _map_source_to_language(source)
-        path = os.path.join(DATA_DIR, lang, source + '.json')  # possibly change to only have one german file
+        path = os.path.join(DATA_DIR, kind, lang, source + '.json')  # possibly change to only have one german file
         with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
@@ -299,3 +316,4 @@ def map_documents_to_year(article_times, counts=False):
 
 if __name__ == "__main__":
     pass
+

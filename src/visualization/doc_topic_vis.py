@@ -186,10 +186,14 @@ if __name__ == "__main__":
     model = "lda"
     language = "german"
     typetx = "editorial"
+    limit_x = 30
 
     threshold = 0.1
     document_topic_matrix, topicmodel = get_document_topic_matrix(model, language, typetx)
-    print(document_topic_matrix)
+    #print(document_topic_matrix)
+    print(topicmodel)
     k, v = amount_topic_per_dokument(threshold, document_topic_matrix)
     # plot_amount_topic_per_dcument(model, language, typetx, threshold, k, v)
-    plot_amount_topic_per_document(model,language,typetx,topicmodel,threshold, k, v)
+    plot_amount_topic_per_document(model,language,typetx,threshold, k, v)
+
+    plot_amount_doc_per_topic(model,language,typetx,topicmodel,threshold, document_topic_matrix, limit_x, sorted=True)
