@@ -86,15 +86,17 @@ def get_articles_by_sources(sources, metadata=None, merge_paragraphs=True, kind=
                 # Get text
                 article_paragraphs = resource['article_text_tokenized']
                 article_text = []
-
-                if merge_paragraphs:
-                    for par in article_paragraphs:
-                        article_text.extend(par)
-                    article_text = " ".join(article_text)
+                if kind == 'tagged':
+                    results['article_texts'].append(article_paragraphs)
                 else:
-                    for par in article_paragraphs:
-                        article_text.append(" ".join(par))
-                results['article_texts'].append(article_text)
+                    if merge_paragraphs:
+                        for par in article_paragraphs:
+                            article_text.extend(par)
+                        article_text = " ".join(article_text)
+                    else:
+                        for par in article_paragraphs:
+                            article_text.append(" ".join(par))
+                    results['article_texts'].append(article_text)
 
                 # Get the meta information
                 if metadata:

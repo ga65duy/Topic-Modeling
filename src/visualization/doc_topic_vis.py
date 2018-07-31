@@ -21,32 +21,32 @@ def get_document_topic_matrix(model, language, typetx):
 
     if model == "lda":
         if language == "german" and typetx == "editorial":
-            lda_vec = Vectorizer.load("DEED_lda_german_editorial.pkl")
-            lda = TopicModel.load('lda', "DEED_lda_german_editorial_articles_190.pkl")
+            lda_vec = Vectorizer.load("vectorizer/DEED_lda_german_editorial.pkl")
+            lda = TopicModel.load("topic_models/lda/DEED_lda_german_editorial_articles_190.pkl")
 
         elif language == "english" and typetx == "editorial":
-            lda_vec = Vectorizer.load("ENED_lda_english_editorial.pkl")
-            lda = TopicModel.load('lda', "ENED_lda_english_editorial_articles_130.pkl")
+            lda_vec = Vectorizer.load("vectorizer/ENED_lda_english_editorial.pkl")
+            lda = TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
 
         elif language == "english" and typetx == "forum":
-            lda_vec = Vectorizer.load("ENFO_lda_english_forum.pkl")
-            lda = TopicModel.load('lda', "ENFO_lda_english_forum_110.pkl")
+            lda_vec = Vectorizer.load("vectorizer/ENFO_lda_english_forum.pkl")
+            lda = TopicModel.load("topic_models/lda/ENFO_lda_english_forum_110.pkl")
 
         lda_document_term_matrix = lda_vec.get_document_token_matrix(texts)
         return lda.get_document_topic_matrix(lda_document_term_matrix), lda
 
     elif model == "nmf":
         if language == "german" and typetx == "editorial":
-            nmf_vec = Vectorizer.load("DEEDCO_nmf_german_editorial.pkl")
-            nmf = TopicModel.load('nmf', "DEEDCO_nmf_german_editorial_comments_170.pkl")
+            nmf_vec = Vectorizer.load("vectorizer/DEEDCO_nmf_german_editorial.pkl")
+            nmf = TopicModel.load("topic_models/nmf/DEEDCO_nmf_german_editorial_comments_170.pkl")
 
         elif language == "german" and typetx == "forum":
-            nmf_vec = Vectorizer.load("DEFO_nmf_german_forum.pkl")
-            nmf = TopicModel.load('nmf', "DEFO_nmf_german_forum_170.pkl")
+            nmf_vec = Vectorizer.load("vectorizer/DEFO_nmf_german_forum.pkl")
+            nmf = TopicModel.load("topic_models/nmf/DEFO_nmf_german_forum_170.pkl")
 
         elif language == "english" and typetx == "editorial":
-            nmf_vec = Vectorizer.load("ENEDCO_nmf_english_editorial.pkl")
-            nmf = TopicModel.load('nmf', "ENEDCO_nmf_english_editorial_comments_170.pkl")
+            nmf_vec = Vectorizer.load("vectorizer/ENEDCO_nmf_english_editorial.pkl")
+            nmf = TopicModel.load("topic_models/nmf/ENEDCO_nmf_english_editorial_comments_170.pkl")
 
         nmf_document_term_matrix = nmf_vec.get_document_token_matrix(texts)
         return nmf.get_document_topic_matrix(nmf_document_term_matrix), nmf

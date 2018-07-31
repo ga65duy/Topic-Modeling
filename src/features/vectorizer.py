@@ -86,7 +86,7 @@ class Vectorizer(object):
         :type path: string
         """
 
-        full_path = os.path.join(ROOT_DIR, 'models/vectorizer', path)
+        full_path = os.path.join(ROOT_DIR, 'models', path)
         with open(full_path, 'wb') as f:
             pickle.dump(self, f)
 
@@ -99,7 +99,7 @@ class Vectorizer(object):
         :type path: string
         :return: Vectorizer object
         """
-        full_path = os.path.join(ROOT_DIR, 'models/vectorizer', path)
+        full_path = os.path.join(ROOT_DIR, 'models' , path)
         with open(full_path, 'rb') as f:
             vec = pickle.load(f)
         return vec

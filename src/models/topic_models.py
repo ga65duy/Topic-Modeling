@@ -157,19 +157,19 @@ class TopicModel(object):
         :param path: Path to file. The path is appended to 'models/topic_models/'
         :type path: str
         """
-        path = os.path.join(ROOT_DIR, 'models/topic_models', self.model_name, path)
+        path = os.path.join(ROOT_DIR, 'models',  path)
         with open(path, 'wb') as f:
             pickle.dump(self, f)
 
     @staticmethod
-    def load(model_type, path):
+    def load(path):
         """
         Load a saved topic model.
         :param mname: path to the stored model. The path is appended to 'models/topic_models/'
         :type mname: str
         :return: Vectorizer object
         """
-        path = os.path.join(ROOT_DIR, 'models/topic_models', model_type, path)
+        path = os.path.join(ROOT_DIR, 'models', path)
         with open(path, 'rb') as f:
             vec = pickle.load(f)
         return vec
