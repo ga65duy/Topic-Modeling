@@ -261,11 +261,15 @@ def get_forum_threads_by_sources(sources,  metadata=None, kind='with_2bigramms',
             data = json.load(f)
 
             for resource in data:
-                # Get text
-                thread_intro = resource['article_title_tokenized'] + resource['article_text_tokenized']
+                #thread_intro = resource['article_title_tokenized'] +
+                thread_intro = resource['article_text_tokenized']
                 for comment in resource['comments']:
                     con_comment = _concatenate_comment(comment)
-                    thread_intro.append([con_comment])
+                    try:
+                        thread_intro.append([con_comment])
+                    except Exception:
+                        thread_intro =[thread_intro.split()]
+                        thread_intro.append([con_comment])
 
                 thread_text = []
                 for par in thread_intro:

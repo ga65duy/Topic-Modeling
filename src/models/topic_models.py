@@ -229,6 +229,7 @@ class TopicModel(object):
         dfn = dfn.reindex(columns=(['score'] + list([a for a in dfn.columns if a != 'score'])))
         return dfn
 
+
     def get_topic_coherence(self, num_top_tokens=10, per_topic=False):
         """
         Return the topic coherence for the trained measures. The coherence is a measure that indicates how
@@ -237,7 +238,6 @@ class TopicModel(object):
         The coherence of a topic model is the mean of the coherence values for each topic.
         The 'u_mass' measure was introduced by Mimno et. al. (2011) and utilizes
         solely the word co-occurences in the training documents.
-
         :param num_top_tokens: The number of top terms to extract from each topic.
         :type num_top_tokens: int
         :param per_topic: If true a list of coherence values for each topic is returned. Passing this list to

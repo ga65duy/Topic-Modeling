@@ -44,11 +44,11 @@ class LabelRanker(object):
         numpy.ndarray, shape (#topics, #labels)
             the scores of each label on each topic
         """
-        print("shape topic model")
-        print(topic_models.shape)
-
-        print("pmishape")
-        print(pmi_w2l.shape)
+        # print("shape topic model")
+        # print(topic_models.shape)
+        #
+        # print("pmishape")
+        # print(pmi_w2l.shape)
 
 
         assert topic_models.shape[1] == pmi_w2l.shape[0]
@@ -213,8 +213,8 @@ class LabelRanker(object):
                                                  self._discrimination,
                                                  self._mu)
 
-        print("lable scores")
-        print(label_scores)
+        # print("lable scores")
+        # print(label_scores)
         if self._coverage:
             assert isinstance(label_models, np.ndarray)
             # TODO: can be parallel

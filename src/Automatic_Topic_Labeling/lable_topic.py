@@ -30,9 +30,9 @@ def get_topic_lables(tagged_docs, docs,pos ,model , vec, trained_tm, n_top_words
         doc2label_vectorizer=LabelCountVectorizer())
     pmi_w2l = pmi_cal.from_texts(docs, cand_labels)
 
-    print("PMI"+str(pmi_w2l))
-
-    print("Topic modeling using " + model)
+    # print("PMI"+str(pmi_w2l))
+    #
+    # print("Topic modeling using " + model)
     #tm_model = TopicModel.load(model, trained_tm)
     topic_token_matrix = trained_tm.get_topic_token_matrix()
 
@@ -42,7 +42,7 @@ def get_topic_lables(tagged_docs, docs,pos ,model , vec, trained_tm, n_top_words
     #                    for id_ in top_word_ids]
     #     print('Topic {}: {}'.format(i, ' '.join(topic_words)))
     table = trained_tm.get_topics_dataframe()
-    display(table)
+    #display(table)
 
     ranker = LabelRanker(apply_intra_topic_coverage=False)
 

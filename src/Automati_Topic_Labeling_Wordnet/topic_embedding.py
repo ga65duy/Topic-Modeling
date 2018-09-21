@@ -1,5 +1,5 @@
-from src.Automati_Topic_Labeling_Wordnet.extrinsic_topic_labler import ExtrensicTopicLabeler as e
-from src.Automati_Topic_Labeling_Wordnet.wordnet_embeddings import Wordnet as wb
+from src.Automati_Topic_Labeling_Wordnet.extrinsic_topic_labler import ExtrensicTopicLabeler
+from src.Automati_Topic_Labeling_Wordnet.wordnet_embeddings import Wordnet
 from src.Automati_Topic_Labeling_Wordnet.polyglot_embeddings import get_topic_labels as pl
 #from src.Automati_Topic_Labeling_Wordnet.tree_labeling import TreeLabel as tree
 from itertools import permutations, combinations
@@ -8,7 +8,7 @@ from itertools import chain
 from src.models import topic_models as tm
 
 
-embeddings = Embedding.load("D:/Bachelorarbeit/Projekte/polyglot_data/embeddings2/en/embeddings_pkl.tar.bz2")
+#embeddings = Embedding.load("D:/Bachelorarbeit/Projekte/polyglot_data/embeddings2/en/embeddings_pkl.tar.bz2")
 embeddings = Embedding.from_glove("D:/Bachelorarbeit/Projekte/tm-maria/models/word_embeddings/glove.6B/glove.6B.100d.txt")
 
 def topic_word_distance(word1, word2):
@@ -46,19 +46,28 @@ def words_for_topics(topics,top = 5,values=False):
         best_words_per_topic_list.append(filtered_topics)
     return best_words_per_topic_list
 
+
 if __name__ == '__main__':
     tm = tm.TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
-    topics = (tm.get_topics())[:2]
+    topics = (tm.get_topics())
     print(topics)
     new_topics = words_for_topics(topics,3)
     print(new_topics)
 
     ##extrinsic
     print("extrinsic")
+    e = ExtrensicTopicLabeler()
+    print(e.print_topic_labels(topics))
+    print("preprocessed")
     print(e.print_topic_labels(new_topics))
 
     print("wornetembeddings")
+    wb = Wordnet()
+    print(wb.get_topic_labels(topics,"path_similarity"))
+    print("preprocessed")
     print(wb.get_topic_labels(new_topics,"path_similarity"))
 
     print("polyglotEmbeddings")
+    print(pl(topics))
+    print("preprocessed")
     print(pl(new_topics))
