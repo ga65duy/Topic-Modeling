@@ -223,5 +223,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Custom
+/data
+/models
 
 # End of https://www.gitignore.io/api/git,macos,python,windows,pycharm,jupyternotebook
