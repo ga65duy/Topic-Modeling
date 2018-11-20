@@ -1,19 +1,20 @@
 """
 Reference:
 ---------------------
-
 Qiaozhu Mei, Xuehua Shen, Chengxiang Zhai,
 Automatic Labeling of Multinomial Topic Models, 2007
+
+implementation was taken from "https://github.com/xiaohan2012/chowmein/tree/master/chowmein" and have been adopted to our data.
+Following we changed in the given implementation:
+    We used our vectoriter, our preprocessing and applied POS-Tagging and stored it in the json, too.
+    Additionally, we prefiltered our datasets and throw out all words which had a smaller length then 3.
 """
+
 import numpy as np
 from scipy.stats import entropy as kl_divergence
 
 
 class LabelRanker(object):
-    """
-
-    """
-
     def __init__(self,
                  apply_intra_topic_coverage=True,
                  apply_inter_topic_discrimination=True,
@@ -44,12 +45,11 @@ class LabelRanker(object):
         numpy.ndarray, shape (#topics, #labels)
             the scores of each label on each topic
         """
-        # print("shape topic model")
-        # print(topic_models.shape)
+        print("shape topic model")
+        print(topic_models.shape)
         #
-        # print("pmishape")
-        # print(pmi_w2l.shape)
-
+        print("pmishape")
+        print(pmi_w2l.shape)
 
         assert topic_models.shape[1] == pmi_w2l.shape[0]
         return np.asarray(np.asmatrix(topic_models) *
@@ -129,7 +129,7 @@ class LabelRanker(object):
             return (candidate_labels, mml_scores)
 
     def combined_label_score(self, topic_models, pmi_w2l,
-                             use_discrimination, mu=None):
+                             use_discrimination, mu=0.7):
         """
         Calculate the combined scores from relevance_score
         and discrimination_score(if required)
@@ -217,7 +217,6 @@ class LabelRanker(object):
         # print(label_scores)
         if self._coverage:
             assert isinstance(label_models, np.ndarray)
-            # TODO: can be parallel
             chosen_labels = self.select_label_sequentially(k, label_scores,
                                                            label_models)
         else:

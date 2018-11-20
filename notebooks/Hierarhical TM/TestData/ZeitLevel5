@@ -1,0 +1,186 @@
+// Topics
+digraph {
+	0 [label="Topic 0: 
+prozent
+ deutschland
+ jed
+ landwirtschaft
+ stehen
+ " shape=box]
+	1 [label="Topic 1: 
+konventionell
+ bio
+ lebensmittel
+ bioprodukt
+ gemüse
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="Topic 2: 
+verbraucher
+ streng
+ standard
+ kriterium
+ hersteller
+ " shape=box]
+	1 -> 2 [constraint=true]
+	3 [label="Topic 3: 
+schwartze
+ frage
+ bangladesch
+ leute
+ asien
+ " shape=box]
+	2 -> 3 [constraint=true]
+	4 [label="Topic 4: 
+schmecken
+ studie
+ produkt
+ geschmack
+ wissenschaftler
+ " shape=box]
+	3 -> 4 [constraint=true]
+	14 [label="Topic 14: 
+mark
+ beispielsweise
+ alternativ
+ grüne
+ urteilen
+ " shape=box]
+	3 -> 14 [constraint=true]
+	24 [label="Topic 24: 
+assaf
+ arbeiter
+ arbeiten
+ arbeit
+ naturland
+ " shape=box]
+	3 -> 24 [constraint=true]
+	12 [label="Topic 12: 
+huhn
+ häde
+ tier
+ keimen
+ darm
+ " shape=box]
+	2 -> 12 [constraint=true]
+	13 [label="Topic 13: 
+dioxin
+ essen
+ gift
+ fast
+ fett
+ " shape=box]
+	12 -> 13 [constraint=true]
+	22 [label="Topic 22: 
+transport
+ anbau
+ umweltfreundlich
+ völlig
+ problem
+ " shape=box]
+	2 -> 22 [constraint=true]
+	23 [label="Topic 23: 
+italien
+ alberti
+ italienisch
+ kontrolleure
+ tonne
+ " shape=box]
+	22 -> 23 [constraint=true]
+	25 [label="Topic 25: 
+region
+ gerber
+ regional
+ edeka
+ zielen
+ " shape=box]
+	22 -> 25 [constraint=true]
+	26 [label="Topic 26: 
+schaffrin
+ magdalena
+ mode
+ kleidung
+ grün
+ " shape=box]
+	22 -> 26 [constraint=true]
+	9 [label="Topic 9: 
+bauer
+ bauernverband
+ funken
+ agrarpolitik
+ politik
+ " shape=box]
+	1 -> 9 [constraint=true]
+	10 [label="Topic 10: 
+rehn
+ alnatura
+ basic
+ bse-krise
+ konzept
+ " shape=box]
+	9 -> 10 [constraint=true]
+	11 [label="Topic 11: 
+arbeitsbedingungen
+ schulz
+ herrschen
+ arbeitszeiten
+ werner
+ " shape=box]
+	10 -> 11 [constraint=true]
+	19 [label="Topic 19: 
+feld
+ rauhaus
+ ernten
+ schäfer
+ studie
+ " shape=box]
+	1 -> 19 [constraint=true]
+	20 [label="Topic 20: 
+hatje
+ timmermann
+ hans_hinrich
+ dennree
+ greim
+ " shape=box]
+	19 -> 20 [constraint=true]
+	21 [label="Topic 21: 
+dosch
+ gentechnik
+ grün
+ streng
+ bezahlen
+ " shape=box]
+	20 -> 21 [constraint=true]
+	15 [label="Topic 15: 
+lebensmittel
+ wies’n
+ münchen
+ kattendorfer
+ supermarktkette
+ " shape=box]
+	0 -> 15 [constraint=true]
+	16 [label="Topic 16: 
+sonnleitner
+ münchner
+ jahrzehnt
+ ausschließlich
+ oktoberfest
+ " shape=box]
+	15 -> 16 [constraint=true]
+	17 [label="Topic 17: 
+amazon
+ walmart
+ google
+ whole_foods
+ hektar
+ " shape=box]
+	16 -> 17 [constraint=true]
+	18 [label="Topic 18: 
+eiern
+ martina
+ künftig
+ hähnchen
+ küken
+ " shape=box]
+	17 -> 18 [constraint=true]
+}

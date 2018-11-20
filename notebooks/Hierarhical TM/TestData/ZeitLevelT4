@@ -1,0 +1,130 @@
+// Topics
+digraph {
+	0 [label="Topic 0: 
+prozent
+ ökologisch
+ bio
+ deutschland
+ stehen
+ " shape=box]
+	1 [label="Topic 1: 
+gemüse
+ obst
+ fleisch
+ essen
+ boden
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="Topic 2: 
+italien
+ alberti
+ kontrolle
+ wachsen
+ italienisch
+ " shape=box]
+	1 -> 2 [constraint=true]
+	3 [label="Topic 3: 
+schwartze
+ assaf
+ arbeit
+ arbeiter
+ arbeiten
+ " shape=box]
+	2 -> 3 [constraint=true]
+	9 [label="Topic 9: 
+bauer
+ landwirtschaft
+ bauernverband
+ funken
+ bse-krise
+ " shape=box]
+	2 -> 9 [constraint=true]
+	15 [label="Topic 15: 
+dioxin
+ falsch
+ zertifikat
+ umso
+ gramm
+ " shape=box]
+	2 -> 15 [constraint=true]
+	7 [label="Topic 7: 
+huhn
+ dioxin
+ häde
+ eiern
+ wirken
+ " shape=box]
+	1 -> 7 [constraint=true]
+	8 [label="Topic 8: 
+keimen
+ mark
+ darm
+ erreger
+ ehec-bakterien
+ " shape=box]
+	7 -> 8 [constraint=true]
+	13 [label="Topic 13: 
+dosch
+ discounter
+ gentechnik
+ forscher
+ dennree
+ " shape=box]
+	1 -> 13 [constraint=true]
+	14 [label="Topic 14: 
+bio
+ konventionell
+ schmecken
+ produkt
+ studie
+ " shape=box]
+	13 -> 14 [constraint=true]
+	4 [label="Topic 4: 
+schaffrin
+ grün
+ magdalena
+ mode
+ kleidung
+ " shape=box]
+	0 -> 4 [constraint=true]
+	5 [label="Topic 5: 
+münchner
+ oktoberfest
+ erklären
+ leute
+ jahrzehnt
+ " shape=box]
+	4 -> 5 [constraint=true]
+	6 [label="Topic 6: 
+timmermann
+ gemüse
+ martina
+ perchlorat
+ kroh
+ " shape=box]
+	5 -> 6 [constraint=true]
+	10 [label="Topic 10: 
+hatje
+ hans_hinrich
+ konventionell
+ entscheidung
+ rehn
+ " shape=box]
+	0 -> 10 [constraint=true]
+	11 [label="Topic 11: 
+eiern
+ künftig
+ cent
+ fleisch
+ küken
+ " shape=box]
+	10 -> 11 [constraint=true]
+	12 [label="Topic 12: 
+alnatura
+ mitarbeiter
+ basic
+ 's
+ amazon
+ " shape=box]
+	11 -> 12 [constraint=true]
+}

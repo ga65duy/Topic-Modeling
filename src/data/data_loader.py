@@ -1,3 +1,6 @@
+'''
+This implementation is copied from Christians project
+'''
 import json
 import os
 from collections import defaultdict
@@ -35,7 +38,7 @@ def _map_source_to_language(source):
         raise Exception('Source {} not included'.format(source))
 
 
-def get_articles_by_type(language, source_type,  metadata=None, merge_paragraphs=True, kind="with_2bigramms"):
+def get_articles_by_type(language, source_type, metadata=None, merge_tokens=True, kind="with_2bigrams"):
     """
     Return all article texts for editorial and blog sources. For forum threads use :py:func:`get_forum_threads_by_language`.
 
@@ -44,14 +47,14 @@ def get_articles_by_type(language, source_type,  metadata=None, merge_paragraphs
     """
 
     if language == 'german':
-        return get_articles_by_sources(german_types[source_type], metadata, merge_paragraphs, kind)
+        return get_articles_by_sources(german_types[source_type], metadata, kind, merge_tokens)
     elif language == 'english':
-        return get_articles_by_sources(english_types[source_type], metadata, merge_paragraphs, kind)
+        return get_articles_by_sources(english_types[source_type], metadata, kind, merge_tokens,)
     else:
         raise Exception('Language {} not supported.'.format(language))
 
 
-def get_articles_by_sources(sources, metadata=None, merge_paragraphs=True, kind="with_2bigramms"):
+def get_articles_by_sources(sources, metadata=None, kind="with_2bigrams", merge_tokens=True):
     """
     Return all article texts of the specified sources and the corresponding metadata. The documents are returned in a dictionary.
     The key 'article_texts' contains the text in the form specified by merge_paragraphs and 'source2articles' contains
@@ -63,11 +66,13 @@ def get_articles_by_sources(sources, metadata=None, merge_paragraphs=True, kind=
     :type sources: list
     :param metadata: List of meta information to load together with article texts. The possible values correspond to the fields of the json files
     :type metadata: list
-    :param merge_paragraphs: Describes whether a string containing the whole document or a list of strings with each list being one paragraph of the document.
-    :type merge_paragraphs: bool
     :param kind: Specifies the kind of processing applied on the data. The possible values 'tokenize_lemmatize',
      'stopwords', and 'processed' correspond to the folders of the data directory.
      :type kind: str
+     :param merge_tokens: If true the tokens are joined to string otherwise the tokens for each document are contained as a list.
+     True: ["t1 t2", "t3 t4"] False: [["t1", "t2"],["t3", "t4"]]. Use True if the documents are passed to the vectorizer and use false if they are passed
+     to the topic labeler
+     :type merge_tokens: bool
     :returns: Dict {article_texts: [...], metadata_0: [...], metadata_1: [...], ...,
      source2articles: {'source0': [], 'source1': [] }}
 
@@ -84,20 +89,15 @@ def get_articles_by_sources(sources, metadata=None, merge_paragraphs=True, kind=
 
             for resource in data:
                 # Get text
-                article_paragraphs = resource['article_text_tokenized']
-                article_text = []
-                if kind == 'tagged':
-                    results['article_texts'].append(article_paragraphs)
+                article_text_tokenized = resource['article_text_tokenized']
+                if merge_tokens:
+                    article_text_tokenized_joined = " ".join(article_text_tokenized)
+                    results['article_texts'].append(article_text_tokenized_joined)
                 else:
-                    if merge_paragraphs:
-                        for par in article_paragraphs:
-                            article_text.extend(par)
-                        article_text = " ".join(article_text)
-                    else:
-                        for par in article_paragraphs:
-                            article_text.append(" ".join(par))
-                    results['article_texts'].append(article_text)
+                    results['article_texts'].append(article_text_tokenized)
 
+                if kind == "tagged":
+                    results['article_pos'].append(resource['article_text_pos'])
                 # Get the meta information
                 if metadata:
                     for idx, meta in enumerate(metadata):
@@ -110,10 +110,14 @@ def get_articles_by_sources(sources, metadata=None, merge_paragraphs=True, kind=
                 ids.append(idx)
                 idx += 1
         source2articles[source] = ids
+    if kind == "tagged":
+        results['article_pos'] = list2tupel(results["article_pos"])
+
     results['source2articles'] = source2articles
     return results
 
-def get_comments_by_type(language, source_type, aggregate='article', kind='with_2bigramms'):
+
+def get_comments_by_type(language, source_type, aggregate='article', kind='with_2bigrams', merge_tokens=True):
     """
     Return all comment texts for editorial articles or blog posts. For forum threads use :py:func:`get_forum_threads_by_language`.
 
@@ -122,14 +126,14 @@ def get_comments_by_type(language, source_type, aggregate='article', kind='with_
     """
 
     if language == 'german':
-        return get_comments_by_sources(german_types[source_type], aggregate,  kind)
+        return get_comments_by_sources(german_types[source_type], aggregate,  kind,  merge_tokens=merge_tokens)
     elif language == 'english':
-        return get_comments_by_sources(english_types[source_type], aggregate,  kind)
+        return get_comments_by_sources(english_types[source_type], aggregate,  kind,  merge_tokens=merge_tokens)
     else:
         raise Exception('Language {} not supported.'.format(language))
 
 
-def get_comments_by_sources(sources, aggregate='article', kind="with_2bigramms"):
+def get_comments_by_sources(sources, aggregate='article', kind="with_2bigrams", merge_tokens=True):
     """
     Get all comments for all articles of the specified sources. The documents are returned in a dictionary.
     The key 'comment_texts' contains the text in  a list and 'comment2articles' contains a mapping of each comment document to the article ids if :py:func:`get_articles_by_sources` is called with the  same sources in the same order.
@@ -152,7 +156,7 @@ def get_comments_by_sources(sources, aggregate='article', kind="with_2bigramms")
     article_id = 0
     documents = []
     article_ids = []
-
+    comment_pos = []
     for source in sources:
         lang = _map_source_to_language(source)
         path = os.path.join(DATA_DIR, kind, lang, source + '.json')
@@ -165,60 +169,91 @@ def get_comments_by_sources(sources, aggregate='article', kind="with_2bigramms")
 
                 if aggregate == 'article':
                     article_comments = []
+                    article_comments_pos = []
                     for comment in resource['comments']:
-                        con_comment = _concatenate_comment(comment)
-                        article_comments.append(con_comment)
-                    documents.append(" ".join(article_comments))
+                        if kind == "tagged":
+                            com, com_pos = _concatenate_comment(comment,  False, "tagged")
+                            article_comments = article_comments + com
+                            article_comments_pos = article_comments_pos + com_pos
+                        else:
+                            article_comments = article_comments + _concatenate_comment(comment, merge_tokens=False)
+                    if merge_tokens:
+                        documents.append(" ".join(article_comments))
+                    else:
+                        documents.append(article_comments)
+                    if kind == "tagged":
+                        comment_pos.append(article_comments_pos)
                     article_ids.append(article_id)
 
                 elif aggregate == 'article_roots':
                     article_comments = []
+                    article_comments_pos = []
                     for comment in resource['comments']:
                         if 'comment_replyTo' not in comment:
-                            con_comment = _concatenate_comment(comment)
-                            article_comments.append(con_comment)
-                    documents.append(" ".join(article_comments))
+                            if kind == "tagged":
+                                com, com_pos = _concatenate_comment(comment, False, "tagged")
+                                article_comments = article_comments + com
+                                article_comments_pos = article_comments_pos + com_pos
+                            else:
+                                article_comments = article_comments + _concatenate_comment(comment, merge_tokens=False)
+                    if merge_tokens:
+                        documents.append(" ".join(article_comments))
+                    else:
+                        documents.append(" ".join(article_comments))
+
+                    if kind == "tagged":
+                        comment_pos.append(article_comments_pos)
+
                     article_ids.append(article_id)
 
                 elif aggregate == 'only_root':
                     for comment in resource['comments']:
                         if 'comment_replyTo' not in comment:
-                            con_comment = _concatenate_comment(comment)
+                            if kind == "tagged":
+                                con_comment, con_pos = _concatenate_comment(comment, merge_tokens=False, kind="tagged")
+                                comment_pos.append(con_pos)
+                            else:
+                                con_comment = _concatenate_comment(comment, merge_tokens=merge_tokens)
                             documents.append(con_comment)
                             article_ids.append(article_id)
 
                 elif aggregate == 'comments':
                     for comment in resource['comments']:
-                        con_comment = _concatenate_comment(comment)
+                        if kind == "tagged":
+                            con_comment, con_pos = _concatenate_comment(comment, merge_tokens=False, kind="tagged")
+                            comment_pos.append(con_pos)
+                        else:
+                            con_comment = _concatenate_comment(comment, merge_tokens=merge_tokens)
                         documents.append(con_comment)
                         article_ids.append(article_id)
                 else:
                     raise Exception('Aggregation level {} not supported'.format(aggregate))
                 article_id += 1
-    return {'comment_texts': documents, 'comment2article': article_ids}
+    if kind == "tagged":
+        comment_pos = list2tupel(comment_pos)
+        return {'comment_texts': documents, 'comment_pos': comment_pos, 'comment2article': article_ids}
+    else:
+        return {'comment_texts': documents, 'comment2article': article_ids}
 
 
-def _combine_comment_title_text(comment):
+def _concatenate_comment(comment, merge_tokens=True, kind="with_2bigrams"):
     comment_text = comment['comment_text_tokenized']
     if 'comment_title' in comment:
         comment_text = comment_text + comment['comment_title_tokenized']
 
-    comment = []
-    for par in comment_text:
-        comment.extend(par)
-    return " ".join(comment)
+    if merge_tokens:
+        comment_text = " ".join(comment_text)
+    # if kind is tagged also return pos tags
+    if kind == "tagged":
+        comment_pos = comment['comment_text_pos']
+        if 'comment_title' in comment:
+            comment_pos = comment_pos + comment['comment_title_pos']
+        return comment_text, comment_pos
 
-def _concatenate_comment(comment):
-    comment_text = comment['comment_text_tokenized']
-    if 'comment_title' in comment:
-        comment_text = comment_text + comment['comment_title_tokenized']
+    return comment_text
 
-    comment_flat = []
-    for par in comment_text:
-        comment_flat.extend(par)
-    return " ".join(comment_flat)
 
-def get_forum_threads_by_language(language,  metadata=None, kind='with_2bigramms'):
+def get_forum_threads_by_language(language,  metadata=None, kind='with_2bigrams', merge_tokens=True):
     """
     Return all forum posts of the specified language.
 
@@ -226,14 +261,14 @@ def get_forum_threads_by_language(language,  metadata=None, kind='with_2bigramms
 
     """
     if language == 'german':
-        return get_forum_threads_by_sources(german_types['forum'], metadata, kind)
+        return get_forum_threads_by_sources(german_types['forum'], metadata, kind, merge_tokens=merge_tokens)
     elif language == 'english':
-        return get_forum_threads_by_sources(english_types['forum'], metadata, kind)
+        return get_forum_threads_by_sources(english_types['forum'], metadata, kind,  merge_tokens=merge_tokens)
     else:
         raise Exception('Language {} not supported.'.format(language))
 
 
-def get_forum_threads_by_sources(sources,  metadata=None, kind='with_2bigramms',):
+def get_forum_threads_by_sources(sources,  metadata=None, kind='with_2bigrams', merge_tokens=True):
     """
     Return all threads of the specified sources and the corresponding metadata. Each document combines the article_title,
     article_text, and comments.  The documents are returned in a dictionary.
@@ -261,22 +296,26 @@ def get_forum_threads_by_sources(sources,  metadata=None, kind='with_2bigramms',
             data = json.load(f)
 
             for resource in data:
-                #thread_intro = resource['article_title_tokenized'] +
-                thread_intro = resource['article_text_tokenized']
+                thread_intro = resource['article_title_tokenized'] + resource['article_text_tokenized']
+
+                if kind == "tagged":
+                    thread_pos = resource['article_title_pos'] + resource['article_text_pos']
+
                 for comment in resource['comments']:
-                    con_comment = _concatenate_comment(comment)
-                    try:
-                        thread_intro.append([con_comment])
-                    except Exception:
-                        thread_intro =[thread_intro.split()]
-                        thread_intro.append([con_comment])
+                    if kind == "tagged":
+                        con_comment, comment_pos = _concatenate_comment(comment, merge_tokens=False, kind="tagged")
+                        thread_pos = thread_pos + comment_pos
+                    else:
+                        con_comment = _concatenate_comment(comment, merge_tokens=False)
+                    thread_intro = thread_intro + con_comment
 
-                thread_text = []
-                for par in thread_intro:
-                    thread_text.extend(par)
-                thread_text = " ".join(thread_text)
+                if merge_tokens:
+                    results['thread_texts'].append(" ".join(thread_intro))
+                else:
+                    results['thread_texts'].append(thread_intro)
 
-                results['thread_texts'].append(thread_text)
+                if kind == "tagged":
+                    results['thread_pos'].append(thread_pos)
 
                 # Get the meta information
                 if metadata:
@@ -290,9 +329,19 @@ def get_forum_threads_by_sources(sources,  metadata=None, kind='with_2bigramms',
                 ids.append(id)
                 id += 1
         source2articles[source] = ids
+    if kind == "tagged":
+        results['thread_pos'] = list2tupel(results['thread_pos'])
     results['source2threads'] = source2articles
     return results
 
+def list2tupel(listA):
+    result_list = []
+    for l in listA:
+        interims_list = []
+        for x in l:
+            interims_list.append(tuple(x))
+        result_list.append(interims_list)
+    return result_list
 
 def map_documents_to_year(article_times, counts=False):
     """
@@ -321,5 +370,9 @@ def map_documents_to_year(article_times, counts=False):
 
 
 if __name__ == "__main__":
-    pass
+    data = get_forum_threads_by_language('german', kind='tagged', merge_tokens=False)
+    texts = data["thread_texts"]
+    print(len(texts))
+    print(texts[0])
+
 

@@ -1,0 +1,829 @@
+// Topics
+digraph {
+	0 [label="bio
+ produkt
+ jed
+ kaufen
+ lebensmittel
+ " shape=box]
+	1 [label="fleisch
+ tier
+ essen
+ leben
+ huhn
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="zitat
+ dioxin
+ lebensmittel
+ verbraucher
+ kontrolle
+ " shape=box]
+	1 -> 2 [constraint=true]
+	5 [label="zitat
+ bio
+ gaztelupe
+ 
+ jed
+ " shape=box]
+	1 -> 5 [constraint=true]
+	8 [label="bauer
+ österreich
+ milch
+ preisen
+ eu
+ " shape=box]
+	1 -> 8 [constraint=true]
+	11 [label="zitat
+ lebensmittel
+ essen
+ verbraucher
+ stehen
+ " shape=box]
+	1 -> 11 [constraint=true]
+	19 [label="olivenöl
+ öl
+ ölen
+ qualität
+ extra
+ " shape=box]
+	1 -> 19 [constraint=true]
+	39 [label="käse
+ spezialität
+ blätern
+ wiener
+ link
+ " shape=box]
+	1 -> 39 [constraint=true]
+	80 [label="hipp
+ logo
+ cms
+ baby
+ hasenohren
+ " shape=box]
+	1 -> 80 [constraint=true]
+	86 [label="farce
+ ard
+ bio-siegel
+ zeigen
+ supermarkt
+ " shape=box]
+	1 -> 86 [constraint=true]
+	88 [label="artikel
+ antibiotika
+ natur
+ ehec
+ bio
+ " shape=box]
+	1 -> 88 [constraint=true]
+	96 [label="weihnachten
+ schenken
+ geschenk
+ geschenke
+ nachhaltig
+ " shape=box]
+	1 -> 96 [constraint=true]
+	97 [label="berg
+ freude
+ gore
+ armin
+ 
+ " shape=box]
+	1 -> 97 [constraint=true]
+	109 [label="desaster
+ duisburger
+ landwirt
+ enninghorst
+ dioxin-fund
+ " shape=box]
+	1 -> 109 [constraint=true]
+	130 [label="glyphosat
+ 2
+4-d
+ pflug
+ hellweg
+ herbizid
+ " shape=box]
+	1 -> 130 [constraint=true]
+	148 [label="respektieren
+ lebensraum
+ nest
+ silberfischchen
+ k.
+ " shape=box]
+	1 -> 148 [constraint=true]
+	150 [label="re
+ video
+ schreiben
+ mai
+ glaube
+ " shape=box]
+	1 -> 150 [constraint=true]
+	209 [label="gewisse
+ mcdonald_’s
+ bisschen-bio-burger
+ werben
+ becker
+ " shape=box]
+	1 -> 209 [constraint=true]
+	238 [label="re
+ biolandwirtschaft
+ artenvielfalt
+ permakultur
+ mai
+ " shape=box]
+	1 -> 238 [constraint=true]
+	246 [label="tomate
+ re
+ sorte
+ februar
+ hauptgrund
+ " shape=box]
+	1 -> 246 [constraint=true]
+	255 [label="bobo
+ verpackung
+ greissler
+ lade
+ bobos
+ " shape=box]
+	1 -> 255 [constraint=true]
+	3 [label="fleisch
+ re
+ tier
+ essen
+ milch
+ " shape=box]
+	0 -> 3 [constraint=true]
+	21 [label="licht
+ wissenschaft
+ methode
+ exoplaneten
+ schweinstein
+ " shape=box]
+	3 -> 21 [constraint=true]
+	22 [label="stiftsquelle
+ markt
+ bio-mineralwässer
+ steigen
+ flasche
+ " shape=box]
+	3 -> 22 [constraint=true]
+	26 [label="kw
+ viehhaltung
+ biogas
+ nich
+ biogasproduktion
+ " shape=box]
+	3 -> 26 [constraint=true]
+	30 [label="putze
+ spange
+ greenpeace
+ umweltgifte
+ redaktionelle
+ " shape=box]
+	3 -> 30 [constraint=true]
+	33 [label="allergie
+ mai
+ juni
+ schreiben
+ gentechnik
+ " shape=box]
+	3 -> 33 [constraint=true]
+	42 [label="huhn
+ eiern
+ töten
+ henne
+ einbruch
+ " shape=box]
+	3 -> 42 [constraint=true]
+	51 [label="bla
+ lampert
+ kraut
+ formel
+ garnichts
+ " shape=box]
+	3 -> 51 [constraint=true]
+	52 [label="migros
+ meeresfisch
+ coop
+ binnenland
+ m-budget
+ " shape=box]
+	3 -> 52 [constraint=true]
+	53 [label="plastikfolie
+ plastik
+ verpackung
+ bringt`s
+ kunststoff
+ " shape=box]
+	3 -> 53 [constraint=true]
+	55 [label="engagement
+ erträge
+ schmeiser
+ bezos
+ aktie
+ " shape=box]
+	3 -> 55 [constraint=true]
+	61 [label="övp
+ minister
+ werbung
+ berlakovich
+ faymann
+ " shape=box]
+	3 -> 61 [constraint=true]
+	65 [label="wein
+ kremstal
+ 🏻
+ de
+ böschung
+ " shape=box]
+	3 -> 65 [constraint=true]
+	70 [label="re
+ kuh
+ überraschen
+ schwachsinn
+ klimawandel
+ " shape=box]
+	3 -> 70 [constraint=true]
+	93 [label="superfood
+ ab-hof
+ verkäufer
+ nenn
+ superfoods
+ " shape=box]
+	3 -> 93 [constraint=true]
+	128 [label="snoop
+ grasen
+ protein
+ freund
+ dogg
+ " shape=box]
+	3 -> 128 [constraint=true]
+	156 [label="landwirtschaft
+ landwirt
+ grüne
+ zitat
+ fachleute
+ " shape=box]
+	3 -> 156 [constraint=true]
+	214 [label="emulgator
+ grösste
+ pilze
+ weichmacher
+ plastikverpackungen
+ " shape=box]
+	3 -> 214 [constraint=true]
+	222 [label="januar
+ nitrat
+ schreiben
+ zucker
+ subvention
+ " shape=box]
+	3 -> 222 [constraint=true]
+	229 [label="brigitte
+ alien
+ musikbeschallung
+ getrimmt
+ @the
+ " shape=box]
+	3 -> 229 [constraint=true]
+	235 [label="gmos
+ beleuchtung
+ beheizung
+ bluehtenstaub
+ insecten
+ " shape=box]
+	3 -> 235 [constraint=true]
+	244 [label="karpfen
+ milchkrise
+ seitan
+ überangebotes
+ dritteln
+ " shape=box]
+	3 -> 244 [constraint=true]
+	253 [label="bildung
+ rentabilität
+ ktg
+ ökofair
+ roboter-bienen
+ " shape=box]
+	3 -> 253 [constraint=true]
+	254 [label="@ko99421
+ sauen
+ ferkeln
+ großwürfige
+ zwickmühle
+ " shape=box]
+	3 -> 254 [constraint=true]
+	6 [label="essen
+ tier
+ finden
+ fleisch
+ <url>
+ " shape=box]
+	0 -> 6 [constraint=true]
+	7 [label="gurke
+ zitat
+ spanien
+ gülle
+ gemüse
+ " shape=box]
+	6 -> 7 [constraint=true]
+	15 [label="neuland
+ keckl
+ platz
+ georg
+ grüßen
+ " shape=box]
+	6 -> 15 [constraint=true]
+	16 [label="kirche
+ singer
+ oele
+ toetung
+ müller
+ " shape=box]
+	6 -> 16 [constraint=true]
+	23 [label="gibts
+ 's
+ <url>
+ hofer
+ schmecken
+ " shape=box]
+	6 -> 23 [constraint=true]
+	24 [label="the
+ juli
+ konsum
+ schreiben
+ leben
+ " shape=box]
+	6 -> 24 [constraint=true]
+	25 [label="hahn
+ huhn
+ initiative
+ zucht
+ tierwohl
+ " shape=box]
+	6 -> 25 [constraint=true]
+	47 [label="ddt
+ zitat
+ malaria
+ beat
+ einsatz
+ " shape=box]
+	6 -> 47 [constraint=true]
+	54 [label="stein
+ @manfred
+ maurin
+ virus
+ form
+ " shape=box]
+	6 -> 54 [constraint=true]
+	66 [label="stein
+ @manfred
+ tier
+ b12
+ of
+ " shape=box]
+	6 -> 66 [constraint=true]
+	81 [label="re
+ september
+ schreiben
+ schmecken
+ bio
+ " shape=box]
+	6 -> 81 [constraint=true]
+	103 [label="^^
+ abends
+ geklont
+ ttip
+ kommentieren
+ " shape=box]
+	6 -> 103 [constraint=true]
+	108 [label="’s
+ gutmenschen
+ bio-supermarkt
+ brauck
+ pflaumen
+ " shape=box]
+	6 -> 108 [constraint=true]
+	123 [label="gemüse
+ obst
+ lebensmittel
+ kaufen
+ preisen
+ " shape=box]
+	6 -> 123 [constraint=true]
+	126 [label="zitat
+ apfel
+ obst
+ hauptsache
+ öko
+ " shape=box]
+	6 -> 126 [constraint=true]
+	136 [label="schokolade
+ roth
+ nikolaus
+ moser
+ lederjacken
+ " shape=box]
+	6 -> 136 [constraint=true]
+	185 [label="pesticide
+ gemeinde
+ blumig
+ 18:54
+ eg
+ " shape=box]
+	6 -> 185 [constraint=true]
+	203 [label="eiern
+ zitat
+ kennzeichnung
+ restaurant
+ huhn
+ " shape=box]
+	6 -> 203 [constraint=true]
+	219 [label="vertragen
+ blume
+ stress
+ ernährungstrend
+ fit
+ " shape=box]
+	6 -> 219 [constraint=true]
+	221 [label="staatsversagen
+ linz
+ trendwende
+ srf
+ lachkrampf
+ " shape=box]
+	6 -> 221 [constraint=true]
+	228 [label="aufsicht
+ @nussrat
+ eu-bio-siegel
+ nutztierhaltung
+ goldpreis
+ " shape=box]
+	6 -> 228 [constraint=true]
+	233 [label="basic
+ service
+ kassierer
+ hochachtung
+ oön
+ " shape=box]
+	6 -> 233 [constraint=true]
+	249 [label="freitag
+ leusch
+ christoph
+ jäger
+ these
+ " shape=box]
+	6 -> 249 [constraint=true]
+	9 [label="essen
+ fleisch
+ tier
+ gütesiegel
+ hofer
+ " shape=box]
+	0 -> 9 [constraint=true]
+	10 [label="dm
+ alnatura
+ werner
+ götz_werner
+ sortiment
+ " shape=box]
+	9 -> 10 [constraint=true]
+	37 [label="tierschutz
+ migrationshintergrund
+ deutschen
+ kartoffel
+ euro
+ " shape=box]
+	9 -> 37 [constraint=true]
+	38 [label="re
+ fläche
+ schreiben
+ boden
+ landwirtschaft
+ " shape=box]
+	9 -> 38 [constraint=true]
+	49 [label="paradeiser
+ tomate
+ wien
+ topfen
+ österreich
+ " shape=box]
+	9 -> 49 [constraint=true]
+	79 [label="tee
+ ages
+ trinken
+ filiale
+ lagerhaus
+ " shape=box]
+	9 -> 79 [constraint=true]
+	90 [label="zitat
+ greenpeace
+ grenzwert
+ gift
+ bpa
+ " shape=box]
+	9 -> 90 [constraint=true]
+	91 [label="extensiv
+ humus
+ viehwirtschaft
+ recycling
+ pet
+ " shape=box]
+	9 -> 91 [constraint=true]
+	115 [label="rewe
+ greenpeace
+ ngo
+ hofer
+ konzern
+ " shape=box]
+	9 -> 115 [constraint=true]
+	131 [label="gmbh
+ folie
+ biofarbe
+ gez
+ frischfasern
+ " shape=box]
+	9 -> 131 [constraint=true]
+	135 [label="masche
+ olivenblätter
+ mästen
+ erbse
+ schwedenbomben
+ " shape=box]
+	9 -> 135 [constraint=true]
+	154 [label="schweinsbraten
+ lifestyle
+ yaatwdn
+ fernreise
+ urlaube
+ " shape=box]
+	9 -> 154 [constraint=true]
+	195 [label="leberkäse
+ bayrische
+ ostereier
+ vorgekochte
+ kynast
+ " shape=box]
+	9 -> 195 [constraint=true]
+	231 [label="politiker
+ deppen-nation
+ dämlich
+ mhd
+ bio-anbieter
+ " shape=box]
+	9 -> 231 [constraint=true]
+	232 [label="apfel
+ lady
+ pink
+ sorte
+ schmecken
+ " shape=box]
+	9 -> 232 [constraint=true]
+	237 [label="norwegen
+ austreten
+ agrosol
+ bedeuten
+ bio“-dünger
+ " shape=box]
+	9 -> 237 [constraint=true]
+	240 [label="korea
+ cm²
+ bravo
+ agrobusiness
+ koreanisch
+ " shape=box]
+	9 -> 240 [constraint=true]
+	241 [label="armenien
+ blindverkostung
+ geschlossen
+ georgien
+ lauf
+ " shape=box]
+	9 -> 241 [constraint=true]
+	251 [label="pro
+ bauer
+ liter
+ wissenschaft
+ co2
+ " shape=box]
+	9 -> 251 [constraint=true]
+	12 [label="fleisch
+ leben
+ verbraucher
+ tier
+ massentierhaltung
+ " shape=box]
+	0 -> 12 [constraint=true]
+	13 [label="lachs
+ aquakultur
+ haltungsbedingungen
+ lücke
+ qualfleisch
+ " shape=box]
+	12 -> 13 [constraint=true]
+	44 [label="frau
+ hofer
+ werbung
+ frauen
+ zitrone
+ " shape=box]
+	12 -> 44 [constraint=true]
+	74 [label="edeka
+ alla
+ @ingo
+ professor
+ anspielung
+ " shape=box]
+	12 -> 74 [constraint=true]
+	83 [label="zitat
+ siegeln
+ öko-test
+ fair
+ ökologisch
+ " shape=box]
+	12 -> 83 [constraint=true]
+	84 [label="wien
+ gebildet
+ bildungsgrad
+ trennen
+ umweltbewusstsein
+ " shape=box]
+	12 -> 84 [constraint=true]
+	118 [label="massentierhaltung
+ zitat
+ kuh
+ landwirtschaft
+ bäuerlich
+ " shape=box]
+	12 -> 118 [constraint=true]
+	153 [label="re
+ bobos
+ hipster
+ wow
+ neues
+ " shape=box]
+	12 -> 153 [constraint=true]
+	157 [label="zitat
+ perchlorat
+ gemüse
+ perchlorate
+ tomate
+ " shape=box]
+	12 -> 157 [constraint=true]
+	160 [label="verjagen
+ figur
+ farmer
+ @tom
+ konsequenz
+ " shape=box]
+	12 -> 160 [constraint=true]
+	172 [label="melone
+ unschädlich
+ faktus
+ dioxin-skandal
+ feiern
+ " shape=box]
+	12 -> 172 [constraint=true]
+	227 [label="lohas
+ amp
+ sinnwidrig
+ qm
+ marketingbegriff
+ " shape=box]
+	12 -> 227 [constraint=true]
+	234 [label="version
+ zurufen
+ bittsteller
+ könig
+ franke
+ " shape=box]
+	12 -> 234 [constraint=true]
+	250 [label="wild
+ sikawild
+ reh
+ bock
+ tiere
+ " shape=box]
+	12 -> 250 [constraint=true]
+	252 [label="labern
+ hochertragsorten
+ migrantinnen
+ fünfe
+ schräg
+ " shape=box]
+	12 -> 252 [constraint=true]
+	17 [label="fleisch
+ tier
+ eiern
+ essen
+ toni
+ " shape=box]
+	0 -> 17 [constraint=true]
+	18 [label="waldorfschule
+ steiner
+ rudolf_steiner
+ <url>
+ schulen
+ " shape=box]
+	17 -> 18 [constraint=true]
+	29 [label="bier
+ reinheitsgebot
+ brauerei
+ biobier
+ brauen
+ " shape=box]
+	17 -> 29 [constraint=true]
+	40 [label="labels
+ label
+ anforderung
+ bioverordnung
+ mindeststandard
+ " shape=box]
+	17 -> 40 [constraint=true]
+	50 [label="umdenken
+ bruder
+ artgerechte_tierhaltung
+ ines
+ agen
+ " shape=box]
+	17 -> 50 [constraint=true]
+	58 [label="juli
+ schreiben
+ re
+ gesund
+ bmi
+ " shape=box]
+	17 -> 58 [constraint=true]
+	69 [label="china
+ zotter
+ schokolade
+ kaffee
+ fair_trade
+ " shape=box]
+	17 -> 69 [constraint=true]
+	77 [label="tabs
+ stiftung_warentest
+ zeitschrift
+ ökotest
+ antibiotikas
+ " shape=box]
+	17 -> 77 [constraint=true]
+	110 [label="grüne
+ grün
+ eva
+ kpö
+ bus
+ " shape=box]
+	17 -> 110 [constraint=true]
+	111 [label="landwirt
+ gülle
+ zitat
+ messstellen
+ werten
+ " shape=box]
+	17 -> 111 [constraint=true]
+	164 [label="kürbisrezepte
+ vermarktbare
+ africa
+ unglücksraben
+ siemens
+ " shape=box]
+	17 -> 164 [constraint=true]
+	178 [label="tochter
+ sohn
+ haus-
+ bangen
+ mager
+ " shape=box]
+	17 -> 178 [constraint=true]
+	194 [label="hochegger
+ justiz
+ india
+ elektroroller
+ klagen
+ " shape=box]
+	17 -> 194 [constraint=true]
+	202 [label="kuh
+ stall
+ anbindehaltung
+ see
+ anbauverbände
+ " shape=box]
+	17 -> 202 [constraint=true]
+	205 [label="pferdefleisch
+ pferd
+ lidl
+ der-apache
+ phenylbutazon
+ " shape=box]
+	17 -> 205 [constraint=true]
+	225 [label="etikettenschwindel
+ bodyshop
+ gebot
+ que
+ betrogene
+ " shape=box]
+	17 -> 225 [constraint=true]
+}

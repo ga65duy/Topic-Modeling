@@ -13,6 +13,9 @@ import logging
 import sys
 import io
 
+"""
+Copied the code from Christians project
+"""
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 model_library_mapping = {'nmf': 'sklearn',  'lda': 'gensim'}

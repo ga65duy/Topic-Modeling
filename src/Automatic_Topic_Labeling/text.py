@@ -48,7 +48,6 @@ class LabelCountVectorizer(object):
 
         Parameter:
         ------------
-
         docs: list of list of string
             tokenized documents
 

@@ -2,13 +2,10 @@ import itertools
 import os
 import numpy as np
 from polyglot.mapping import Embedding
-from gensim.corpora.dictionary import Dictionary
-from gensim.models.coherencemodel import CoherenceModel
 import pickle
-from gensim import matutils
 from sklearn.cluster import KMeans
 from src.definitions import ROOT_DIR
-import time
+
 
 
 class Coherence(object):

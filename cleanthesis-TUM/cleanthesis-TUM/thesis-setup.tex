@@ -1,0 +1,88 @@
+% !TEX root = thesis.tex
+
+
+% **************************************************
+% Files' Character Encoding
+% **************************************************
+\PassOptionsToPackage{utf8}{inputenc}
+\usepackage{inputenc}
+
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Topic Model Visualization for Opinion Mining}
+\newcommand{\thesisTitleGer}{Topic Model Visualisierung für Opinion Mining}
+\newcommand{\thesisAuthor}{Maria Potzner}
+\newcommand{\thesisType}{Bachelor's Thesis}
+\newcommand{\thesisDate}{15. November 2018}
+
+\newcommand{\thesisSupervisor}{PD Dr. Georg Groh}
+\newcommand{\thesisAdviser}{PD Dr. Georg Groh}
+
+\newcommand{\thesisUniversity}{\protect{Technical University of Munich}}
+\newcommand{\thesisUniversityDepartment}{Department of Informatics}
+\newcommand{\thesisUniversityFaculty}{Information Systems}
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+
+\PassOptionsToPackage{table}{xcolor}
+\usepackage[english]{babel} % babel system, adjust the language of the content
+\PassOptionsToPackage{% setup clean thesis style
+    figuresep=colon,%
+    sansserif=false,%
+    hangfigurecaption=false,%
+    hangsection=true,%
+    hangsubsection=true,%
+    colorize=full,%
+    colortheme=bluemagenta,%
+    bibsys=bibtex,%
+    bibfile=library,%
+    bibstyle=authoryear,%
+    wrapfooter=false,%
+}{cleanthesis}
+\usepackage{cleanthesis}
+
+
+
+\hypersetup{% setup the hyperref-package options
+    pdftitle={\thesisTitle},    %   - title (PDF meta)
+    pdfsubject={\thesisType},%   - subject (PDF meta)
+    pdfauthor={\thesisAuthor},    %   - author (PDF meta)
+    plainpages=false,           %   -
+    colorlinks=true,           %   - colorize links?
+    pdfborder={0 0 0},          %   -
+    breaklinks=true,            %   - allow line break inside links
+    bookmarksnumbered=true,     %
+    bookmarksopen=true          %
+}
+
+\usepackage{subfig}
+\usepackage{tumlogo}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usetikzlibrary{bayesnet}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{rotating}
+\usepackage{lineno}
+\usepackage{smartdiagram}
+\usepackage[printonlyused, withpage]{acronym}
+%\usepackage{subcaption}
+%\captionsetup[subfigure]{list=true, font=large, labelfont=bf, 
+%	labelformat=brace, position=top}
+\usepackage[cache=false]{minted}
+

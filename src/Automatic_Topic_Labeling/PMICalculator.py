@@ -86,7 +86,7 @@ class PMICalculator(object):
             the pmi matrix
         """
         #fit_transform bei lda transform ansonsten fittransform
-        d2w = self._d2w_vect.fit_transform(map(lambda sent: ' '.join(sent),
+        d2w = self._d2w_vect.transform(map(lambda sent: ' '.join(sent),
                                                docs))
 
         # save it to avoid re-computation

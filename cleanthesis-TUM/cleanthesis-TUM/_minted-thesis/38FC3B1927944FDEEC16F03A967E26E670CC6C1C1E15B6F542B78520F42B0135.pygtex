@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+c			\PYG{p}{\PYGZob{}}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}title\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}article title\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}author\PYGZdq{}}\PYG{p}{:[}
+				\PYG{p}{\PYGZob{}}
+					\PYG{n+nt}{\PYGZdq{}article\PYGZus{}author\PYGZus{}id\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}123456789\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}article\PYGZus{}author\PYGZus{}name\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}author name\PYGZdq{}}
+				\PYG{p}{\PYGZcb{}}
+				\PYG{p}{],}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}time\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}2015\PYGZhy{}10\PYGZhy{}17 20:02:54\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}text\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}article text\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}source\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}news source\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}comments\PYGZdq{}}\PYG{p}{:[}
+				\PYG{p}{\PYGZob{}}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}id\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}123456789\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}author\PYGZdq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+						\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}author\PYGZus{}id\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}45678\PYGZdq{}}\PYG{p}{,}
+						\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}author\PYGZus{}name\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}author name\PYGZdq{}}\PYG{p}{,}
+					\PYG{p}{\PYGZcb{},}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}time\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}2015\PYGZhy{}10\PYGZhy{}20 04:17:17\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}text\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}comment text\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}rating\PYGZdq{}}\PYG{p}{:}\PYG{l+m+mf}{\PYGZhy{}15.0}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}title\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}example title\PYGZdq{}}
+				\PYG{p}{\PYGZcb{},}
+				\PYG{p}{\PYGZob{}}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}id\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}987654321\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}author\PYGZdq{}}\PYG{p}{:\PYGZob{}}
+						\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}author\PYGZus{}id\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}12345\PYGZdq{}}\PYG{p}{,}
+						\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}author\PYGZus{}name\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}author name\PYGZdq{}}
+					\PYG{p}{\PYGZcb{},}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}time\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}2015\PYGZhy{}10\PYGZhy{}19 19:16:33\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}text\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}comment text\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}replyTo\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}123456789\PYGZdq{}}\PYG{p}{,}
+					\PYG{n+nt}{\PYGZdq{}comment\PYGZus{}rating\PYGZdq{}}\PYG{p}{:}\PYG{l+m+mf}{6.0}
+				\PYG{p}{\PYGZcb{}}
+				\PYG{p}{],}
+				\PYG{n+nt}{\PYGZdq{}search\PYGZus{}query\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}organic farming\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}url\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}https://example.url\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}resource\PYGZus{}type\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}editorial | blog | forum\PYGZdq{}}\PYG{p}{,}
+				\PYG{n+nt}{\PYGZdq{}article\PYGZus{}rating\PYGZdq{}}\PYG{p}{:}\PYG{l+m+mf}{5.0}
+			\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

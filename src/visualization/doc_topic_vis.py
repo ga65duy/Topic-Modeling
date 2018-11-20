@@ -7,62 +7,77 @@ import matplotlib.pyplot as plt
 import numpy as np
 from IPython.display import display
 
+model_dict = {"topic_models/lda/DEED_lda_german_editorial_articles_190.pkl": ["lda", "german", "editorial"],
+              "topic_models/lda/ENED_lda_english_editorial_articles_130.pkl": ["lda", "english", "editorial"],
+              "topic_models/lda/ENFO_lda_english_forum_110.pkl": ["lda", "english", "forum"],
 
-def get_document_topic_matrix(model, language, typetx):
-    """"
-    return the document topic matrix for the choosen model, language and typetx
-    
-    :param model: string lda or nmf
-    :param language: string german or english
-    :param typetx: string editorial or forum
+              "topic_models/nmf/DEEDCO_nmf_german_editorial_comments_170.pkl": ["nmf", "german", "editorial"],
+              "topic_models/nmf/DEFO_nmf_german_forum_170.pkl": ["nmf", "german", "forum"],
+              "topic_models/nmf/ENEDCO_nmf_english_editorial_comments_170.pkl": ["nmf", "english", "editorial"]}
+
+
+def get_document_topic_matrix(model_pkl):
     """
-    data = dl.get_articles_by_type(language, typetx)
-    texts = data['article_texts']
+    Load a Topic model and get the document topic matrix
 
-    if model == "lda":
-        if language == "german" and typetx == "editorial":
-            lda_vec = Vectorizer.load("vectorizer/DEED_lda_german_editorial.pkl")
-            lda = TopicModel.load("topic_models/lda/DEED_lda_german_editorial_articles_190.pkl")
+    :param model_pkl: string to load a model
+    :return: the document topic matrix and the loaded model
+    """
+    if model_pkl == "topic_models/lda/DEED_lda_german_editorial_articles_190.pkl":
+        data = dl.get_articles_by_type(model_dict[model_pkl][1], model_dict[model_pkl][2])
+        texts = data['article_texts']
+        vec = Vectorizer.load("vectorizer/DEED_lda_german_editorial.pkl")
+        model = TopicModel.load(model_pkl)
 
-        elif language == "english" and typetx == "editorial":
-            lda_vec = Vectorizer.load("vectorizer/ENED_lda_english_editorial.pkl")
-            lda = TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
+    elif model_pkl == "topic_models/lda/ENED_lda_english_editorial_articles_130.pkl":
+        data = dl.get_articles_by_type(model_dict[model_pkl][1], model_dict[model_pkl][2])
+        texts = data['article_texts']
+        vec = Vectorizer.load("vectorizer/ENED_lda_english_editorial.pkl")
+        model = TopicModel.load(model_pkl)
 
-        elif language == "english" and typetx == "forum":
-            lda_vec = Vectorizer.load("vectorizer/ENFO_lda_english_forum.pkl")
-            lda = TopicModel.load("topic_models/lda/ENFO_lda_english_forum_110.pkl")
+    elif model_pkl == "topic_models/lda/ENFO_lda_english_forum_110.pkl":
+        data = dl.get_forum_threads_by_language(model_dict[model_pkl][1])
+        texts = data['thread_texts']
+        vec = Vectorizer.load("vectorizer/ENFO_lda_english_forum.pkl")
+        model = TopicModel.load(model_pkl)
 
-        lda_document_term_matrix = lda_vec.get_document_token_matrix(texts)
-        return lda.get_document_topic_matrix(lda_document_term_matrix), lda
 
-    elif model == "nmf":
-        if language == "german" and typetx == "editorial":
-            nmf_vec = Vectorizer.load("vectorizer/DEEDCO_nmf_german_editorial.pkl")
-            nmf = TopicModel.load("topic_models/nmf/DEEDCO_nmf_german_editorial_comments_170.pkl")
+    elif model_pkl == "topic_models/nmf/DEEDCO_nmf_german_editorial_comments_170.pkl":
+        data = dl.get_comments_by_type(model_dict[model_pkl][1], model_dict[model_pkl][2])
+        texts = data['comment_texts']
+        vec = Vectorizer.load("vectorizer/DEEDCO_nmf_german_editorial.pkl")
+        model = TopicModel.load(model_pkl)
 
-        elif language == "german" and typetx == "forum":
-            nmf_vec = Vectorizer.load("vectorizer/DEFO_nmf_german_forum.pkl")
-            nmf = TopicModel.load("topic_models/nmf/DEFO_nmf_german_forum_170.pkl")
+    elif model_pkl == "topic_models/nmf/DEFO_nmf_german_forum_170.pkl":
+        data = dl.get_forum_threads_by_language(model_dict[model_pkl][1])
+        texts = data['thread_texts']
+        vec = Vectorizer.load("vectorizer/DEFO_nmf_german_forum.pkl")
+        model = TopicModel.load(model_pkl)
 
-        elif language == "english" and typetx == "editorial":
-            nmf_vec = Vectorizer.load("vectorizer/ENEDCO_nmf_english_editorial.pkl")
-            nmf = TopicModel.load("topic_models/nmf/ENEDCO_nmf_english_editorial_comments_170.pkl")
+    elif model_pkl == "topic_models/nmf/ENEDCO_nmf_english_editorial_comments_170.pkl":
+        data = dl.get_comments_by_type(model_dict[model_pkl][1], model_dict[model_pkl][2])
+        texts = data['comment_texts']
+        vec = Vectorizer.load("vectorizer/ENEDCO_nmf_english_editorial.pkl")
+        model = TopicModel.load(model_pkl)
 
-        nmf_document_term_matrix = nmf_vec.get_document_token_matrix(texts)
-        return nmf.get_document_topic_matrix(nmf_document_term_matrix), nmf
     else:
-        raise Exception('Source {} not included'.format(typetx))
+        raise Exception('Models for {} not found'.format(model_pkl))
+
+    document_term_matrix = vec.get_document_token_matrix(texts)
+
+    return model.get_document_topic_matrix(document_term_matrix), model
 
 
-# limitation per row
-# wie viele topics die grenze pro doc überschritten
+
 def amount_topic_per_dokument(min_probability, matrix):
     """"
-    returns a list with the the amount of topics in a document
+    Calculate the amount of topics in one document
+
     :param min_probability: a min percentage of a topic in a document
-    :typetx: int
+    :type: int
     :param: matrix: the document topic matrix
-    :typetx: list
+    :type: matrix
+    :return:list with the the amount of topics in a document
     """
     newMatrix = []
     for matrixrow in range(0, len(matrix)):
@@ -71,9 +86,6 @@ def amount_topic_per_dokument(min_probability, matrix):
             if matrix[matrixrow, matrixcolumn] >= min_probability:
                 count += 1
         newMatrix.append(count)
-    max_topic_number = max(newMatrix)
-
-    # return newMatrix, max_topic_number
 
     amount_of_topics, number_of_documents = count_amount_of_topics(newMatrix)
     return amount_of_topics, number_of_documents
@@ -81,11 +93,11 @@ def amount_topic_per_dokument(min_probability, matrix):
 
 def count_amount_of_topics(amount_topic_per_dokument):
     """"
-    returns 2 lists. the first list is the amount of topics 
-                    the second list is the number of documents
 
-    param: amount_topic_per_document
-    typetx: list
+    :param: amount_topic_per_document
+    :type matrix
+    :return 2 lists. The first list is the amount of topics
+                    the second list is the number of documents
     """
 
     doc_count_dict = defaultdict(int)
@@ -98,21 +110,37 @@ def count_amount_of_topics(amount_topic_per_dokument):
     return k, v
 
 
-# model,language,typetx,
-def plot_amount_topic_per_document(model,language,typetx,threshold, k, v):
-    plt.bar(k, v , 0.9)
-    plt.title('Number of documents with amount of topics \n with threshold of {}% for {} {} with {} model'.format(threshold*100, language, typetx, model))
+def plot_amount_topic_per_document(model_pkl, threshold, topic_amount, document_amount):
+    """
+    Plots how many topics, which are over the threshold, occure in how many documents.
+
+    :param model_pkl: string to load the Topic Model
+    :param threshold: minimal percentage a topic has to occure
+    :type float
+    :param topic_amount:  how many topics are in certain document
+    :type list
+    :param document_amount: sumed up documents which have a certain amount of topics
+    :type list
+    :return: Plot
+    """
+    plt.bar(topic_amount, document_amount, 0.9)
+    plt.title('Number of documents with amount of topics \n with threshold of {}% for {} {} with {} model'.format(
+        threshold * 100, model_dict[model_pkl][1], model_dict[model_pkl][2], model_dict[model_pkl][0]))
     plt.xlabel('Amount of Topics')
     plt.ylabel('Number of documents')
-    #ohne xtickts wird die breite automatisch generiert(nicht einheitlich)
-    plt.xticks(k, k)
+    # ohne xtickts wird die breite automatisch generiert(nicht einheitlich)
+    plt.xticks(topic_amount, topic_amount)
     plt.show()
 
 
-# limitation per column
 def amount_doc_per_topic(min_probability, matrix):
     """
-    returns a list in how many documents the topic occurs
+
+    :param min_probability: minimal percentage a topic has to coocure in a document
+    :type float
+    :param matrix: document term matrix
+    :type matrix
+    :return: a list in how many documents the topic occurs
     """
     newMatrix = []
     for matrixcolumn in range(0, (len(matrix[0]))):
@@ -125,6 +153,12 @@ def amount_doc_per_topic(min_probability, matrix):
 
 
 def amount_doc_per_topic_sorted(min_probability, matrix):
+    """
+
+    :param min_probability:minimal percentage a topic has to coocure in a document
+    :param matrix:
+    :return:
+    """
     newMatrix = []
     topic_index = 0
     for matrixcolumn in range(0, (len(matrix[0]))):
@@ -143,27 +177,39 @@ def amount_doc_per_topic_sorted(min_probability, matrix):
     return tid_list, doc_count_list
 
 
-def plot_amount_doc_per_topic(model,language,typetx,topicmodel,threshold, document_topic_matrix, limit_x, sorted=True):
-
-    plt.title('Number of documents with amount of topics \n with threshold of {}% for {} {} with {} model'.format(threshold * 100, language, typetx, model))
+def plot_amount_doc_per_topic(model_pkl, threshold, limit_x,
+                              sorted=True):
+    """
+    Plot how often a topic occurs in different documents
+    :param model_pkl: string to load a topic Model
+    :param topicmodel:
+    :param threshold: minimal percentage a topic has to coocure in a document
+    :param document_topic_matrix:
+    :param limit_x: number of values shown on the x-axis
+    :param sorted: Sorts descending
+    :return:
+    """
+    plt.title('Number of documents with amount of topics \n with threshold of {}% for {} {} with {} model'.format(
+        threshold * 100, model_dict[model_pkl][1], model_dict[model_pkl][2], model_dict[model_pkl][0]))
     plt.xlabel('Topicnumber')
     plt.ylabel('Number of documents')
 
+    document_topic_matrix, topicmodel = get_document_topic_matrix(model_pkl)
     if sorted:
         tid_list, doc_count_list = amount_doc_per_topic_sorted(threshold, document_topic_matrix)
         topicnumber = range(0, len(tid_list))
         plt.bar(topicnumber, doc_count_list, 0.9)
 
         if limit_x < 50:
-            plt.xticks(tid_list, tid_list,rotation = 45)
+            plt.xticks(tid_list, tid_list, rotation=45)
         else:
             plt.xticks([], [])
 
-        #plt.xticks(range(0,len(tid_list)), tid_list, rotation=45)
+        # plt.xticks(range(0,len(tid_list)), tid_list, rotation=45)
         plt.xlim(-1, limit_x)
         plt.show()
 
-        #plottable
+        # plottable
         table = topicmodel.get_topics_dataframe()
         display(table.iloc[tid_list[:limit_x + 1], :])
 
@@ -172,8 +218,8 @@ def plot_amount_doc_per_topic(model,language,typetx,topicmodel,threshold, docume
         topicnumber = range(0, len(document_topic_list))
         plt.bar(topicnumber, document_topic_list, 0.9)
 
-        #plt.xticks(np.arange(0, len(document_topic_list), step=50))
-        if limit_x <50:
+        # plt.xticks(np.arange(0, len(document_topic_list), step=50))
+        if limit_x < 50:
             plt.xticks(topicnumber, document_topic_list)
         else:
             plt.xticks([], [])
@@ -181,19 +227,55 @@ def plot_amount_doc_per_topic(model,language,typetx,topicmodel,threshold, docume
     plt.show()
 
 
+def plot_sumed_theta(model_pkl, sorted=True):
+    """
+    Plot with the summed up theta values from the document topic matrix
+
+    :param sorted: True if the summed up thetavalues shall be sorted descending else false
+    :type boolean
+    :param model: string lda or nmf
+    :param language: string german or english
+    :param typetx: string editorial or forum
+    :return plot
+    """
+    tm,summed_up_columns = get_summed_theta(model_pkl)
+
+    plt.title('Summed up theta per topic for {}'.format(model_dict[model_pkl][0]))
+    plt.xlabel('Topic')
+    plt.ylabel('Theta')
+
+    if sorted:
+        indices = np.argsort(summed_up_columns)[::-1]
+        sorted_t = summed_up_columns[indices]
+        plt.xticks([], [])
+        plt.bar(range(0, len(sorted_t)), sorted_t, 0.3)
+    else:
+        plt.bar(range(0, len(summed_up_columns)), summed_up_columns, 0.3)
+        # plt.xticks(range(0, len(entropy)),range(0, len(entropy)), rotation=45)
+    plt.show()
+    # plt.savefig("test.png",bbox_inches = "tight")
+
+
+def get_summed_theta(model_pkl):
+    """
+
+    :param model_pkl: string to load a topic model
+    :return:
+    """
+    document_topic_matrix, tm = get_document_topic_matrix(model_pkl)
+    summed_up_columns = np.around(np.sum(document_topic_matrix, axis=0),decimals = 3)
+    return tm,summed_up_columns
+
 
 if __name__ == "__main__":
-    model = "lda"
-    language = "german"
-    typetx = "editorial"
+    model_pkl = "topic_models/lda/ENED_lda_english_editorial_articles_130.pkl"
     threshold = 0.1
     x_limit = 20
 
-    document_topic_matrix, topicmodel = get_document_topic_matrix(model, language, typetx)
+    document_topic_matrix, topicmodel = get_document_topic_matrix(model_pkl)
     k, v = amount_topic_per_dokument(threshold, document_topic_matrix)
-    plot_amount_topic_per_document(model, language, typetx, threshold, k, v)
-    # vis.plot_amount_doc_per_topic(model,language,typetx,topicmodel,threshold, document_topic_matrix,x_limit, sorted = False)
-    plot_amount_doc_per_topic(model, language, typetx, topicmodel, threshold, document_topic_matrix, 190,
-                                  sorted=True)
-    plot_amount_doc_per_topic(model, language, typetx, topicmodel, threshold, document_topic_matrix, x_limit,
-                                  sorted=True)
+    plot_amount_topic_per_document(model_pkl, threshold, k, v)
+    plot_amount_doc_per_topic(model_pkl, threshold, 190,
+                              sorted=True)
+    plot_amount_doc_per_topic(model_pkl, threshold, x_limit,
+                              sorted=True)

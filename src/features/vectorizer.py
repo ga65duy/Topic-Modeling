@@ -1,3 +1,6 @@
+'''
+This implementation is copied from Christian project
+'''
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from src.definitions import ROOT_DIR
 import pickle
@@ -99,14 +102,15 @@ class Vectorizer(object):
         :type path: string
         :return: Vectorizer object
         """
-        full_path = os.path.join(ROOT_DIR, 'models' , path)
+        #full_path = os.path.join(ROOT_DIR, 'models' , path)
+        full_path = os.path.join("D:\Bachelorarbeit\Projekte" , 'tm-maria\models' , path)
         with open(full_path, 'rb') as f:
             vec = pickle.load(f)
         return vec
 
 
 if __name__ == '__main__':
-    docs = ['I only by organic', 'organic food is a scam', 'organic food vs. conventional food']
+    docs = ['organic is healthier then conventional food', 'i buy organic', 'organic is wasted money']
     vec = Vectorizer('tfidf', docs)
     dtm = vec.get_document_token_matrix(docs)
     for i, val in enumerate(dtm):

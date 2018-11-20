@@ -1,0 +1,102 @@
+% **************************************************
+% Document Class Definition
+% **************************************************
+\documentclass[%
+    paper=A4,               % paper size --> A4 is default in Germany
+    twoside=false,           % onesite or twoside printing
+    openright,              % doublepage cleaning ends up right side
+    parskip=full,           % spacing value / method for paragraphs
+    chapterprefix=true,     % prefix for chapter marks
+    11pt,                   % font size
+    headings=normal,        % size of headings
+    bibliography=totoc,     % include bib in toc
+    listof=totoc,           % include listof entries in toc
+    titlepage=on,           % own page for each title page
+    captions=tableabove,    % display table captions above the float env
+    draft=false,            % value for draft version
+]{scrreprt}%
+
+
+% **************************************************
+% Setup YOUR thesis document in this file !
+% **************************************************
+\input{thesis-setup}
+
+
+% **************************************************
+% Document CONTENT
+% **************************************************
+\begin{document}
+
+% --------------------------
+% rename document parts
+% --------------------------
+%\renewcaptionname{ngerman}{\figurename}{Abb.}
+%\renewcaptionname{ngerman}{\tablename}{Tab.}
+\renewcaptionname{english}{\figurename}{Fig.}
+\renewcaptionname{english}{\tablename}{Tab.}
+
+% --------------------------
+% Front matter
+% --------------------------
+\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
+\pagestyle{empty}				% no header or footers
+\input{content/titlepages}
+\cleardoublepage
+\input{content/declaration}
+\cleardoublepage
+
+\pagestyle{plain}				% display just page numbers
+\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\cleardoublepage
+%
+\input{content/acknowledgement} % INCLUDE: acknowledgement
+\cleardoublepage
+%
+\setcounter{tocdepth}{2}		% define depth of toc
+\tableofcontents				% display table of contents
+\cleardoublepage
+
+% --------------------------
+% Body matter
+% --------------------------
+\pagenumbering{arabic}			% arabic page numbering
+\setcounter{page}{1}			% set page counter
+\pagestyle{maincontentstyle} 	% fancy header and footer
+
+\input{content/acronym}
+\input{content/chapter-introduction}
+\input{content/Theroy}
+\input{content/dataset}
+\input{content/topic_ranking}
+\input{content/Automatic_Topic_Labeling}
+\input{content/intern_consistency}
+\input{content/future_work_and_conclusion}
+ % Weitere Kapitel hier einfügen 
+
+% --------------------------
+% Back matter
+% --------------------------
+\appendix\cleardoublepage
+\input{content/chapter-appendix}       % INCLUDE: appendix
+%
+{%
+\setstretch{1.1}
+\renewcommand{\bibfont}{\normalfont\small}
+\setlength{\biblabelsep}{0pt}
+\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
+
+\printbibliography[nottype=online]
+\printbibliography[heading=subbibliography,title={Webpages},type=online,prefixnumbers={@}]
+}
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+% **************************************************
+% End of Document CONTENT
+% **************************************************
+\end{document}

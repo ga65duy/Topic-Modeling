@@ -1,0 +1,3770 @@
+// Topics
+digraph {
+	0 [label="Topic 0: 
+produkt
+ lebensmittel
+ verbraucher
+ bio
+ konventionell
+ " shape=box]
+	1 [label="Topic 1: 
+prozent
+ euro
+ deutschland
+ bio
+ österreich
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="Topic 2: 
+landwirtschaft
+ gemüse
+ produkt
+ stehen
+ region
+ " shape=box]
+	1 -> 2 [constraint=true]
+	3 [label="Topic 3: 
+tier
+ eiern
+ betrieb
+ huhn
+ landwirtschaft
+ " shape=box]
+	2 -> 3 [constraint=true]
+	4 [label="Topic 4: 
+bauer
+ preisen
+ kunde
+ milch
+ supermarkt
+ " shape=box]
+	3 -> 4 [constraint=true]
+	14 [label="Topic 14: 
+glyphosat
+ bier
+ liter
+ zulassung
+ bfr
+ " shape=box]
+	3 -> 14 [constraint=true]
+	24 [label="Topic 24: 
+prozent
+ ökologisch
+ stadt
+ österreich
+ netzwerk
+ " shape=box]
+	3 -> 24 [constraint=true]
+	34 [label="Topic 34: 
+betroffen
+ produkt
+ unternehmen
+ mindesthaltbarkeitsdatum
+ teilen
+ " shape=box]
+	3 -> 34 [constraint=true]
+	53 [label="Topic 53: 
+nrw
+ zubereiten
+ thema
+ frischen
+ präsentieren
+ " shape=box]
+	3 -> 53 [constraint=true]
+	81 [label="Topic 81: 
+antibiotika
+ tierhaltung
+ tonne
+ keimen
+ einsatz
+ " shape=box]
+	3 -> 81 [constraint=true]
+	153 [label="Topic 153: 
+grüne
+ wien
+ wienern
+ övp
+ spö
+ " shape=box]
+	3 -> 153 [constraint=true]
+	321 [label="Topic 321: 
+pestizid
+ glyphosat
+ eu-kommission
+ taz
+ gentechnik
+ " shape=box]
+	3 -> 321 [constraint=true]
+	346 [label="Topic 346: 
+fleisch
+ pferdefleisch
+ pferd
+ verkaufen
+ neu
+ " shape=box]
+	3 -> 346 [constraint=true]
+	426 [label="Topic 426: 
+biolandbau
+ landwirtschaft
+ niggli
+ urs_niggli
+ ertragen
+ " shape=box]
+	3 -> 426 [constraint=true]
+	614 [label="Topic 614: 
+bioladen
+ betreiber
+ haus
+ entscheiden
+ bio-waren
+ " shape=box]
+	3 -> 614 [constraint=true]
+	12 [label="Topic 12: 
+betrieb
+ prozent
+ bewirtschaften
+ landwirtschaft
+ million
+ " shape=box]
+	2 -> 12 [constraint=true]
+	13 [label="Topic 13: 
+prozent
+ zahlen
+ hektaren
+ vorjahr
+ betrieb
+ " shape=box]
+	12 -> 13 [constraint=true]
+	94 [label="Topic 94: 
+wien
+ logo
+ wienern
+ broschüre
+ wettbewerb
+ " shape=box]
+	12 -> 94 [constraint=true]
+	103 [label="Topic 103: 
+stecken
+ aldi_süd
+ günstig
+ mark
+ hersteller
+ " shape=box]
+	12 -> 103 [constraint=true]
+	137 [label="Topic 137: 
+eröffnen
+ filiale
+ reformhaus
+ unternehmen
+ neu
+ " shape=box]
+	12 -> 137 [constraint=true]
+	150 [label="Topic 150: 
+standard
+ adeg
+ rewe
+ spar
+ usa
+ " shape=box]
+	12 -> 150 [constraint=true]
+	224 [label="Topic 224: 
+fleisch
+ österreich
+ brot
+ österreicher
+ klima
+ " shape=box]
+	12 -> 224 [constraint=true]
+	226 [label="Topic 226: 
+wien
+ information
+ wachsen
+ agrarbetriebe
+ bieten
+ " shape=box]
+	12 -> 226 [constraint=true]
+	255 [label="Topic 255: 
+enthalten
+ geschmacksverstärker
+ produkt
+ foodwatch
+ zutat
+ " shape=box]
+	12 -> 255 [constraint=true]
+	424 [label="Topic 424: 
+wasser
+ hauen
+ ölen
+ zutat
+ wirkung
+ " shape=box]
+	12 -> 424 [constraint=true]
+	544 [label="Topic 544: 
+landwirt
+ töten
+ tier
+ gülle
+ huhn
+ " shape=box]
+	12 -> 544 [constraint=true]
+	742 [label="Topic 742: 
+fair
+ handeln
+ faire
+ fair_gehandelt
+ woche
+ " shape=box]
+	12 -> 742 [constraint=true]
+	871 [label="Topic 871: 
+wien
+ wienern
+ lokal
+ stadt
+ weinen
+ " shape=box]
+	12 -> 871 [constraint=true]
+	897 [label="Topic 897: 
+foodwatch
+ rewe
+ rückruf
+ sprecher
+ heißen
+ " shape=box]
+	12 -> 897 [constraint=true]
+	993 [label="Topic 993: 
+bier
+ brauerei
+ verwenden
+ flasche
+ münchner
+ " shape=box]
+	12 -> 993 [constraint=true]
+	22 [label="Topic 22: 
+enthalten
+ prozent
+ pestizid
+ teilen
+ obst
+ " shape=box]
+	2 -> 22 [constraint=true]
+	23 [label="Topic 23: 
+bio
+ prozent
+ biologisch
+ produkt
+ kaufen
+ " shape=box]
+	22 -> 23 [constraint=true]
+	57 [label="Topic 57: 
+euro
+ netto
+ million
+ unternehmen
+ förderungen
+ " shape=box]
+	22 -> 57 [constraint=true]
+	64 [label="Topic 64: 
+ökologisch
+ niedersachsen
+ hektar
+ bewirtschaften
+ meyer
+ " shape=box]
+	22 -> 64 [constraint=true]
+	87 [label="Topic 87: 
+greenpeace
+ eiern
+ kaufen
+ erhältlich
+ farbe
+ " shape=box]
+	22 -> 87 [constraint=true]
+	176 [label="Topic 176: 
+zitrusfrucht
+ schalen
+ frucht
+ vitamin
+ zitrone
+ " shape=box]
+	22 -> 176 [constraint=true]
+	413 [label="Topic 413: 
+kartoffel
+ vergleichen
+ ökobilanz
+ knolle
+ belieben
+ " shape=box]
+	22 -> 413 [constraint=true]
+	588 [label="Topic 588: 
+studie
+ nährstoff
+ gemüse
+ vitamin
+ unterschiedlich
+ " shape=box]
+	22 -> 588 [constraint=true]
+	731 [label="Topic 731: 
++
+ cent
+ niedersachsen
+ schleswig-holstein
+ verbraucherzentrale
+ " shape=box]
+	22 -> 731 [constraint=true]
+	1056 [label="Topic 1056: 
+grüne
+ wechseln
+ abgeordnete
+ politisch
+ jens
+ " shape=box]
+	22 -> 1056 [constraint=true]
+	1212 [label="Topic 1212: 
+probe
+ untersuchen
+ vitamin
+ fungizide
+ unbelastet
+ " shape=box]
+	22 -> 1212 [constraint=true]
+	32 [label="Topic 32: 
+deutschland
+ betrieb
+ mai
+ all
+ niedersachsen
+ " shape=box]
+	2 -> 32 [constraint=true]
+	33 [label="Topic 33: 
+milch
+ molkerei
+ teilen
+ verbraucher
+ freitag
+ " shape=box]
+	32 -> 33 [constraint=true]
+	188 [label="Topic 188: 
+traube
+ pestizid
+ rückstand
+ probe
+ finden
+ " shape=box]
+	32 -> 188 [constraint=true]
+	301 [label="Topic 301: 
+prozent
+ ökologisch
+ zahlen
+ ökolandbaus
+ vorjahr
+ " shape=box]
+	32 -> 301 [constraint=true]
+	442 [label="Topic 442: 
+keimen
+ erreger
+ natur
+ gefahr
+ risiko
+ " shape=box]
+	32 -> 442 [constraint=true]
+	638 [label="Topic 638: 
+kirche
+ logo
+ leben
+ stern
+ sehen
+ " shape=box]
+	32 -> 638 [constraint=true]
+	992 [label="Topic 992: 
+lebensmittel
+ experiment
+ erfahrung
+ verpacken
+ teilnehmer
+ " shape=box]
+	32 -> 992 [constraint=true]
+	1183 [label="Topic 1183: 
+stoff
+ ungenügend
+ kritisch
+ unbedenklich
+ 's
+ " shape=box]
+	32 -> 1183 [constraint=true]
+	48 [label="Topic 48: 
+euro
+ deutschland
+ million
+ betrieb
+ pro
+ " shape=box]
+	2 -> 48 [constraint=true]
+	49 [label="Topic 49: 
+handeln
+ eierproduzenten
+ käfighaltung
+ deutsche
+ meyer
+ " shape=box]
+	48 -> 49 [constraint=true]
+	174 [label="Topic 174: 
+alnatura
+ unternehmen
+ rehn
+ dm
+ geschäftsjahr
+ " shape=box]
+	48 -> 174 [constraint=true]
+	247 [label="Topic 247: 
+basic
+ schwarz-gruppe
+ einstieg
+ handeln
+ bio-supermarktkette
+ " shape=box]
+	48 -> 247 [constraint=true]
+	292 [label="Topic 292: 
+produkt
+ marke
+ konsument
+ mehrwert
+ spar
+ " shape=box]
+	48 -> 292 [constraint=true]
+	305 [label="Topic 305: 
+apfel
+ selber
+ enthalten
+ inhaltsstoffe
+ the
+ " shape=box]
+	48 -> 305 [constraint=true]
+	491 [label="Topic 491: 
+landwirt
+ nrw
+ düsseldorf
+ mitteln
+ säule
+ " shape=box]
+	48 -> 491 [constraint=true]
+	1082 [label="Topic 1082: 
+tomate
+ rot
+ stress
+ klein
+ gen
+ " shape=box]
+	48 -> 1082 [constraint=true]
+	1357 [label="Topic 1357: 
+schweizer
+ kuh
+ programm
+ kritik
+ förderung
+ " shape=box]
+	48 -> 1357 [constraint=true]
+	75 [label="Topic 75: 
+bauer
+ euro
+ betrieb
+ landwirtschaft
+ halten
+ " shape=box]
+	2 -> 75 [constraint=true]
+	76 [label="Topic 76: 
+deutschland
+ massentierhaltung
+ hofreiter
+ tierhaltung
+ schwein
+ " shape=box]
+	75 -> 76 [constraint=true]
+	159 [label="Topic 159: 
+vorschlag
+ eu-kommission
+ neu
+ brüssel
+ rupprechter
+ " shape=box]
+	75 -> 159 [constraint=true]
+	213 [label="Topic 213: 
+spd
+ grün
+ grüne
+ säule
+ zuschuß
+ " shape=box]
+	75 -> 213 [constraint=true]
+	221 [label="Topic 221: 
+gemüse
+ obst
+ hektar
+ bio-gemüse
+ pro
+ " shape=box]
+	75 -> 221 [constraint=true]
+	280 [label="Topic 280: 
+nehmen
+ pro
+ niedersachsen
+ betrieb
+ landwirtschaft
+ " shape=box]
+	2 -> 280 [constraint=true]
+	281 [label="Topic 281: 
+hofer
+ bauer
+ ursprung
+ euro
+ landwirtschaftsminister
+ " shape=box]
+	280 -> 281 [constraint=true]
+	318 [label="Topic 318: 
+mai
+ futtern
+ ukraine
+ eiern
+ belasten
+ " shape=box]
+	280 -> 318 [constraint=true]
+	370 [label="Topic 370: 
+boden
+ einsatz
+ empfindlich
+ rücksicht
+ substanz
+ " shape=box]
+	280 -> 370 [constraint=true]
+	677 [label="Topic 677: 
+öko-produkte
+ nürnberg
+ getrocknet
+ gmbh
+ fügen
+ " shape=box]
+	280 -> 677 [constraint=true]
+	965 [label="Topic 965: 
+wirtschaft
+ ttip
+ initiative
+ unternehmen
+ <url>
+ " shape=box]
+	280 -> 965 [constraint=true]
+	9 [label="Topic 9: 
+landwirtschaft
+ stehen
+ erklären
+ lebensmittel
+ fordern
+ " shape=box]
+	1 -> 9 [constraint=true]
+	10 [label="Topic 10: 
+verbraucher
+ zufolge
+ produktion
+ boden
+ bieten
+ " shape=box]
+	9 -> 10 [constraint=true]
+	104 [label="Topic 104: 
+ökolandbau
+ august
+ betrieb
+ focus
+ verarbeitung
+ " shape=box]
+	10 -> 104 [constraint=true]
+	136 [label="Topic 136: 
+dünger
+ afrika
+ bauer
+ chemisch-synthetische
+ mist
+ " shape=box]
+	10 -> 136 [constraint=true]
+	272 [label="Topic 272: 
+huhn
+ tier
+ schwein
+ stallpflicht
+ futtern
+ " shape=box]
+	10 -> 272 [constraint=true]
+	300 [label="Topic 300: 
+friedrich
+ afrika
+ franzen
+ schädling
+ pflanzenschutz
+ " shape=box]
+	10 -> 300 [constraint=true]
+	404 [label="Topic 404: 
+platzen
+ discounter
+ edeka
+ rewe
+ lidl
+ " shape=box]
+	10 -> 404 [constraint=true]
+	1442 [label="Topic 1442: 
+bäumen
+ wald
+ nachhaltig
+ heimisch
+ dicht
+ " shape=box]
+	10 -> 1442 [constraint=true]
+	91 [label="Topic 91: 
+eiern
+ verkaufen
+ produkt
+ belasten
+ falsch
+ " shape=box]
+	9 -> 91 [constraint=true]
+	92 [label="Topic 92: 
+whole_foods
+ amazon
+ donnerstag
+ usa
+ aktie
+ " shape=box]
+	91 -> 92 [constraint=true]
+	220 [label="Topic 220: 
+produkt
+ enthalten
+ vki
+ verpackung
+ prozent
+ " shape=box]
+	91 -> 220 [constraint=true]
+	253 [label="Topic 253: 
+de
+ langen
+ eu
+ gering
+ betrug
+ " shape=box]
+	91 -> 253 [constraint=true]
+	289 [label="Topic 289: 
+aldi_nord
+ aldi
+ kunde
+ greenpeace
+ discounter
+ " shape=box]
+	91 -> 289 [constraint=true]
+	324 [label="Topic 324: 
+schüler
+ kind
+ klasse
+ schulen
+ lernen
+ " shape=box]
+	91 -> 324 [constraint=true]
+	595 [label="Topic 595: 
+pestizid
+ insekt
+ substanz
+ gemüse
+ stoff
+ " shape=box]
+	91 -> 595 [constraint=true]
+	98 [label="Topic 98: 
+verkaufen
+ produkt
+ mehrer
+ angeben
+ euro
+ " shape=box]
+	9 -> 98 [constraint=true]
+	99 [label="Topic 99: 
+italien
+ tonne
+ deutschland
+ polizei
+ italienisch
+ " shape=box]
+	98 -> 99 [constraint=true]
+	149 [label="Topic 149: 
+brunner
+ bayer
+ bayerisch
+ freistaat
+ landkreis
+ " shape=box]
+	98 -> 149 [constraint=true]
+	155 [label="Topic 155: 
+bionade
+ limonade
+ foodwatch
+ horn
+ brauerei
+ " shape=box]
+	98 -> 155 [constraint=true]
+	197 [label="Topic 197: 
+prozent
+ milliarde
+ frau
+ schweizer
+ migros
+ " shape=box]
+	98 -> 197 [constraint=true]
+	449 [label="Topic 449: 
+schuh
+ rind
+ tierhaltung
+ kontrolliert
+ glücklich
+ " shape=box]
+	98 -> 449 [constraint=true]
+	464 [label="Topic 464: 
+pestizid
+ probe
+ baby
+ kleinkind
+ gemüse
+ " shape=box]
+	98 -> 464 [constraint=true]
+	123 [label="Topic 123: 
+deutschland
+ pestizid
+ eu
+ kommission
+ kontrolle
+ " shape=box]
+	9 -> 123 [constraint=true]
+	124 [label="Topic 124: 
+marokko
+ land
+ gemüse
+ kilometer
+ spanien
+ " shape=box]
+	123 -> 124 [constraint=true]
+	178 [label="Topic 178: 
+behörde
+ regel
+ baumwolle
+ verbraucherschützer
+ h&m
+ " shape=box]
+	123 -> 178 [constraint=true]
+	186 [label="Topic 186: 
+kirche
+ gentechnik
+ geld
+ eu-staaten
+ lassen
+ " shape=box]
+	123 -> 186 [constraint=true]
+	233 [label="Topic 233: 
+gemüse
+ plastik
+ verpackung
+ obst
+ kunde
+ " shape=box]
+	123 -> 233 [constraint=true]
+	299 [label="Topic 299: 
+whole_foods
+ produkt
+ amazon
+ preissenkungen
+ milliarde
+ " shape=box]
+	123 -> 299 [constraint=true]
+	350 [label="Topic 350: 
+ökolandbau
+ euro
+ forschung
+ investieren
+ million
+ " shape=box]
+	123 -> 350 [constraint=true]
+	493 [label="Topic 493: 
+einsatz
+ sogenannt
+ material
+ gesundheitlich
+ gängig
+ " shape=box]
+	123 -> 493 [constraint=true]
+	535 [label="Topic 535: 
+österreichisch
+ teller
+ freund
+ lebensmittel
+ programm
+ " shape=box]
+	123 -> 535 [constraint=true]
+	307 [label="Topic 307: 
+entwicklung
+ dienstag
+ benötigen
+ wien
+ milch
+ " shape=box]
+	9 -> 307 [constraint=true]
+	525 [label="Topic 525: 
+antibiotika
+ einsatz
+ einsetzen
+ apfel
+ mecklenburg-vorpommern
+ " shape=box]
+	307 -> 525 [constraint=true]
+	674 [label="Topic 674: 
+biologisch
+ forscher
+ weltbevölkerung
+ brauchen
+ schweiz
+ " shape=box]
+	307 -> 674 [constraint=true]
+	19 [label="Topic 19: 
+landwirtschaft
+ stehen
+ pro
+ finden
+ deutschland
+ " shape=box]
+	1 -> 19 [constraint=true]
+	20 [label="Topic 20: 
+produkt
+ sogar
+ bioprodukt
+ heißen
+ eiern
+ " shape=box]
+	19 -> 20 [constraint=true]
+	21 [label="Topic 21: 
+gemüse
+ obst
+ bringen
+ discounter
+ produkt
+ " shape=box]
+	20 -> 21 [constraint=true]
+	52 [label="Topic 52: 
+bio
+ dm
+ milliarde
+ bereich
+ natur
+ " shape=box]
+	20 -> 52 [constraint=true]
+	63 [label="Topic 63: 
+austria
+ vierbauch
+ biobauern
+ bio
+ obmann
+ " shape=box]
+	20 -> 63 [constraint=true]
+	139 [label="Topic 139: 
+test
+ stiftung_warentest
+ tee
+ tester
+ schadstoff
+ " shape=box]
+	20 -> 139 [constraint=true]
+	166 [label="Topic 166: 
+schmidt
+ regel
+ eu-kommission
+ entwurf
+ streiten
+ " shape=box]
+	20 -> 166 [constraint=true]
+	173 [label="Topic 173: 
+hof
+ kuh
+ milchpreis
+ salzburg
+ eltern
+ " shape=box]
+	20 -> 173 [constraint=true]
+	203 [label="Topic 203: 
+tonne
+ schweinefleisch
+ fleisch
+ rindfleisch
+ behörde
+ " shape=box]
+	20 -> 203 [constraint=true]
+	325 [label="Topic 325: 
+gülle
+ grundwasser
+ nitrat
+ milligramm
+ bundesregierung
+ " shape=box]
+	20 -> 325 [constraint=true]
+	422 [label="Topic 422: 
+apfel
+ käse
+ eher
+ punkten
+ bio-fleisch
+ " shape=box]
+	20 -> 422 [constraint=true]
+	769 [label="Topic 769: 
+bundesrat
+ bauer
+ schweizer
+ tierärzte
+ welch
+ " shape=box]
+	20 -> 769 [constraint=true]
+	1452 [label="Topic 1452: 
+italien
+ italienisch
+ mutmaßlich
+ gefälscht
+ rumänien
+ " shape=box]
+	20 -> 1452 [constraint=true]
+	50 [label="Topic 50: 
+biologisch
+ pestizid
+ bio-lebensmittel
+ finden
+ landwirtschaft
+ " shape=box]
+	19 -> 50 [constraint=true]
+	51 [label="Topic 51: 
+buchen
+ lesen
+ natur
+ biolandbau
+ landbau_fibl
+ " shape=box]
+	50 -> 51 [constraint=true]
+	199 [label="Topic 199: 
+spargel
+ erdbeere
+ ernten
+ niedersachsen
+ hektar
+ " shape=box]
+	50 -> 199 [constraint=true]
+	209 [label="Topic 209: 
+niedersachsen
+ betrieb
+ neuland
+ betrug
+ ermittlung
+ " shape=box]
+	50 -> 209 [constraint=true]
+	214 [label="Topic 214: 
+studie
+ ergebnis
+ forscher
+ gesünder
+ ähnlich
+ " shape=box]
+	50 -> 214 [constraint=true]
+	869 [label="Topic 869: 
+keimen
+ prozent
+ antibiotika
+ resistent
+ probe
+ " shape=box]
+	50 -> 869 [constraint=true]
+	1429 [label="Topic 1429: 
+billa
+ eigenmarken
+ image
+ spar
+ kunde
+ " shape=box]
+	50 -> 1429 [constraint=true]
+	1430 [label="Topic 1430: 
+schreiben
+ kundin
+ bio-laden
+ nennen
+ teuer
+ " shape=box]
+	50 -> 1430 [constraint=true]
+	1434 [label="Topic 1434: 
+markt
+ bremen
+ problem
+ wochenmärkte
+ stand
+ " shape=box]
+	50 -> 1434 [constraint=true]
+	61 [label="Topic 61: 
+euro
+ enthalten
+ sehen
+ schweizer
+ huhn
+ " shape=box]
+	19 -> 61 [constraint=true]
+	62 [label="Topic 62: 
+schreiben
+ firma
+ taz
+ stall
+ großflächig
+ " shape=box]
+	61 -> 62 [constraint=true]
+	147 [label="Topic 147: 
+migros
+ alnatura
+ tegut
+ dm
+ deutsch
+ " shape=box]
+	61 -> 147 [constraint=true]
+	242 [label="Topic 242: 
+öko-test
+ produkt
+ reisen
+ vitamin
+ test
+ " shape=box]
+	61 -> 242 [constraint=true]
+	258 [label="Topic 258: 
+mitglied
+ feld
+ ernten
+ acker
+ solidarisch
+ " shape=box]
+	61 -> 258 [constraint=true]
+	597 [label="Topic 597: 
+neu
+ siegeln
+ kennzeichnen
+ deutsch
+ geltend
+ " shape=box]
+	61 -> 597 [constraint=true]
+	797 [label="Topic 797: 
+harles_jentzsch
+ firma
+ futtermittel
+ tonne
+ staatsanwaltschaft
+ " shape=box]
+	61 -> 797 [constraint=true]
+	79 [label="Topic 79: 
+fürstenhof
+ betreffen
+ niedersachsen
+ meer
+ stammen
+ " shape=box]
+	19 -> 79 [constraint=true]
+	80 [label="Topic 80: 
+kürzung
+ subvention
+ spö
+ förderungen
+ övp
+ " shape=box]
+	79 -> 80 [constraint=true]
+	357 [label="Topic 357: 
+betrieb
+ konventionelle
+ bestätigen
+ mitteilung
+ amt
+ " shape=box]
+	79 -> 357 [constraint=true]
+	848 [label="Topic 848: 
+fischen
+ see
+ kanton
+ hahn
+ martin
+ " shape=box]
+	79 -> 848 [constraint=true]
+	902 [label="Topic 902: 
+naturkosmetik
+ prozent
+ siegeln
+ inhaltsstoffe
+ mindestens
+ " shape=box]
+	79 -> 902 [constraint=true]
+	127 [label="Topic 127: 
+ware
+ niederländisch
+ land
+ eiern
+ betrieb
+ " shape=box]
+	19 -> 127 [constraint=true]
+	128 [label="Topic 128: 
+biene
+ grüne
+ pestizid
+ forscher
+ insekt
+ " shape=box]
+	127 -> 128 [constraint=true]
+	165 [label="Topic 165: 
+gemüse
+ niederrhein
+ anteil
+ vereinen
+ solidarisch
+ " shape=box]
+	127 -> 165 [constraint=true]
+	171 [label="Topic 171: 
+norwegen
+ bio-siegel
+ discounter
+ lachs
+ eu
+ " shape=box]
+	127 -> 171 [constraint=true]
+	187 [label="Topic 187: 
+eiern
+ fipronil
+ niederlande
+ belasten
+ insektizid_fipronil
+ " shape=box]
+	127 -> 187 [constraint=true]
+	206 [label="Topic 206: 
+biologisch
+ weinen
+ winzer
+ weingut
+ wein
+ " shape=box]
+	127 -> 206 [constraint=true]
+	212 [label="Topic 212: 
+grüne
+ mineralwasser
+ antrag
+ veranstaltung
+ urteilen
+ " shape=box]
+	127 -> 212 [constraint=true]
+	215 [label="Topic 215: 
+technische
+ agrarminister
+ thüringen
+ jürgen
+ neu
+ " shape=box]
+	127 -> 215 [constraint=true]
+	223 [label="Topic 223: 
+kilo
+ co
+ gramm
+ verursachen
+ persönlich
+ " shape=box]
+	127 -> 223 [constraint=true]
+	360 [label="Topic 360: 
+gastronomie
+ österreichisch
+ rauchen
+ neu
+ bio-anteil
+ " shape=box]
+	127 -> 360 [constraint=true]
+	375 [label="Topic 375: 
+milliarde
+ rind
+ boden
+ wien
+ tier
+ " shape=box]
+	19 -> 375 [constraint=true]
+	568 [label="Topic 568: 
+österreich
+ ernährung
+ klimaschutz
+ platzen
+ dienstleistungen
+ " shape=box]
+	375 -> 568 [constraint=true]
+	959 [label="Topic 959: 
+kuh
+ welt
+ horn
+ werner_lampert
+ buchen
+ " shape=box]
+	375 -> 959 [constraint=true]
+	487 [label="Topic 487: 
+landwirt
+ tier
+ kilo
+ bauer
+ grasen
+ " shape=box]
+	19 -> 487 [constraint=true]
+	488 [label="Topic 488: 
+boden
+ co2
+ kuh
+ bewirtschaftung
+ grünland
+ " shape=box]
+	487 -> 488 [constraint=true]
+	1132 [label="Topic 1132: 
+gans
+ euro
+ weber
+ kosten
+ verkaufen
+ " shape=box]
+	487 -> 1132 [constraint=true]
+	1342 [label="Topic 1342: 
+september
+ leben
+ bieten
+ wienern
+ lebensraum
+ " shape=box]
+	487 -> 1342 [constraint=true]
+	1440 [label="Topic 1440: 
+coop
+ kilometer
+ unternehmen
+ transportieren
+ scheinen
+ " shape=box]
+	487 -> 1440 [constraint=true]
+	29 [label="Topic 29: 
+finden
+ landwirtschaft
+ stehen
+ all
+ produkt
+ " shape=box]
+	1 -> 29 [constraint=true]
+	30 [label="Topic 30: 
+produkt
+ lebensmittel
+ foodwatch
+ belasten
+ verpackung
+ " shape=box]
+	29 -> 30 [constraint=true]
+	31 [label="Topic 31: 
+mineralöl
+ grenzwert
+ gelten
+ schokolade
+ stark
+ " shape=box]
+	30 -> 31 [constraint=true]
+	113 [label="Topic 113: 
+wien
+ hallen
+ linz
+ 's
+ österreich
+ " shape=box]
+	30 -> 113 [constraint=true]
+	189 [label="Topic 189: 
+prozent
+ platzen
+ alnatura
+ beliebt
+ frau
+ " shape=box]
+	30 -> 189 [constraint=true]
+	287 [label="Topic 287: 
+hof
+ ziege
+ tier
+ frau
+ stellen
+ " shape=box]
+	30 -> 287 [constraint=true]
+	111 [label="Topic 111: 
+probe
+ laut
+ euro
+ enthalten
+ österreich
+ " shape=box]
+	29 -> 111 [constraint=true]
+	112 [label="Topic 112: 
+eiern
+ färben
+ farbe
+ legen
+ kochen
+ " shape=box]
+	111 -> 112 [constraint=true]
+	172 [label="Topic 172: 
+stiftung
+ projekt
+ bremen
+ bremer
+ vereinen
+ " shape=box]
+	111 -> 172 [constraint=true]
+	185 [label="Topic 185: 
+basic
+ schwarz-gruppe
+ lidl
+ kunde
+ müller
+ " shape=box]
+	111 -> 185 [constraint=true]
+	235 [label="Topic 235: 
+pestizid
+ apfel
+ erdbeere
+ obst
+ belasten
+ " shape=box]
+	111 -> 235 [constraint=true]
+	323 [label="Topic 323: 
+glyphosat
+ monsanto
+ eu-kommission
+ verordnung
+ parlament
+ " shape=box]
+	111 -> 323 [constraint=true]
+	339 [label="Topic 339: 
+eiern
+ bio-eier
+ betrieb
+ reinhard
+ betreffen
+ " shape=box]
+	111 -> 339 [constraint=true]
+	340 [label="Topic 340: 
+studie
+ stoff
+ konzentration
+ biologisch
+ milch
+ " shape=box]
+	111 -> 340 [constraint=true]
+	564 [label="Topic 564: 
+pestizid
+ salat
+ rückstand
+ belasten
+ test
+ " shape=box]
+	111 -> 564 [constraint=true]
+	696 [label="Topic 696: 
+müller
+ kirche
+ verdächtigen
+ suchen
+ abseits
+ " shape=box]
+	111 -> 696 [constraint=true]
+	745 [label="Topic 745: 
+otto
+ initiative
+ bauer
+ agrarwende
+ bäcker
+ " shape=box]
+	111 -> 745 [constraint=true]
+	756 [label="Topic 756: 
+euro
+ josef
+ brauer
+ wien
+ samstag
+ " shape=box]
+	111 -> 756 [constraint=true]
+	144 [label="Topic 144: 
+tee
+ untersuchen
+ verwenden
+ plantage
+ erkennen
+ " shape=box]
+	29 -> 144 [constraint=true]
+	145 [label="Topic 145: 
+pestizid
+ rückstand
+ global
+ gefunden
+ substanz
+ " shape=box]
+	144 -> 145 [constraint=true]
+	298 [label="Topic 298: 
+schmecken
+ kaffee
+ olive
+ geschmack
+ stiftung_warentest
+ " shape=box]
+	144 -> 298 [constraint=true]
+	381 [label="Topic 381: 
+eiern
+ supermarkt
+ greenpeace
+ huhn
+ fordern
+ " shape=box]
+	144 -> 381 [constraint=true]
+	489 [label="Topic 489: 
+lebensmittel
+ schweiz
+ falsch
+ deklarieren
+ fleisch
+ " shape=box]
+	144 -> 489 [constraint=true]
+	536 [label="Topic 536: 
+eiern
+ belasten
+ dioxin
+ fipronil
+ code
+ " shape=box]
+	144 -> 536 [constraint=true]
+	785 [label="Topic 785: 
+<url>
+ baumwolle
+ textilien
+ schadstoff
+ garantieren
+ " shape=box]
+	144 -> 785 [constraint=true]
+	217 [label="Topic 217: 
+lebensmittel
+ landwirtschaft
+ entdecken
+ tonne
+ gentechnisch_verändern
+ " shape=box]
+	29 -> 217 [constraint=true]
+	218 [label="Topic 218: 
+cdu
+ grüne
+ partei
+ agrarpolitik
+ skandal
+ " shape=box]
+	217 -> 218 [constraint=true]
+	278 [label="Topic 278: 
+studie
+ positiv
+ ökologisch
+ bewirtschaften
+ umwelt
+ " shape=box]
+	217 -> 278 [constraint=true]
+	314 [label="Topic 314: 
+gefälscht
+ kontrolle
+ betrug
+ olive
+ zucker
+ " shape=box]
+	217 -> 314 [constraint=true]
+	545 [label="Topic 545: 
+saft
+ ukraine
+ ernten
+ projekt
+ obst
+ " shape=box]
+	217 -> 545 [constraint=true]
+	635 [label="Topic 635: 
+fleischlos
+ fleisch
+ vegetarische
+ befragte
+ wurst
+ " shape=box]
+	217 -> 635 [constraint=true]
+	714 [label="Topic 714: 
+aigner
+ gentechnik
+ pflanze
+ monsanto
+ mai
+ " shape=box]
+	217 -> 714 [constraint=true]
+	1310 [label="Topic 1310: 
+seite
+ großküchen
+ kindergärten
+ hilfreich
+ wichtig
+ " shape=box]
+	217 -> 1310 [constraint=true]
+	337 [label="Topic 337: 
+verdacht
+ genossenschaft
+ öl
+ test
+ stiftung_warentest
+ " shape=box]
+	29 -> 337 [constraint=true]
+	338 [label="Topic 338: 
+ölen
+ olivenöl
+ extra
+ getestet
+ schadstoff
+ " shape=box]
+	337 -> 338 [constraint=true]
+	494 [label="Topic 494: 
+projekt
+ solidarische
+ mitglied
+ gärtnerei
+ dokumentation
+ " shape=box]
+	337 -> 494 [constraint=true]
+	1364 [label="Topic 1364: 
+mitarbeiter
+ alnatura
+ bremen
+ filiale
+ wahl
+ " shape=box]
+	337 -> 1364 [constraint=true]
+	69 [label="Topic 69: 
+bio
+ produkt
+ all
+ finden
+ bioprodukt
+ " shape=box]
+	1 -> 69 [constraint=true]
+	70 [label="Topic 70: 
+lebensmittel
+ ökologisch
+ zudem
+ tier
+ bio-produkte
+ " shape=box]
+	69 -> 70 [constraint=true]
+	71 [label="Topic 71: 
+alnatura
+ dm
+ edeka
+ mark
+ sortiment
+ " shape=box]
+	70 -> 71 [constraint=true]
+	190 [label="Topic 190: 
+licht
+ <url>
+ klima
+ wichtig
+ organismus
+ " shape=box]
+	70 -> 190 [constraint=true]
+	238 [label="Topic 238: 
+sonnleitner
+ deutsche
+ neuland
+ landwirt
+ ökolandbau
+ " shape=box]
+	70 -> 238 [constraint=true]
+	329 [label="Topic 329: 
+konventionell
+ qualität
+ stiftung_warentest
+ test
+ tester
+ " shape=box]
+	70 -> 329 [constraint=true]
+	777 [label="Topic 777: 
+weichmacher
+ forscher
+ familie
+ menge
+ milchprodukten
+ " shape=box]
+	70 -> 777 [constraint=true]
+	809 [label="Topic 809: 
+pestizid
+ gewürze
+ greenpeace
+ kraut
+ patient
+ " shape=box]
+	70 -> 809 [constraint=true]
+	933 [label="Topic 933: 
+johann
+ familie
+ sohn
+ gemeinde
+ bevölkerung
+ " shape=box]
+	70 -> 933 [constraint=true]
+	1190 [label="Topic 1190: 
+ausnehmen
+ regel
+ honig
+ kontrolle
+ bislang
+ " shape=box]
+	70 -> 1190 [constraint=true]
+	1418 [label="Topic 1418: 
+winter
+ schön
+ blüte
+ presse_print-ausgabe
+ nützen
+ " shape=box]
+	70 -> 1418 [constraint=true]
+	1426 [label="Topic 1426: 
+koch
+ rostock
+ kochen
+ kurs
+ kosten
+ " shape=box]
+	70 -> 1426 [constraint=true]
+	156 [label="Topic 156: 
+eiern
+ verkaufen
+ deutschland
+ deutsch
+ nehmen
+ " shape=box]
+	69 -> 156 [constraint=true]
+	157 [label="Topic 157: 
+aldi
+ rewe
+ discounter
+ suisse
+ angeben
+ " shape=box]
+	156 -> 157 [constraint=true]
+	225 [label="Topic 225: 
+hipp
+ demeter
+ gemüse
+ gentechnisch_verändert
+ probe
+ " shape=box]
+	156 -> 225 [constraint=true]
+	254 [label="Topic 254: 
+global
+ studie
+ belastung
+ wirksam
+ ergeben
+ " shape=box]
+	156 -> 254 [constraint=true]
+	438 [label="Topic 438: 
+bauer
+ heimisch
+ positiv
+ österreichisch
+ leben
+ " shape=box]
+	156 -> 438 [constraint=true]
+	776 [label="Topic 776: 
+italien
+ werner
+ land
+ kontrollieren
+ kontrolle
+ " shape=box]
+	156 -> 776 [constraint=true]
+	496 [label="Topic 496: 
+stall
+ tier
+ huhn
+ betrieb
+ platzen
+ " shape=box]
+	69 -> 496 [constraint=true]
+	557 [label="Topic 557: 
+dioxin
+ konventionell
+ süden
+ sinnen
+ flugzeug
+ " shape=box]
+	496 -> 557 [constraint=true]
+	994 [label="Topic 994: 
+kuh
+ weide
+ stehen
+ leben
+ milch
+ " shape=box]
+	496 -> 994 [constraint=true]
+	250 [label="Topic 250: 
+landwirtschaft
+ nachhaltig
+ betrieb
+ bauer
+ sehen
+ " shape=box]
+	1 -> 250 [constraint=true]
+	251 [label="Topic 251: 
+verkaufen
+ betreiben
+ boden
+ gemeinde
+ bundesinstitut_risikobewertung
+ " shape=box]
+	250 -> 251 [constraint=true]
+	252 [label="Topic 252: 
+gesetzlich
+ bfr
+ reisen
+ verstoßen
+ kritisieren
+ " shape=box]
+	251 -> 252 [constraint=true]
+	269 [label="Topic 269: 
+kirche
+ bekommen
+ biobauern
+ schwein
+ land
+ " shape=box]
+	251 -> 269 [constraint=true]
+	349 [label="Topic 349: 
+geschäft
+ mühlviertel
+ linz
+ eröffnen
+ biofleisch
+ " shape=box]
+	251 -> 349 [constraint=true]
+	444 [label="Topic 444: 
+konsument
+ österreicher
+ artenvielfalt
+ wichtig
+ region
+ " shape=box]
+	250 -> 444 [constraint=true]
+	445 [label="Topic 445: 
+standard
+ österreich
+ ama
+ vierbauch
+ förderungen
+ " shape=box]
+	444 -> 445 [constraint=true]
+	637 [label="Topic 637: 
+fläche
+ konventionell
+ acker
+ ökologisch
+ biobauern
+ " shape=box]
+	444 -> 637 [constraint=true]
+	1444 [label="Topic 1444: 
+rewe
+ erdbeere
+ wwf
+ ökologisch
+ chemie
+ " shape=box]
+	444 -> 1444 [constraint=true]
+	5 [label="Topic 5: 
+prozent
+ ökologisch
+ landwirtschaft
+ liegen
+ bio
+ " shape=box]
+	0 -> 5 [constraint=true]
+	6 [label="Topic 6: 
+deutschland
+ bio
+ stehen
+ erklären
+ nehmen
+ " shape=box]
+	5 -> 6 [constraint=true]
+	7 [label="Topic 7: 
+eiern
+ verkaufen
+ betrieb
+ unternehmen
+ kontrolle
+ " shape=box]
+	6 -> 7 [constraint=true]
+	8 [label="Topic 8: 
+edeka
+ obst
+ lidl
+ gemüse
+ ware
+ " shape=box]
+	7 -> 8 [constraint=true]
+	90 [label="Topic 90: 
+betrug
+ aigner
+ verbraucher
+ hart
+ ankündigen
+ " shape=box]
+	7 -> 90 [constraint=true]
+	102 [label="Topic 102: 
+prozent
+ gesamt
+ ökologisch
+ steigen
+ hektar
+ " shape=box]
+	7 -> 102 [constraint=true]
+	132 [label="Topic 132: 
+eiern
+ stallpflicht
+ niederlande
+ woche
+ bayer
+ " shape=box]
+	7 -> 132 [constraint=true]
+	436 [label="Topic 436: 
+betreiben
+ hersteller
+ code
+ nummer
+ adresse
+ " shape=box]
+	7 -> 436 [constraint=true]
+	970 [label="Topic 970: 
+foodwatch
+ hipp
+ baby
+ kind
+ alnatura
+ " shape=box]
+	7 -> 970 [constraint=true]
+	88 [label="Topic 88: 
+tier
+ fläche
+ tierhaltung
+ anbau
+ per
+ " shape=box]
+	6 -> 88 [constraint=true]
+	89 [label="Topic 89: 
+hektar
+ mecklenburg-vorpommern
+ ökolandbau
+ wachsen
+ bio-produkten
+ " shape=box]
+	88 -> 89 [constraint=true]
+	161 [label="Topic 161: 
+lieferant
+ tonne
+ unternehmen
+ informieren
+ firma
+ " shape=box]
+	88 -> 161 [constraint=true]
+	175 [label="Topic 175: 
+siegeln
+ produkt
+ verbraucher
+ qualität
+ initiative
+ " shape=box]
+	88 -> 175 [constraint=true]
+	532 [label="Topic 532: 
+fleisch
+ wwf
+ verbieten
+ vegane
+ brauchen
+ " shape=box]
+	88 -> 532 [constraint=true]
+	1203 [label="Topic 1203: 
+eu-verordnung
+ künftig
+ zukunft
+ bezeichnen
+ chance
+ " shape=box]
+	88 -> 1203 [constraint=true]
+	1458 [label="Topic 1458: 
+einsatz
+ weide
+ kuh
+ tiermast
+ erkranken
+ " shape=box]
+	88 -> 1458 [constraint=true]
+	100 [label="Topic 100: 
+konventionell
+ zeigen
+ landwirtschaft
+ ergebnis
+ untersuchen
+ " shape=box]
+	6 -> 100 [constraint=true]
+	101 [label="Topic 101: 
+studie
+ biologisch
+ pestizid
+ wissenschafter
+ rose
+ " shape=box]
+	100 -> 101 [constraint=true]
+	158 [label="Topic 158: 
+zitrusfrucht
+ orange
+ zitrone
+ gericht
+ frucht
+ " shape=box]
+	100 -> 158 [constraint=true]
+	184 [label="Topic 184: 
+staatlich
+ geprüft
+ gemeinsam
+ zielen
+ christian
+ " shape=box]
+	100 -> 184 [constraint=true]
+	216 [label="Topic 216: 
+eiern
+ küken
+ vergasen
+ töten
+ geflügel
+ " shape=box]
+	100 -> 216 [constraint=true]
+	264 [label="Topic 264: 
+art
+ artenvielfalt
+ vielfalt
+ betrieb
+ hecke
+ " shape=box]
+	100 -> 264 [constraint=true]
+	348 [label="Topic 348: 
+fürchten
+ falsch
+ rufen
+ fordern
+ verbinden
+ " shape=box]
+	100 -> 348 [constraint=true]
+	391 [label="Topic 391: 
+tee
+ überschreiten
+ verbraucherschutz
+ menge
+ mikrogramm
+ " shape=box]
+	100 -> 391 [constraint=true]
+	524 [label="Topic 524: 
+obst
+ gemüse
+ enthalten
+ frisch
+ vitamin
+ " shape=box]
+	100 -> 524 [constraint=true]
+	1425 [label="Topic 1425: 
+meer
+ bremen
+ links
+ bio
+ wasser
+ " shape=box]
+	100 -> 1425 [constraint=true]
+	1432 [label="Topic 1432: 
+bio-bauern
+ bauer
+ bundesamt
+ dinkel
+ werner
+ " shape=box]
+	100 -> 1432 [constraint=true]
+	121 [label="Topic 121: 
+leben
+ zeigen
+ eg-öko-verordnung
+ umfragen
+ hinaus
+ " shape=box]
+	6 -> 121 [constraint=true]
+	151 [label="Topic 151: 
+<url>
+ essen
+ hofer
+ brunner
+ winter
+ " shape=box]
+	121 -> 151 [constraint=true]
+	304 [label="Topic 304: 
+bio
+ gesünder
+ studie
+ bio-produkte
+ bio-lebensmitteln
+ " shape=box]
+	121 -> 304 [constraint=true]
+	600 [label="Topic 600: 
+bio-siegel
+ ökologisch
+ biologisch
+ erlauben
+ begriff
+ " shape=box]
+	121 -> 600 [constraint=true]
+	82 [label="Topic 82: 
+landwirtschaft
+ bio
+ preisen
+ bauer
+ all
+ " shape=box]
+	5 -> 82 [constraint=true]
+	83 [label="Topic 83: 
+urin
+ leben
+ tier
+ boden
+ düngemittel
+ " shape=box]
+	82 -> 83 [constraint=true]
+	84 [label="Topic 84: 
+|
+ milch
+ cent
+ redaktion
+ liter
+ " shape=box]
+	83 -> 84 [constraint=true]
+	162 [label="Topic 162: 
+lampert
+ standard
+ produzieren
+ brauchen
+ ursprung
+ " shape=box]
+	83 -> 162 [constraint=true]
+	334 [label="Topic 334: 
+bernd
+ stickstoff
+ pflanze
+ kunstdünger
+ schaf
+ " shape=box]
+	83 -> 334 [constraint=true]
+	427 [label="Topic 427: 
+produkt
+ coop
+ günstig
+ senken
+ schweiz
+ " shape=box]
+	83 -> 427 [constraint=true]
+	474 [label="Topic 474: 
+biofach
+ messen
+ nürnberg
+ januar
+ besucher
+ " shape=box]
+	83 -> 474 [constraint=true]
+	570 [label="Topic 570: 
+schweiz
+ schweizer
+ migros
+ chef
+ discounter
+ " shape=box]
+	83 -> 570 [constraint=true]
+	1388 [label="Topic 1388: 
+keimen
+ welch
+ wort
+ zertifizierung
+ bedeutung
+ " shape=box]
+	83 -> 1388 [constraint=true]
+	192 [label="Topic 192: 
+bayer
+ auswirkung
+ övp
+ umfragen
+ meist
+ " shape=box]
+	82 -> 192 [constraint=true]
+	193 [label="Topic 193: 
+ttip
+ prozent
+ grüne
+ abkomme
+ österreich
+ " shape=box]
+	192 -> 193 [constraint=true]
+	559 [label="Topic 559: 
+münchner
+ münchen
+ punkten
+ bayerisch
+ bewerten
+ " shape=box]
+	192 -> 559 [constraint=true]
+	95 [label="Topic 95: 
+test
+ lebensmittel
+ bio-produkte
+ landwirtschaft
+ meist
+ " shape=box]
+	5 -> 95 [constraint=true]
+	96 [label="Topic 96: 
+enthalten
+ belasten
+ apotheke
+ organismus
+ stoff
+ " shape=box]
+	95 -> 96 [constraint=true]
+	97 [label="Topic 97: 
+giftstoffe
+ tee
+ gefährlich
+ baby
+ allgemeine
+ " shape=box]
+	96 -> 97 [constraint=true]
+	1275 [label="Topic 1275: 
+schröder
+ monat
+ finanzkrise
+ liefern
+ biofach_nürnberg
+ " shape=box]
+	96 -> 1275 [constraint=true]
+	1371 [label="Topic 1371: 
+salzburger
+ ulrich
+ metzger
+ betreiben
+ regionalität
+ " shape=box]
+	96 -> 1371 [constraint=true]
+	244 [label="Topic 244: 
+anlass
+ samstag
+ grüne
+ bundesregierung
+ veranstalten
+ " shape=box]
+	95 -> 244 [constraint=true]
+	245 [label="Topic 245: 
+■
+ bremen
+ massentierhaltung
+ bündnis
+ einsatz
+ " shape=box]
+	244 -> 245 [constraint=true]
+	115 [label="Topic 115: 
+verbraucher
+ stall
+ nordrhein-westfalen
+ jed
+ deutschland
+ " shape=box]
+	5 -> 115 [constraint=true]
+	116 [label="Topic 116: 
+fipronil
+ niederlande
+ nehmen
+ angeben
+ mitteln
+ " shape=box]
+	115 -> 116 [constraint=true]
+	234 [label="Topic 234: 
+eiern
+ belasten
+ handeln
+ betrieb
+ niederländische
+ " shape=box]
+	116 -> 234 [constraint=true]
+	262 [label="Topic 262: 
+eiern
+ huhn
+ tier
+ konventionell
+ haltungsformen
+ " shape=box]
+	116 -> 262 [constraint=true]
+	720 [label="Topic 720: 
+nachhaltig
+ bremen
+ kantine
+ bio-essen
+ setzen
+ " shape=box]
+	116 -> 720 [constraint=true]
+	1445 [label="Topic 1445: 
+regional
+ bundesweit
+ kasse
+ bieten
+ leistung
+ " shape=box]
+	116 -> 1445 [constraint=true]
+	724 [label="Topic 724: 
+pestizid
+ finden
+ werten
+ studie
+ markus
+ " shape=box]
+	5 -> 724 [constraint=true]
+	725 [label="Topic 725: 
+tonne
+ pestizidrückstände
+ stellen
+ pro
+ ergebnis
+ " shape=box]
+	724 -> 725 [constraint=true]
+	726 [label="Topic 726: 
+<url>
+ bio
+ apfel
+ kilometer
+ heimisch
+ " shape=box]
+	725 -> 726 [constraint=true]
+	1080 [label="Topic 1080: 
+organisation
+ fao
+ wwf
+ nachhaltig
+ fischerei
+ " shape=box]
+	725 -> 1080 [constraint=true]
+	1081 [label="Topic 1081: 
+schweizer
+ schweiz
+ zucker
+ familienbetriebe
+ anbau
+ " shape=box]
+	725 -> 1081 [constraint=true]
+	1360 [label="Topic 1360: 
+österreich
+ forum
+ foto
+ grafik
+ ama
+ " shape=box]
+	725 -> 1360 [constraint=true]
+	1438 [label="Topic 1438: 
+werten
+ wachstum
+ berg
+ nunmehr
+ wertschöpfungskette
+ " shape=box]
+	725 -> 1438 [constraint=true]
+	15 [label="Topic 15: 
+prozent
+ euro
+ deutschland
+ stark
+ million
+ " shape=box]
+	0 -> 15 [constraint=true]
+	16 [label="Topic 16: 
+produkt
+ bio
+ lebensmittel
+ stehen
+ landwirtschaft
+ " shape=box]
+	15 -> 16 [constraint=true]
+	17 [label="Topic 17: 
+bio
+ bioprodukt
+ studie
+ qualität
+ produkt
+ " shape=box]
+	16 -> 17 [constraint=true]
+	18 [label="Topic 18: 
+prozent
+ kaufen
+ verbraucher
+ häufig
+ greifen
+ " shape=box]
+	17 -> 18 [constraint=true]
+	47 [label="Topic 47: 
+angebot
+ samstag
+ freitag
+ kartoffel
+ adresse
+ " shape=box]
+	17 -> 47 [constraint=true]
+	60 [label="Topic 60: 
+china
+ platzen
+ leiter
+ skandal
+ filiale
+ " shape=box]
+	17 -> 60 [constraint=true]
+	85 [label="Topic 85: 
+usa
+ eu
+ europa
+ schweiz
+ abkomme
+ " shape=box]
+	17 -> 85 [constraint=true]
+	138 [label="Topic 138: 
+künast
+ grüne
+ renate_künast
+ idee
+ hannover
+ " shape=box]
+	17 -> 138 [constraint=true]
+	182 [label="Topic 182: 
+betrieb
+ staatsanwaltschaft
+ betrug
+ bio-eiern
+ bio-eier
+ " shape=box]
+	17 -> 182 [constraint=true]
+	195 [label="Topic 195: 
+grün
+ bio-siegel
+ blatt
+ siegeln
+ mindestens
+ " shape=box]
+	17 -> 195 [constraint=true]
+	336 [label="Topic 336: 
+austria
+ franzen
+ obmann
+ walter
+ övp
+ " shape=box]
+	17 -> 336 [constraint=true]
+	1457 [label="Topic 1457: 
+amerika
+ gast
+ bio-ware
+ austausch
+ verarbeitung
+ " shape=box]
+	17 -> 1457 [constraint=true]
+	45 [label="Topic 45: 
+getreide
+ feld
+ brot
+ produzent
+ gütesiegel
+ " shape=box]
+	16 -> 45 [constraint=true]
+	46 [label="Topic 46: 
+tier
+ besucher
+ bund
+ biohof
+ erleben
+ " shape=box]
+	45 -> 46 [constraint=true]
+	322 [label="Topic 322: 
+fairtrade
+ fair
+ deutschland
+ handeln
+ kaffee
+ " shape=box]
+	45 -> 322 [constraint=true]
+	335 [label="Topic 335: 
+weber
+ christine
+ verzehr
+ erkrankung
+ hofladen
+ " shape=box]
+	45 -> 335 [constraint=true]
+	698 [label="Topic 698: 
+aktie
+ euro
+ schwach
+ hofreiter
+ gesellschaft
+ " shape=box]
+	45 -> 698 [constraint=true]
+	1012 [label="Topic 1012: 
+glyphosat
+ bauer
+ pestizid
+ mitteln
+ salzburg
+ " shape=box]
+	45 -> 1012 [constraint=true]
+	1041 [label="Topic 1041: 
+buttern
+ molkerei
+ greenpeace
+ österreichisch
+ frist
+ " shape=box]
+	45 -> 1041 [constraint=true]
+	58 [label="Topic 58: 
+werner
+ rehn
+ streiten
+ deutschland
+ klage
+ " shape=box]
+	16 -> 58 [constraint=true]
+	59 [label="Topic 59: 
+buchen
+ region
+ erzählen
+ leben
+ besuchen
+ " shape=box]
+	58 -> 59 [constraint=true]
+	143 [label="Topic 143: 
+alnatura
+ dm
+ alnatura-produkte
+ edeka
+ verkaufen
+ " shape=box]
+	58 -> 143 [constraint=true]
+	196 [label="Topic 196: 
+aktionsplan
+ landwirtschaft
+ pflanzenschutzmittel
+ massnahmen
+ pflanzenschutzmitteln
+ " shape=box]
+	58 -> 196 [constraint=true]
+	341 [label="Topic 341: 
+erreger
+ gurke
+ ehec
+ erkranken
+ österreich
+ " shape=box]
+	58 -> 341 [constraint=true]
+	1017 [label="Topic 1017: 
+winter
+ huhn
+ food
+ eiern
+ wald
+ " shape=box]
+	58 -> 1017 [constraint=true]
+	1443 [label="Topic 1443: 
+skandal
+ niedersächsische
+ aigner
+ umsetzen
+ dioxin
+ " shape=box]
+	58 -> 1443 [constraint=true]
+	77 [label="Topic 77: 
+pestizid
+ konventionell
+ landbau
+ winden
+ gelten
+ " shape=box]
+	16 -> 77 [constraint=true]
+	210 [label="Topic 210: 
+feld
+ chemisch
+ frucht
+ karl
+ hektaren
+ " shape=box]
+	77 -> 210 [constraint=true]
+	246 [label="Topic 246: 
+risiko
+ dioxin
+ nrw
+ kontrolleure
+ entdecken
+ " shape=box]
+	77 -> 246 [constraint=true]
+	924 [label="Topic 924: 
+bremen
+ erläutern
+ verbraucherzentrale
+ erzeugen
+ erzeugung
+ " shape=box]
+	77 -> 924 [constraint=true]
+	125 [label="Topic 125: 
+verbraucher
+ prozent
+ bislang
+ berichten
+ deutschland
+ " shape=box]
+	16 -> 125 [constraint=true]
+	126 [label="Topic 126: 
+fleisch
+ kaufen
+ roh
+ braten
+ handeln
+ " shape=box]
+	125 -> 126 [constraint=true]
+	170 [label="Topic 170: 
+polizei
+ vergiften
+ ermittler
+ hinweisen
+ babynahrung
+ " shape=box]
+	125 -> 170 [constraint=true]
+	572 [label="Topic 572: 
+fischen
+ greenpeace
+ aquakultur
+ kaufen
+ wwf
+ " shape=box]
+	125 -> 572 [constraint=true]
+	707 [label="Topic 707: 
+aldi_nord
+ discounter
+ bioprodukt
+ angebot
+ künftig
+ " shape=box]
+	125 -> 707 [constraint=true]
+	1454 [label="Topic 1454: 
+großkunde
+ auftrag
+ verhelfen
+ zahl
+ enorm
+ " shape=box]
+	16 -> 1454 [constraint=true]
+	1455 [label="Topic 1455: 
+österreichisch
+ linz
+ regionalität
+ bauer
+ gmbh
+ " shape=box]
+	1454 -> 1455 [constraint=true]
+	42 [label="Topic 42: 
+all
+ basic
+ produkt
+ landwirtschaft
+ stehen
+ " shape=box]
+	15 -> 42 [constraint=true]
+	43 [label="Topic 43: 
+landwirtschaft
+ prozent
+ neu
+ unternehmen
+ schweiz
+ " shape=box]
+	42 -> 43 [constraint=true]
+	44 [label="Topic 44: 
+rossmann
+ dm
+ kunde
+ filiale
+ mitarbeiter
+ " shape=box]
+	43 -> 44 [constraint=true]
+	148 [label="Topic 148: 
+bauer
+ direktzahlungen
+ agrarpolitik
+ kleinbauern
+ ausbildung
+ " shape=box]
+	43 -> 148 [constraint=true]
+	227 [label="Topic 227: 
+reduzieren
+ treibhausgase
+ pro
+ co
+ klima
+ " shape=box]
+	43 -> 227 [constraint=true]
+	231 [label="Topic 231: 
+bio
+ suisse
+ biologisch
+ geschmack
+ kanton
+ " shape=box]
+	43 -> 231 [constraint=true]
+	297 [label="Topic 297: 
+behörde
+ kontrolle
+ information
+ land
+ bundesrat
+ " shape=box]
+	43 -> 297 [constraint=true]
+	395 [label="Topic 395: 
+initiative
+ bauernverband
+ schweizer
+ vereinen
+ trinkwasser
+ " shape=box]
+	43 -> 395 [constraint=true]
+	717 [label="Topic 717: 
+biomarkt
+ aktuell
+ ’s
+ josef
+ bistro
+ " shape=box]
+	43 -> 717 [constraint=true]
+	913 [label="Topic 913: 
+hektar
+ österreich
+ spar
+ ökologisch
+ getränk
+ " shape=box]
+	43 -> 913 [constraint=true]
+	1137 [label="Topic 1137: 
+behörde
+ italien
+ million
+ beschlagnahmen
+ china
+ " shape=box]
+	43 -> 1137 [constraint=true]
+	1296 [label="Topic 1296: 
+biene
+ beispiel
+ zum
+ pflanzenschutzmittel
+ adresse
+ " shape=box]
+	43 -> 1296 [constraint=true]
+	1315 [label="Topic 1315: 
+weinen
+ schaden
+ martin
+ wettern
+ erzeugen
+ " shape=box]
+	43 -> 1315 [constraint=true]
+	709 [label="Topic 709: 
+gemüse
+ gurke
+ heimisch
+ land
+ spanisch
+ " shape=box]
+	42 -> 709 [constraint=true]
+	710 [label="Topic 710: 
+österreich
+ erklären
+ keimen
+ wienern
+ region
+ " shape=box]
+	709 -> 710 [constraint=true]
+	879 [label="Topic 879: 
+leben
+ grün
+ britisch
+ konsument
+ steigend
+ " shape=box]
+	709 -> 879 [constraint=true]
+	1328 [label="Topic 1328: 
+brauerei
+ salzburg
+ genuss
+ hafer
+ obst
+ " shape=box]
+	709 -> 1328 [constraint=true]
+	1391 [label="Topic 1391: 
+fuchs
+ peta
+ korrekt
+ produkt
+ sehen
+ " shape=box]
+	709 -> 1391 [constraint=true]
+	1185 [label="Topic 1185: 
+österreich
+ kennzeichnung
+ tierfutter
+ futtern
+ eiern
+ " shape=box]
+	42 -> 1185 [constraint=true]
+	1186 [label="Topic 1186: 
+gentechnisch_verändern
+ müller
+ gentechnik
+ <url>
+ futtermittel
+ " shape=box]
+	1185 -> 1186 [constraint=true]
+	54 [label="Topic 54: 
+deutschland
+ behörde
+ landwirtschaft
+ bio
+ erklären
+ " shape=box]
+	15 -> 54 [constraint=true]
+	55 [label="Topic 55: 
+region
+ eu-kommission
+ reisen
+ verbieten
+ wichtig
+ " shape=box]
+	54 -> 55 [constraint=true]
+	56 [label="Topic 56: 
+gurke
+ spanien
+ erreger
+ spanisch
+ gemüse
+ " shape=box]
+	55 -> 56 [constraint=true]
+	135 [label="Topic 135: 
+betrieb
+ tier
+ hof
+ klein
+ urteilen
+ " shape=box]
+	55 -> 135 [constraint=true]
+	268 [label="Topic 268: 
+brot
+ öko-test
+ mehl
+ <url>
+ app
+ " shape=box]
+	55 -> 268 [constraint=true]
+	768 [label="Topic 768: 
+maschine
+ wissenschaftler
+ klein
+ zielen
+ schreiten
+ " shape=box]
+	55 -> 768 [constraint=true]
+	1368 [label="Topic 1368: 
+china
+ <url>
+ schokolade
+ verkaufen
+ produzieren
+ " shape=box]
+	55 -> 1368 [constraint=true]
+	284 [label="Topic 284: 
+tier
+ verbraucher
+ einfach
+ teilen
+ gefahr
+ " shape=box]
+	54 -> 284 [constraint=true]
+	285 [label="Topic 285: 
+unternehmen
+ rückruf
+ information
+ <url>
+ informieren
+ " shape=box]
+	284 -> 285 [constraint=true]
+	344 [label="Topic 344: 
+dioxin
+ schwein
+ grenzwert
+ kiel
+ aufnehmen
+ " shape=box]
+	284 -> 344 [constraint=true]
+	877 [label="Topic 877: 
+vegan
+ produkt
+ vegane
+ veganen
+ essen
+ " shape=box]
+	284 -> 877 [constraint=true]
+	883 [label="Topic 883: 
+mitteln
+ luft
+ warm
+ polizei
+ vorfall
+ " shape=box]
+	284 -> 883 [constraint=true]
+	72 [label="Topic 72: 
+landwirtschaft
+ ökologisch
+ bio
+ all
+ finden
+ " shape=box]
+	15 -> 72 [constraint=true]
+	73 [label="Topic 73: 
+produkt
+ lebensmittel
+ deutschland
+ hof
+ stiftung_warentest
+ " shape=box]
+	72 -> 73 [constraint=true]
+	74 [label="Topic 74: 
+foodwatch
+ mineralöl
+ lebensmittel
+ verpackung
+ produkt
+ " shape=box]
+	73 -> 74 [constraint=true]
+	160 [label="Topic 160: 
+china
+ biofach
+ weltweit
+ biolebensmittel
+ usa
+ " shape=box]
+	73 -> 160 [constraint=true]
+	232 [label="Topic 232: 
+fond
+ firma
+ branche
+ aktie
+ geld
+ " shape=box]
+	73 -> 232 [constraint=true]
+	388 [label="Topic 388: 
+whole_foods
+ platzen
+ dollar
+ kunde
+ läden
+ " shape=box]
+	73 -> 388 [constraint=true]
+	500 [label="Topic 500: 
+konventionell
+ bioprodukt
+ löwenstein
+ qualität
+ mangelhaft
+ " shape=box]
+	73 -> 500 [constraint=true]
+	807 [label="Topic 807: 
+terra
+ europa
+ slow_food
+ österreich
+ generation
+ " shape=box]
+	73 -> 807 [constraint=true]
+	1035 [label="Topic 1035: 
+kuh
+ horn
+ rind
+ stall
+ nrw
+ " shape=box]
+	73 -> 1035 [constraint=true]
+	1102 [label="Topic 1102: 
+fleisch
+ plakat
+ claudia
+ glücklich
+ klein
+ " shape=box]
+	73 -> 1102 [constraint=true]
+	248 [label="Topic 248: 
+hof
+ landwirtschaft
+ konventionell
+ bio-lebensmittel
+ pflanze
+ " shape=box]
+	72 -> 248 [constraint=true]
+	249 [label="Topic 249: 
+sonntag
+ gast
+ familie
+ august
+ michael
+ " shape=box]
+	248 -> 249 [constraint=true]
+	276 [label="Topic 276: 
+prozent
+ verbraucher
+ befragte
+ bio-produkten
+ studie
+ " shape=box]
+	248 -> 276 [constraint=true]
+	286 [label="Topic 286: 
+gentechnik
+ befragte
+ demonstration
+ umfragen
+ taz
+ " shape=box]
+	248 -> 286 [constraint=true]
+	499 [label="Topic 499: 
+landwirt
+ gericht
+ urteilen
+ klage
+ sorte
+ " shape=box]
+	248 -> 499 [constraint=true]
+	353 [label="Topic 353: 
+schule
+ eltern
+ arbeiten
+ hand
+ afrika
+ " shape=box]
+	72 -> 353 [constraint=true]
+	356 [label="Topic 356: 
+ernähren
+ löwenstein
+ hungern
+ these
+ ökolandbau
+ " shape=box]
+	353 -> 356 [constraint=true]
+	383 [label="Topic 383: 
+kind
+ schüler
+ gesellschaft
+ lehrer
+ rudolf_steiner
+ " shape=box]
+	353 -> 383 [constraint=true]
+	118 [label="Topic 118: 
+landwirtschaft
+ stehen
+ gemüse
+ konventionell
+ anbau
+ " shape=box]
+	15 -> 118 [constraint=true]
+	119 [label="Topic 119: 
+pestizid
+ studie
+ biologisch
+ biobauern
+ finden
+ " shape=box]
+	118 -> 119 [constraint=true]
+	120 [label="Topic 120: 
+prozent
+ konventionell
+ probe
+ antioxidantien
+ betreffen
+ " shape=box]
+	119 -> 120 [constraint=true]
+	385 [label="Topic 385: 
+verbraucher
+ wachstum
+ nürnberg
+ biofach
+ naturkost
+ " shape=box]
+	119 -> 385 [constraint=true]
+	735 [label="Topic 735: 
+brandenburg
+ subvention
+ kürzung
+ brandenburgisch
+ geplant
+ " shape=box]
+	119 -> 735 [constraint=true]
+	1053 [label="Topic 1053: 
+glyphosat
+ erlauben
+ antwort
+ zulassung
+ getreide
+ " shape=box]
+	119 -> 1053 [constraint=true]
+	200 [label="Topic 200: 
+test
+ deutsch
+ bleiben
+ erhältlich
+ erhalten
+ " shape=box]
+	118 -> 200 [constraint=true]
+	201 [label="Topic 201: 
+preisen
+ stoff
+ plastik
+ enthalten
+ franke
+ " shape=box]
+	200 -> 201 [constraint=true]
+	374 [label="Topic 374: 
+regierung
+ subvention
+ deutschland
+ bündnis
+ dünger
+ " shape=box]
+	200 -> 374 [constraint=true]
+	378 [label="Topic 378: 
+schulz
+ migros
+ stelle
+ standort
+ feld
+ " shape=box]
+	200 -> 378 [constraint=true]
+	434 [label="Topic 434: 
+linz
+ umsatz
+ standort
+ ’s
+ planen
+ " shape=box]
+	200 -> 434 [constraint=true]
+	518 [label="Topic 518: 
+regional
+ planen
+ investor
+ regionale
+ bekennen
+ " shape=box]
+	200 -> 518 [constraint=true]
+	561 [label="Topic 561: 
+brandenburg
+ berliner
+ berlin
+ produkt
+ bundesweit
+ " shape=box]
+	200 -> 561 [constraint=true]
+	1272 [label="Topic 1272: 
+konsument
+ supermarkt
+ ursprung
+ jed
+ verpacken
+ " shape=box]
+	200 -> 1272 [constraint=true]
+	1283 [label="Topic 1283: 
+discounter
+ lidl
+ kaffee
+ tester
+ meist
+ " shape=box]
+	200 -> 1283 [constraint=true]
+	420 [label="Topic 420: 
+ministerium
+ klaren
+ einfach
+ auftrag
+ stellen
+ " shape=box]
+	118 -> 420 [constraint=true]
+	421 [label="Topic 421: 
+schmidt
+ landwirtschaftsminister
+ umweltministerium
+ generalsekretär
+ grundwasser
+ " shape=box]
+	420 -> 421 [constraint=true]
+	1005 [label="Topic 1005: 
+löwenstein
+ henne
+ bio-eier
+ konventionell
+ legen
+ " shape=box]
+	420 -> 1005 [constraint=true]
+	25 [label="Topic 25: 
+prozent
+ deutschland
+ deutsch
+ neu
+ liegen
+ " shape=box]
+	0 -> 25 [constraint=true]
+	26 [label="Topic 26: 
+lebensmittel
+ finden
+ landwirtschaft
+ all
+ stehen
+ " shape=box]
+	25 -> 26 [constraint=true]
+	27 [label="Topic 27: 
+euro
+ umsatz
+ million
+ standort
+ spar
+ " shape=box]
+	26 -> 27 [constraint=true]
+	28 [label="Topic 28: 
+vorgehen
+ landwirtschaft
+ blatt
+ beraten
+ agrar
+ " shape=box]
+	27 -> 28 [constraint=true]
+	146 [label="Topic 146: 
+frischen
+ bio
+ milch
+ vollmilch
+ euro
+ " shape=box]
+	27 -> 146 [constraint=true]
+	177 [label="Topic 177: 
+prozent
+ rewe
+ filiale
+ österreich
+ marktanteil
+ " shape=box]
+	27 -> 177 [constraint=true]
+	860 [label="Topic 860: 
+trend
+ naturkostläden
+ messen
+ löwenstein
+ beispielsweise
+ " shape=box]
+	27 -> 860 [constraint=true]
+	108 [label="Topic 108: 
+belasten
+ betreffen
+ eiern
+ deutschland
+ betrieb
+ " shape=box]
+	26 -> 108 [constraint=true]
+	109 [label="Topic 109: 
+gemüse
+ pestizid
+ obst
+ greenpeace
+ frucht
+ " shape=box]
+	108 -> 109 [constraint=true]
+	198 [label="Topic 198: 
+kunststoff
+ abbaubar
+ biologisch
+ herstellen
+ rohstoff
+ " shape=box]
+	108 -> 198 [constraint=true]
+	202 [label="Topic 202: 
+eiern
+ fipronil
+ niederlande
+ belgien
+ schmidt
+ " shape=box]
+	108 -> 202 [constraint=true]
+	834 [label="Topic 834: 
+behörde
+ tier
+ firma
+ offenbaren
+ bayerisch
+ " shape=box]
+	108 -> 834 [constraint=true]
+	1433 [label="Topic 1433: 
+daniel
+ barbara
+ einnehmen
+ kilometer
+ erlösen
+ " shape=box]
+	108 -> 1433 [constraint=true]
+	1447 [label="Topic 1447: 
+brunner
+ <url>
+ green
+ urlaub
+ nachhaltigkeit
+ " shape=box]
+	108 -> 1447 [constraint=true]
+	1456 [label="Topic 1456: 
+produkt
+ metzger
+ erhalten
+ wert
+ oberösterreich
+ " shape=box]
+	108 -> 1456 [constraint=true]
+	140 [label="Topic 140: 
+eiern
+ verkaufen
+ unternehmen
+ belasten
+ million
+ " shape=box]
+	26 -> 140 [constraint=true]
+	141 [label="Topic 141: 
+amazon
+ whole_foods
+ prozent
+ dollar
+ usa
+ " shape=box]
+	140 -> 141 [constraint=true]
+	275 [label="Topic 275: 
+gelten
+ bio
+ verunreinigung
+ österreich
+ eu
+ " shape=box]
+	140 -> 275 [constraint=true]
+	293 [label="Topic 293: 
+lidl
+ discounter
+ aldi
+ ergebnis
+ penny
+ " shape=box]
+	140 -> 293 [constraint=true]
+	351 [label="Topic 351: 
+gestern
+ fürstenhof
+ futtermittel
+ futtern
+ betrieb
+ " shape=box]
+	140 -> 351 [constraint=true]
+	435 [label="Topic 435: 
+österreich
+ regional
+ rupprechter
+ nachhaltig
+ österreichisch
+ " shape=box]
+	140 -> 435 [constraint=true]
+	850 [label="Topic 850: 
+fair
+ faire
+ siegeln
+ standard
+ kleidung
+ " shape=box]
+	140 -> 850 [constraint=true]
+	163 [label="Topic 163: 
+tier
+ huhn
+ eiern
+ speisekarte
+ leben
+ " shape=box]
+	26 -> 163 [constraint=true]
+	164 [label="Topic 164: 
+hans
+ wurst
+ +
+ fleisch
+ metzgerei
+ " shape=box]
+	163 -> 164 [constraint=true]
+	243 [label="Topic 243: 
+probe
+ grenzwert
+ belastung
+ belasten
+ gewusst
+ " shape=box]
+	163 -> 243 [constraint=true]
+	317 [label="Topic 317: 
+unternehmen
+ bank
+ gründen
+ anthroposophischen
+ weltweit
+ " shape=box]
+	163 -> 317 [constraint=true]
+	623 [label="Topic 623: 
+eiern
+ käfig
+ verarbeiten
+ kennzeichnung
+ henne
+ " shape=box]
+	163 -> 623 [constraint=true]
+	240 [label="Topic 240: 
+dioxin
+ eiern
+ hof
+ ministerium
+ sprecher
+ " shape=box]
+	26 -> 240 [constraint=true]
+	241 [label="Topic 241: 
+bach
+ pestizid
+ boden
+ kontrolle
+ gewässer
+ " shape=box]
+	240 -> 241 [constraint=true]
+	271 [label="Topic 271: 
+pestizid
+ glyphosat
+ biene
+ pflanzenschutzmittel
+ stimmen
+ " shape=box]
+	240 -> 271 [constraint=true]
+	288 [label="Topic 288: 
+stall
+ feststellen
+ gefährlich
+ konzentration
+ betreiben
+ " shape=box]
+	240 -> 288 [constraint=true]
+	412 [label="Topic 412: 
+gfk
+ konsum
+ krise
+ haushalt
+ profitieren
+ " shape=box]
+	240 -> 412 [constraint=true]
+	659 [label="Topic 659: 
+sojabohnen
+ strategie
+ bayer
+ futtermittel
+ botschaft
+ " shape=box]
+	240 -> 659 [constraint=true]
+	282 [label="Topic 282: 
+euro
+ günstig
+ kosten
+ bio-lebensmittel
+ preisen
+ " shape=box]
+	26 -> 282 [constraint=true]
+	283 [label="Topic 283: 
+teuer
+ supermarkt
+ durchschnittlich
+ gemüse
+ biolebensmittel
+ " shape=box]
+	282 -> 283 [constraint=true]
+	574 [label="Topic 574: 
+nachfrage
+ öko-produkten
+ bio-produkten
+ bio-branche
+ gesamt
+ " shape=box]
+	282 -> 574 [constraint=true]
+	787 [label="Topic 787: 
+weinen
+ winzer
+ orange
+ welt
+ weingut
+ " shape=box]
+	282 -> 787 [constraint=true]
+	866 [label="Topic 866: 
+fischen
+ lachs
+ pro
+ edeka
+ fleisch
+ " shape=box]
+	282 -> 866 [constraint=true]
+	1109 [label="Topic 1109: 
+system
+ privat
+ behörde
+ bild
+ staatliche
+ " shape=box]
+	282 -> 1109 [constraint=true]
+	1182 [label="Topic 1182: 
+pestizid
+ greenpeace
+ landwirtschaft
+ landwirt
+ einsatz
+ " shape=box]
+	282 -> 1182 [constraint=true]
+	1448 [label="Topic 1448: 
+probe
+ nitrat
+ spinat
+ salzburg
+ gesundheit
+ " shape=box]
+	282 -> 1448 [constraint=true]
+	129 [label="Topic 129: 
+feld
+ landwirtschaft
+ betreiben
+ hof
+ halten
+ " shape=box]
+	25 -> 129 [constraint=true]
+	130 [label="Topic 130: 
+konventionell
+ studie
+ vergleichen
+ anbau
+ produktion
+ " shape=box]
+	129 -> 130 [constraint=true]
+	131 [label="Topic 131: 
+biolandwirtschaft
+ ertrag
+ landwirtschaft
+ biologisch
+ artenvielfalt
+ " shape=box]
+	130 -> 131 [constraint=true]
+	207 [label="Topic 207: 
+kuh
+ frank
+ stall
+ kartoffel
+ allgäu
+ " shape=box]
+	130 -> 207 [constraint=true]
+	237 [label="Topic 237: 
+bioland
+ verband
+ kreisen
+ gegründet
+ aufnehmen
+ " shape=box]
+	130 -> 237 [constraint=true]
+	509 [label="Topic 509: 
+tier
+ töten
+ schwein
+ alternativ
+ huber
+ " shape=box]
+	130 -> 509 [constraint=true]
+	1398 [label="Topic 1398: 
+food
+ februar
+ einkommen
+ eröffnen
+ dose
+ " shape=box]
+	130 -> 1398 [constraint=true]
+	1424 [label="Topic 1424: 
+firma
+ kunde
+ betroffen
+ biogas
+ bakterie
+ " shape=box]
+	130 -> 1424 [constraint=true]
+	1446 [label="Topic 1446: 
+edeka
+ foodwatch
+ luft
+ ändern
+ füllen
+ " shape=box]
+	130 -> 1446 [constraint=true]
+	1453 [label="Topic 1453: 
+nuß
+ lagern
+ supermarkt
+ umsatz
+ lassen
+ " shape=box]
+	130 -> 1453 [constraint=true]
+	167 [label="Topic 167: 
+zeichen
+ bund
+ labels
+ offiziell
+ vorschlag
+ " shape=box]
+	25 -> 167 [constraint=true]
+	168 [label="Topic 168: 
+vermarktung
+ landwirtschaft
+ all
+ entsprechen
+ einführung
+ " shape=box]
+	167 -> 168 [constraint=true]
+	194 [label="Topic 194: 
+berg
+ konsument
+ coop
+ schreiben
+ jen
+ " shape=box]
+	168 -> 194 [constraint=true]
+	179 [label="Topic 179: 
+landwirtschaft
+ konventionell
+ verbraucher
+ österreich
+ biologisch
+ " shape=box]
+	25 -> 179 [constraint=true]
+	180 [label="Topic 180: 
+kommission
+ grenzwert
+ eu-kommission
+ entwurf
+ regel
+ " shape=box]
+	179 -> 180 [constraint=true]
+	181 [label="Topic 181: 
+grün
+ <url>
+ aussteller
+ messen
+ hallen
+ " shape=box]
+	180 -> 181 [constraint=true]
+	222 [label="Topic 222: 
+student
+ bereich
+ bedarf
+ angeboten
+ verarbeitung
+ " shape=box]
+	180 -> 222 [constraint=true]
+	291 [label="Topic 291: 
+kontrolle
+ kompromiss
+ reform
+ brüssel
+ bioprodukt
+ " shape=box]
+	180 -> 291 [constraint=true]
+	309 [label="Topic 309: 
+fluß
+ studie
+ grundwasser
+ chemikalie
+ gewässer
+ " shape=box]
+	180 -> 309 [constraint=true]
+	484 [label="Topic 484: 
+vertrauen
+ lebensmittelhandel
+ absatz
+ wachstum
+ getränk
+ " shape=box]
+	180 -> 484 [constraint=true]
+	565 [label="Topic 565: 
+angebaut
+ wasser
+ enthalten
+ art
+ pflanze
+ " shape=box]
+	180 -> 565 [constraint=true]
+	634 [label="Topic 634: 
+eu-kommission
+ zulassung
+ entscheidung
+ ökoverordnung
+ national
+ " shape=box]
+	180 -> 634 [constraint=true]
+	1088 [label="Topic 1088: 
+gespräch
+ parlament
+ europäisch
+ stehen
+ laufen
+ " shape=box]
+	180 -> 1088 [constraint=true]
+	65 [label="Topic 65: 
+prozent
+ ökologisch
+ deutschland
+ bioprodukt
+ land
+ " shape=box]
+	0 -> 65 [constraint=true]
+	66 [label="Topic 66: 
+produkt
+ landwirtschaft
+ österreich
+ unternehmen
+ derzeit
+ " shape=box]
+	65 -> 66 [constraint=true]
+	67 [label="Topic 67: 
+konsument
+ verkaufen
+ ernährung
+ finden
+ aktuell
+ " shape=box]
+	66 -> 67 [constraint=true]
+	68 [label="Topic 68: 
+test
+ probe
+ schokolade
+ betroffen
+ regeln
+ " shape=box]
+	67 -> 68 [constraint=true]
+	152 [label="Topic 152: 
+verwenden
+ pizza
+ molkerei
+ gaben
+ käse
+ " shape=box]
+	67 -> 152 [constraint=true]
+	267 [label="Topic 267: 
+regionale
+ wochenmarkt
+ kunde
+ ware
+ einkauf
+ " shape=box]
+	67 -> 267 [constraint=true]
+	1117 [label="Topic 1117: 
+essen
+ euro
+ wohlbefinden
+ gesund
+ genuss
+ " shape=box]
+	67 -> 1117 [constraint=true]
+	259 [label="Topic 259: 
+fläche
+ liegen
+ laut
+ bio-lebensmittel
+ neu
+ " shape=box]
+	66 -> 259 [constraint=true]
+	327 [label="Topic 327: 
+ölen
+ italienisch
+ verkaufen
+ zeitung
+ zufolge
+ " shape=box]
+	259 -> 327 [constraint=true]
+	371 [label="Topic 371: 
+studie
+ gering
+ ernährung
+ österreicher
+ reduzieren
+ " shape=box]
+	259 -> 371 [constraint=true]
+	399 [label="Topic 399: 
+biofach
+ nürnberg
+ deutschland
+ messen
+ bund_ökologische
+ " shape=box]
+	259 -> 399 [constraint=true]
+	433 [label="Topic 433: 
+direktvermarkter
+ veranstaltung
+ nachhaltigkeit
+ thoma
+ erzeuger
+ " shape=box]
+	259 -> 433 [constraint=true]
+	443 [label="Topic 443: 
+hamburg
+ stadt
+ fördern
+ agrarwirtschaft
+ gering
+ " shape=box]
+	259 -> 443 [constraint=true]
+	1163 [label="Topic 1163: 
+arbeitsbedingungen
+ besucher
+ labels
+ franke
+ zürich
+ " shape=box]
+	259 -> 1163 [constraint=true]
+	1449 [label="Topic 1449: 
+lebensmittel
+ landwirtschaft
+ wien
+ derzeit
+ all
+ " shape=box]
+	65 -> 1449 [constraint=true]
+	1450 [label="Topic 1450: 
+tirol
+ wienern
+ aufwendig
+ liefern
+ formen
+ " shape=box]
+	1449 -> 1450 [constraint=true]
+	1451 [label="Topic 1451: 
+mitglied
+ meist
+ vereinen
+ immerhin
+ einzeln
+ " shape=box]
+	1450 -> 1451 [constraint=true]
+}

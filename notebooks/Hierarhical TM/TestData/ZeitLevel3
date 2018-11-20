@@ -1,0 +1,106 @@
+// Topics
+digraph {
+	0 [label="Topic 0: 
+bio
+ prozent
+ ökologisch
+ deutschland
+ konventionell
+ " shape=box]
+	1 [label="Topic 1: 
+feld
+ obst
+ anbau
+ gemüse
+ klein
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="Topic 2: 
+hatje
+ biobauern
+ assaf
+ hof
+ meier
+ " shape=box]
+	1 -> 2 [constraint=true]
+	5 [label="Topic 5: 
+dosch
+ schmecken
+ bio
+ konventionell
+ studie
+ " shape=box]
+	1 -> 5 [constraint=true]
+	8 [label="Topic 8: 
+region
+ kunde
+ regional
+ alberti
+ italien
+ " shape=box]
+	1 -> 8 [constraint=true]
+	9 [label="Topic 9: 
+basic
+ amazon
+ lidl
+ discounter
+ moralisch
+ " shape=box]
+	1 -> 9 [constraint=true]
+	3 [label="Topic 3: 
+schwer
+ sonnleitner
+ darm
+ keimen
+ gesünder
+ " shape=box]
+	0 -> 3 [constraint=true]
+	4 [label="Topic 4: 
+dioxin
+ huhn
+ häde
+ essen
+ tier
+ " shape=box]
+	3 -> 4 [constraint=true]
+	13 [label="Topic 13: 
+eiern
+ künftig
+ münchner
+ küken
+ laengenfelder
+ " shape=box]
+	3 -> 13 [constraint=true]
+	6 [label="Topic 6: 
+alnatura
+ bauer
+ rehn
+ 's
+ mark
+ " shape=box]
+	0 -> 6 [constraint=true]
+	7 [label="Topic 7: 
+schwartze
+ frage
+ bangladesch
+ löhne
+ ökobauern
+ " shape=box]
+	6 -> 7 [constraint=true]
+	11 [label="Topic 11: 
+mark
+ bioprodukt
+ grüne
+ eugh
+ bundesrepublik
+ " shape=box]
+	6 -> 11 [constraint=true]
+	14 [label="Topic 14: 
+schaffrin
+ reden
+ bse-krise
+ magdalena
+ mode
+ " shape=box]
+	6 -> 14 [constraint=true]
+}

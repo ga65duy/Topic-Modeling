@@ -1,0 +1,1375 @@
+// Topics
+digraph {
+	0 [label="food
+ organic
+ good
+ make
+ use
+ " shape=box]
+	1 [label="fat
+ eat
+ carb
+ good
+ weight
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="summit
+ homegrown
+ organizer
+ tarahumara
+ mexico
+ " shape=box]
+	1 -> 2 [constraint=true]
+	7 [label="oil
+ protein
+ diet
+ <url>
+ animal
+ " shape=box]
+	1 -> 7 [constraint=true]
+	15 [label="tea
+ online
+ spice
+ drink
+ india
+ " shape=box]
+	1 -> 15 [constraint=true]
+	16 [label="cash
+ soybean
+ pgr
+ dermatophyte
+ ancient
+ " shape=box]
+	1 -> 16 [constraint=true]
+	215 [label="sku
+ spec
+ governing
+ gtin
+ repercussion
+ " shape=box]
+	1 -> 215 [constraint=true]
+	350 [label="alternatively
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	1 -> 350 [constraint=true]
+	468 [label="saying
+ yup
+ 🧀
+ expense-
+ expensivesoil-
+ " shape=box]
+	1 -> 468 [constraint=true]
+	3 [label="food
+ organic
+ people
+ just
+ make
+ " shape=box]
+	0 -> 3 [constraint=true]
+	4 [label="salmon
+ costco
+ walmart
+ $
+ buy
+ " shape=box]
+	3 -> 4 [constraint=true]
+	11 [label="organic
+ food
+ pesticide
+ use
+ crop
+ " shape=box]
+	3 -> 11 [constraint=true]
+	12 [label="milk
+ animal
+ eat
+ meat
+ cow
+ " shape=box]
+	3 -> 12 [constraint=true]
+	98 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	3 -> 98 [constraint=true]
+	223 [label="freshener
+ expense
+\"ie
+ expensive~
+ expensivesoil-
+ expensivemarketing
+ " shape=box]
+	3 -> 223 [constraint=true]
+	250 [label="-sure
+ potegia
+ comparisons
+ price
+ low
+ " shape=box]
+	3 -> 250 [constraint=true]
+	328 [label="udupi
+ swadesha
+ bhandara
+ phone
+ swadeshi
+ " shape=box]
+	3 -> 328 [constraint=true]
+	360 [label="woodland
+ joes
+ mays
+ pendell
+ st
+ " shape=box]
+	3 -> 360 [constraint=true]
+	394 [label="skunk
+ landrigan
+ benbrook
+ foia
+ dogsee
+ " shape=box]
+	3 -> 394 [constraint=true]
+	425 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	3 -> 425 [constraint=true]
+	433 [label="contractor
+ expensepoor
+ experienc
+ experiece
+ expensive~
+ " shape=box]
+	3 -> 433 [constraint=true]
+	454 [label="polysulfone
+ processes.a
+ nmp
+ dmac
+ methylpyrolidone
+ " shape=box]
+	3 -> 454 [constraint=true]
+	491 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	3 -> 491 [constraint=true]
+	5 [label="gmo
+ people
+ food
+ organic
+ monsanto
+ " shape=box]
+	0 -> 5 [constraint=true]
+	6 [label="monsanto
+ food
+ gmo
+ milk
+ world
+ " shape=box]
+	5 -> 6 [constraint=true]
+	8 [label="iamgreen
+ supporting
+ greenngood
+ ecotokri
+ website(food
+ " shape=box]
+	5 -> 8 [constraint=true]
+	9 [label="fair
+ °
+ ★
+ transparent
+ dedicated
+ " shape=box]
+	5 -> 9 [constraint=true]
+	10 [label="organic
+ food
+ buy
+ product
+ gmo
+ " shape=box]
+	5 -> 10 [constraint=true]
+	28 [label="acid
+ spinach
+ vitamin
+ high
+ orange
+ " shape=box]
+	5 -> 28 [constraint=true]
+	32 [label="year
+ drought
+ water
+ grape
+ carbon
+ " shape=box]
+	5 -> 32 [constraint=true]
+	269 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	5 -> 269 [constraint=true]
+	284 [label="scandinavian
+ cashier
+ thermal
+ supported
+ mimicking
+ " shape=box]
+	5 -> 284 [constraint=true]
+	346 [label="sweatshop
+ sweatfree
+ clothe
+ organicconsumer
+ summit
+ " shape=box]
+	5 -> 346 [constraint=true]
+	370 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	5 -> 370 [constraint=true]
+	13 [label="amino
+ cetrimonium
+ nailed
+ carboxylate
+ acetate
+ " shape=box]
+	0 -> 13 [constraint=true]
+	34 [label="ethene
+ functional
+ amine
+ hydration
+ ethylene
+ " shape=box]
+	13 -> 34 [constraint=true]
+	401 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	13 -> 401 [constraint=true]
+	437 [label="bumper
+ jackfruit
+ mango
+ 🧀
+ expense
+\"ie
+ " shape=box]
+	13 -> 437 [constraint=true]
+	18 [label="victory
+ instructional
+ summary
+ sinceclick
+ somalia
+ " shape=box]
+	0 -> 18 [constraint=true]
+	208 [label="chooser
+ 🧀
+ expense
+\"ie
+ expensive~
+ expensivesoil-
+ " shape=box]
+	18 -> 208 [constraint=true]
+	278 [label="institutional
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	18 -> 278 [constraint=true]
+	354 [label="membrane
+ kenya
+ herder
+ river
+ graphene
+ " shape=box]
+	18 -> 354 [constraint=true]
+	366 [label="limestone
+ rebuild
+ indig
+ expenses.marvin
+ experienc
+ " shape=box]
+	18 -> 366 [constraint=true]
+	369 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	18 -> 369 [constraint=true]
+	376 [label="arab
+ poverty
+ palestinian
+ arabs
+ churchill
+ " shape=box]
+	18 -> 376 [constraint=true]
+	420 [label="omotesando
+ farmers
+ shibuya
+ infront
+ exclusively
+ " shape=box]
+	18 -> 420 [constraint=true]
+	24 [label="krishnaswami
+ benin
+ 🧀
+ experience
+ experiece
+ " shape=box]
+	0 -> 24 [constraint=true]
+	470 [label="alimentaire
+ sarl
+ blank
+ expense-
+ experiece
+ " shape=box]
+	24 -> 470 [constraint=true]
+	37 [label="del
+ no.6
+ transcript
+ fwp
+ fail
+ " shape=box]
+	0 -> 37 [constraint=true]
+	399 [label="bgh
+ digestive
+ rbgh
+ 🧀
+ expense-
+ " shape=box]
+	37 -> 399 [constraint=true]
+	400 [label="la
+ en
+ twat
+ backwards
+ uva
+ " shape=box]
+	37 -> 400 [constraint=true]
+	416 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	37 -> 416 [constraint=true]
+	430 [label="informational
+ niblet
+ nibble
+ dilution
+ 6:30pm
+ " shape=box]
+	37 -> 430 [constraint=true]
+	449 [label="skeptoid
+ merit
+ ostensibly
+ twat
+ scant
+ " shape=box]
+	37 -> 449 [constraint=true]
+	39 [label="barton
+ exam
+ gavea
+ celeiro
+ sul
+ " shape=box]
+	0 -> 39 [constraint=true]
+	149 [label="realise
+ hop
+ month
+ expense
+\"ie
+ expensivemarketing
+ " shape=box]
+	39 -> 149 [constraint=true]
+	155 [label="creek
+ reasonable
+ 🧀
+ expense
+\"ie
+ expensivesoil-
+ " shape=box]
+	39 -> 155 [constraint=true]
+	287 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	39 -> 287 [constraint=true]
+	326 [label="surat
+ chowk
+ bhagal
+ banana
+ 🧀
+ " shape=box]
+	39 -> 326 [constraint=true]
+	327 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	39 -> 327 [constraint=true]
+	331 [label="electron
+ flow
+ rio
+ tropical
+ density
+ " shape=box]
+	39 -> 331 [constraint=true]
+	443 [label="gouging
+ apologize
+ new
+ 🧀
+ experience:-
+ " shape=box]
+	39 -> 443 [constraint=true]
+	484 [label="organics
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	39 -> 484 [constraint=true]
+	50 [label="plant
+ oxidize
+ embassy
+ attache
+ mycelium
+ " shape=box]
+	0 -> 50 [constraint=true]
+	263 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	50 -> 263 [constraint=true]
+	435 [label="mould
+ square
+ london
+ soho
+ ant
+ " shape=box]
+	50 -> 435 [constraint=true]
+	452 [label="series
+ nbs
+ alkane
+ bromosuccinimide
+ expenses.marvin
+ " shape=box]
+	50 -> 452 [constraint=true]
+	461 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	50 -> 461 [constraint=true]
+	478 [label="protect
+ apeda
+ programme
+ 🍍
+ fare
+ " shape=box]
+	50 -> 478 [constraint=true]
+	52 [label="exmple
+ /error
+ 🧀
+ expenses.marvin
+ experienc
+ " shape=box]
+	0 -> 52 [constraint=true]
+	216 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	52 -> 216 [constraint=true]
+	355 [label="error
+ memory
+ ecomorganic
+ freemarker.template.templatemodelexception
+ header.ftl
+ " shape=box]
+	52 -> 355 [constraint=true]
+	493 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	52 -> 493 [constraint=true]
+	55 [label="weed
+ tidy
+ mexico
+ eradicate
+ forecast
+ " shape=box]
+	0 -> 55 [constraint=true]
+	104 [label="wine
+ pineapple
+ contamination
+ rutini
+ luigi
+ " shape=box]
+	55 -> 104 [constraint=true]
+	156 [label="avalon
+ ngos
+ aubrey
+ ngo
+ hain
+ " shape=box]
+	55 -> 156 [constraint=true]
+	204 [label="overcome
+ trickle
+ click
+ experience
+ experiece
+ " shape=box]
+	55 -> 204 [constraint=true]
+	377 [label="smother
+ greenery
+ scurrying
+ weedssmothering
+ smothererfollow
+ " shape=box]
+	55 -> 377 [constraint=true]
+	448 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	55 -> 448 [constraint=true]
+	451 [label="flawed
+ ¨fair
+ woopie
+ qualificati
+ base
+ " shape=box]
+	55 -> 451 [constraint=true]
+	455 [label="convene
+ set
+ consumers
+ program
+ supporter
+ " shape=box]
+	55 -> 455 [constraint=true]
+	462 [label="purify
+ altruistic
+ intoo2
+ 🧀
+ experiece
+ " shape=box]
+	55 -> 462 [constraint=true]
+	65 [label="cornflake
+ ph
+ contraception
+ cabana
+ rusty
+ " shape=box]
+	0 -> 65 [constraint=true]
+	189 [label="pentagon
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	65 -> 189 [constraint=true]
+	214 [label="vertical
+ hydroponic
+ hydroponics
+ builder
+ vertically
+ " shape=box]
+	65 -> 214 [constraint=true]
+	256 [label="horticulture
+ syngenta
+ dow
+ makhteshim
+ bisphenol
+ " shape=box]
+	65 -> 256 [constraint=true]
+	262 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	65 -> 262 [constraint=true]
+	275 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	65 -> 275 [constraint=true]
+	337 [label="laxative
+ nurishing
+ denote
+ eyesight
+ expense
+ " shape=box]
+	65 -> 337 [constraint=true]
+	419 [label="bay
+ expensepoor
+ experienc
+ experiece
+ expensive~
+ " shape=box]
+	65 -> 419 [constraint=true]
+	429 [label="🦋
+ hebert
+ carla
+ expedite
+ expedition
+ " shape=box]
+	65 -> 429 [constraint=true]
+	485 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	65 -> 485 [constraint=true]
+	69 [label="welfare
+ fssai
+ roi
+ channelsconversion
+ city
+ " shape=box]
+	0 -> 69 [constraint=true]
+	115 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	69 -> 115 [constraint=true]
+	286 [label="waitrose
+ partly
+ emigrate
+ riverfords
+ pub
+ " shape=box]
+	69 -> 286 [constraint=true]
+	438 [label="bucha
+ mango
+ grassroots
+ largely
+ adwords
+ " shape=box]
+	69 -> 438 [constraint=true]
+	466 [label="lane
+ bloomberg
+ sewage
+ congestion
+ novel-
+ " shape=box]
+	69 -> 466 [constraint=true]
+	111 [label="choco
+ kg
+ ng
+ worth
+ onward
+ " shape=box]
+	0 -> 111 [constraint=true]
+	181 [label="extravagantly
+ vally
+ indulgence
+ expense
+\"ie
+ expensivesoil-
+ " shape=box]
+	111 -> 181 [constraint=true]
+	313 [label="kretschmann
+ cylinder
+ regulation
+ triblive
+ county
+ " shape=box]
+	111 -> 313 [constraint=true]
+	344 [label="botulinum
+ ld₅₀s
+ artificial
+ intravenously
+ acutely
+ " shape=box]
+	111 -> 344 [constraint=true]
+	368 [label="rules
+ 🧀
+ expense
+\"ie
+ expensive~
+ expensivesoil-
+ " shape=box]
+	111 -> 368 [constraint=true]
+	411 [label="bounty
+ palm
+ 🧀
+ expenses.marvin
+ experiece
+ " shape=box]
+	111 -> 411 [constraint=true]
+	431 [label="müsli
+ 🧀
+ expensepoor
+ experienc
+ experiece
+ " shape=box]
+	111 -> 431 [constraint=true]
+	457 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	111 -> 457 [constraint=true]
+	116 [label="peanut
+ shuman
+ sunscreen
+ cleveland
+ australia
+ " shape=box]
+	0 -> 116 [constraint=true]
+	194 [label="downvot
+ headline
+ cowshit
+ inability
+ expensive.2
+ " shape=box]
+	116 -> 194 [constraint=true]
+	319 [label="prices
+ those-
+ alcala
+ nasties
+ passionate
+ " shape=box]
+	116 -> 319 [constraint=true]
+	367 [label="vivants
+ livestream
+ tonight
+ montréal
+ montreal
+ " shape=box]
+	116 -> 367 [constraint=true]
+	423 [label="ultraviolet
+ ray
+ spf
+ suntan
+ lotion
+ " shape=box]
+	116 -> 423 [constraint=true]
+	434 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	116 -> 434 [constraint=true]
+	453 [label="greenie
+ mechanized
+ 20th_century
+ peoperty
+ successful
+ " shape=box]
+	116 -> 453 [constraint=true]
+	477 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	116 -> 477 [constraint=true]
+	489 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	116 -> 489 [constraint=true]
+	164 [label="nigeria
+ argan
+ club
+ cooperative
+ worcester
+ " shape=box]
+	0 -> 164 [constraint=true]
+	235 [label="westchester
+ .com
+ 🧀
+ expense
+\"ie
+ expensivesoil-
+ " shape=box]
+	164 -> 235 [constraint=true]
+	291 [label="location
+ eugene
+ fertile
+ calendar
+ annually
+ " shape=box]
+	164 -> 291 [constraint=true]
+	292 [label="ranchi
+ bariatu
+ bhawan
+ french
+ gymkhana
+ " shape=box]
+	164 -> 292 [constraint=true]
+	343 [label="btk
+ foray
+ 48b
+ moth
+ novo
+ " shape=box]
+	164 -> 343 [constraint=true]
+	365 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	164 -> 365 [constraint=true]
+	388 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	164 -> 388 [constraint=true]
+	409 [label="uncommon
+ provincial
+ enhancement
+ rff
+ vor2
+dkfkfl
+ " shape=box]
+	164 -> 409 [constraint=true]
+	417 [label="coopeation
+ 🧀
+ experience:-
+ experienc
+ experiece
+ " shape=box]
+	164 -> 417 [constraint=true]
+	426 [label="millions
+ advocate
+ slams
+ support
+ hearings
+ " shape=box]
+	164 -> 426 [constraint=true]
+	471 [label="material
+ expense
+\"ie
+ expensive~
+ expensivesoil-
+ expensivemarketing
+ " shape=box]
+	164 -> 471 [constraint=true]
+	486 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	164 -> 486 [constraint=true]
+	168 [label="op
+ waste
+ transparent
+ number
+ transient
+ " shape=box]
+	0 -> 168 [constraint=true]
+	184 [label="spider
+ venomous
+ mystaceus
+ venom
+ axis
+ " shape=box]
+	168 -> 184 [constraint=true]
+	390 [label="csa
+ sourcing
+ small
+ expense
+\"ie
+ expensivesoil-
+ " shape=box]
+	168 -> 390 [constraint=true]
+	404 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	168 -> 404 [constraint=true]
+	442 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	168 -> 442 [constraint=true]
+	445 [label="lactobacillus
+ yakult
+ probiotic
+ strain
+ minute
+ " shape=box]
+	168 -> 445 [constraint=true]
+	467 [label="lidl
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	168 -> 467 [constraint=true]
+	212 [label="peanut
+ butter
+ maranatha
+ macadamia
+ 10ppb
+ " shape=box]
+	0 -> 212 [constraint=true]
+	381 [label="cat
+ biochar
+ 🔥
+ bob
+ aminoacid
+ " shape=box]
+	212 -> 381 [constraint=true]
+	424 [label="aflatoxin
+ valencia
+ crookneck
+ squash
+ unopen
+ " shape=box]
+	212 -> 424 [constraint=true]
+	440 [label="chennai
+ 1.no
+ kolukkattai
+ afternoon
+ tamilnadu
+ " shape=box]
+	212 -> 440 [constraint=true]
+	460 [label="vice
+ madre
+ diiisslike
+ 🧀
+ expense-
+ " shape=box]
+	212 -> 460 [constraint=true]
+	230 [label="perelandra
+ decent
+ thumbnail
+ deli
+ reaxys
+ " shape=box]
+	0 -> 230 [constraint=true]
+	294 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	230 -> 294 [constraint=true]
+	335 [label="ginger
+ chenopodium
+ tori
+ anwla
+ berry-
+ " shape=box]
+	230 -> 335 [constraint=true]
+	371 [label="fairway
+ database
+ marlow
+ brooklyn
+ hook
+ " shape=box]
+	230 -> 371 [constraint=true]
+	447 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	230 -> 447 [constraint=true]
+	492 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	230 -> 492 [constraint=true]
+	244 [label="entitle
+ survey
+ construct
+ 🧀
+ expensivesoil-
+ " shape=box]
+	0 -> 244 [constraint=true]
+	384 [label="wonder
+ 🧀
+ expensepoor
+ experiece
+ expensive~
+ " shape=box]
+	244 -> 384 [constraint=true]
+	248 [label="cumin
+ italy
+ gps
+ neem
+ mulch
+ " shape=box]
+	0 -> 248 [constraint=true]
+	272 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	248 -> 272 [constraint=true]
+	302 [label="members
+ 8:28
+ lefty
+ mayer
+ meeting
+ " shape=box]
+	248 -> 302 [constraint=true]
+	307 [label="weedkiller
+ sprayers
+ biodynamic
+ italian
+ droplet
+ " shape=box]
+	248 -> 307 [constraint=true]
+	321 [label="sour
+ reporting
+ resource
+ penalties
+ utensil
+ " shape=box]
+	248 -> 321 [constraint=true]
+	323 [label="palmyra
+ tamil
+ palm
+ default
+ andhra
+ " shape=box]
+	248 -> 323 [constraint=true]
+	379 [label="calculation
+ dusting
+ infomation
+ precision
+ sub
+ " shape=box]
+	248 -> 379 [constraint=true]
+	380 [label="coffin
+ jealous
+ youtube
+ wha
+ whhhhhy
+ " shape=box]
+	248 -> 380 [constraint=true]
+	412 [label="bullsheit
+ 🧀
+ expensepoor
+ experienc
+ experiece
+ " shape=box]
+	248 -> 412 [constraint=true]
+	446 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	248 -> 446 [constraint=true]
+	482 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	248 -> 482 [constraint=true]
+	298 [label="chicken
+ iowa
+ life
+ forwe
+ omnivore
+ " shape=box]
+	0 -> 298 [constraint=true]
+	303 [label="gcc
+ dat
+ complicated.once
+ 🧀
+ experienc
+ " shape=box]
+	298 -> 303 [constraint=true]
+	347 [label="ambronite
+ bertrand
+ feather
+ veterinary
+ meal
+ " shape=box]
+	298 -> 347 [constraint=true]
+	393 [label="hello
+ ‍
+ 🌾
+ blake
+ county
+ " shape=box]
+	298 -> 393 [constraint=true]
+	476 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	298 -> 476 [constraint=true]
+	479 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	298 -> 479 [constraint=true]
+	487 [label="classify
+ 🧀
+ expense
+\"ie
+ expensive~
+ expensivesoil-
+ " shape=box]
+	298 -> 487 [constraint=true]
+	341 [label="politix
+ fertilizante
+ permisos
+ obviamente
+ mucho
+ " shape=box]
+	0 -> 341 [constraint=true]
+	348 [label="unpolished
+ tricity
+ clear
+ 🧀
+ expense
+\"ie
+ " shape=box]
+	341 -> 348 [constraint=true]
+	469 [label="los
+ es
+ producción
+ yeild
+ y
+ " shape=box]
+	341 -> 469 [constraint=true]
+	483 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	341 -> 483 [constraint=true]
+	490 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	341 -> 490 [constraint=true]
+	358 [label="sale
+ soot
+ accumation
+ 🧀
+ expense
+\"ie
+ " shape=box]
+	0 -> 358 [constraint=true]
+	385 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	358 -> 385 [constraint=true]
+	391 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	358 -> 391 [constraint=true]
+	421 [label="congratulate
+ tha
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	358 -> 421 [constraint=true]
+	450 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	358 -> 450 [constraint=true]
+	481 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	358 -> 481 [constraint=true]
+	397 [label="hoop
+ cool
+ alkene
+ cope
+ eel
+ " shape=box]
+	0 -> 397 [constraint=true]
+	413 [label="bait
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	397 -> 413 [constraint=true]
+	432 [label="poultry
+ 🧀
+ expense
+ expensivesoil-
+ expensivemarketing
+ " shape=box]
+	397 -> 432 [constraint=true]
+	459 [label="hoe
+ reaction
+ rake
+ pitchfork
+ dont
+ " shape=box]
+	397 -> 459 [constraint=true]
+	464 [label="abortion
+ spontanous
+ nyt
+ defective
+ compnay
+ " shape=box]
+	397 -> 464 [constraint=true]
+	405 [label="knights
+ tructure
+ excel
+ ni
+ 🧀
+ " shape=box]
+	0 -> 405 [constraint=true]
+	406 [label="spasm
+ orgasm
+ contraction
+ pelvic
+ 🧀
+ " shape=box]
+	405 -> 406 [constraint=true]
+	456 [label="bosch
+ 🧀
+ expensepoor
+ experiece
+ expensive~
+ " shape=box]
+	405 -> 456 [constraint=true]
+	463 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	405 -> 463 [constraint=true]
+	480 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	405 -> 480 [constraint=true]
+	414 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	0 -> 414 [constraint=true]
+	415 [label="nbc
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	414 -> 415 [constraint=true]
+	458 [label="offline
+ 🧀
+ expense
+\"ie
+ expensive~
+ expensivesoil-
+ " shape=box]
+	414 -> 458 [constraint=true]
+	465 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	414 -> 465 [constraint=true]
+	472 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	0 -> 472 [constraint=true]
+	473 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	472 -> 473 [constraint=true]
+	474 [label="locavore
+ stephen
+ misguided
+ budiansky
+ op_ed
+ " shape=box]
+	0 -> 474 [constraint=true]
+	475 [label="🧀
+ expense-
+ experiece
+ expensive~
+ expensivesoil-
+ " shape=box]
+	474 -> 475 [constraint=true]
+	488 [label="provocative
+ 🧀
+ expense-
+ experiece
+ expensive~
+ " shape=box]
+	474 -> 488 [constraint=true]
+}

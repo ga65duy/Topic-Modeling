@@ -1,0 +1,3986 @@
+// Topics
+digraph {
+	0 [label="Topic 0: 
+food
+ organic
+ eat
+ animal
+ good
+ " shape=box]
+	1 [label="Topic 1: 
+food
+ eat
+ organic
+ just
+ buy
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="Topic 2: 
+gmo
+ food
+ monsanto
+ people
+ know
+ " shape=box]
+	1 -> 2 [constraint=true]
+	3 [label="Topic 3: 
+organic
+ food
+ use
+ grow
+ good
+ " shape=box]
+	2 -> 3 [constraint=true]
+	4 [label="Topic 4: 
+organic
+ pesticide
+ use
+ food
+ crop
+ " shape=box]
+	3 -> 4 [constraint=true]
+	14 [label="Topic 14: 
+purple
+ potato
+ blue
+ sweet
+ love
+ " shape=box]
+	3 -> 14 [constraint=true]
+	24 [label="Topic 24: 
+food
+ organic
+ buy
+ gmo
+ product
+ " shape=box]
+	3 -> 24 [constraint=true]
+	34 [label="Topic 34: 
+protein
+ baby
+ make
+ whey
+ powder
+ " shape=box]
+	3 -> 34 [constraint=true]
+	53 [label="Topic 53: 
+salmon
+ costco
+ buy
+ gmo
+ sell
+ " shape=box]
+	3 -> 53 [constraint=true]
+	81 [label="Topic 81: 
+natural
+ research
+ compound
+ avocado
+ product
+ " shape=box]
+	3 -> 81 [constraint=true]
+	1100 [label="Topic 1100: 
+alive
+ freezer
+ negatively
+ appropriate
+ glass
+ " shape=box]
+	3 -> 1100 [constraint=true]
+	12 [label="Topic 12: 
+use
+ chemical
+ plant
+ case
+ fertilizer
+ " shape=box]
+	2 -> 12 [constraint=true]
+	13 [label="Topic 13: 
+ddt
+ study
+ ban
+ exposure
+ spray
+ " shape=box]
+	12 -> 13 [constraint=true]
+	103 [label="Topic 103: 
+sprout
+ seed
+ fruit
+ normal
+ condition
+ " shape=box]
+	12 -> 103 [constraint=true]
+	137 [label="Topic 137: 
+cost
+ cabbage
+ sugar
+ price
+ profit
+ " shape=box]
+	12 -> 137 [constraint=true]
+	1046 [label="Topic 1046: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	12 -> 1046 [constraint=true]
+	1132 [label="Topic 1132: 
+bee
+ plant
+ home
+ sign
+ garden
+ " shape=box]
+	12 -> 1132 [constraint=true]
+	22 [label="Topic 22: 
+food
+ monsanto
+ gmo
+ consumer
+ world
+ " shape=box]
+	2 -> 22 [constraint=true]
+	23 [label="Topic 23: 
+organic
+ gmo
+ buy
+ product
+ company
+ " shape=box]
+	22 -> 23 [constraint=true]
+	57 [label="Topic 57: 
+sustainable
+ peanut
+ app
+ level
+ san_francisco
+ " shape=box]
+	22 -> 57 [constraint=true]
+	64 [label="Topic 64: 
+model
+ method
+ agriculture
+ ceo
+ horizon
+ " shape=box]
+	22 -> 64 [constraint=true]
+	87 [label="Topic 87: 
+seed
+ tea
+ heirloom
+ plant
+ crop
+ " shape=box]
+	22 -> 87 [constraint=true]
+	964 [label="Topic 964: 
+toy
+ paint
+ recall
+ strict
+ mcdonald
+ " shape=box]
+	22 -> 964 [constraint=true]
+	1517 [label="Topic 1517: 
+fridge
+ pdf
+ article
+ family
+ fake
+ " shape=box]
+	22 -> 1517 [constraint=true]
+	1586 [label="Topic 1586: 
+dye
+ grace
+ continued
+ count
+ lynn
+ " shape=box]
+	22 -> 1586 [constraint=true]
+	32 [label="Topic 32: 
+oil
+ palm
+ buy
+ peanut
+ butter
+ " shape=box]
+	2 -> 32 [constraint=true]
+	33 [label="Topic 33: 
+oil
+ use
+ canola
+ coconut
+ olive
+ " shape=box]
+	32 -> 33 [constraint=true]
+	1437 [label="Topic 1437: 
+link
+ iq
+ genetically
+ obvious
+ reference
+ " shape=box]
+	32 -> 1437 [constraint=true]
+	1572 [label="Topic 1572: 
+school
+ program
+ +
+ offer
+ lunch
+ " shape=box]
+	32 -> 1572 [constraint=true]
+	48 [label="Topic 48: 
+acid
+ high
+ genetic
+ mg
+ vitamin
+ " shape=box]
+	2 -> 48 [constraint=true]
+	49 [label="Topic 49: 
+acid
+ fatty
+ beef
+ journal
+ science
+ " shape=box]
+	48 -> 49 [constraint=true]
+	970 [label="Topic 970: 
+inspection
+ playing
+ supply
+ oversee
+ far
+ " shape=box]
+	48 -> 970 [constraint=true]
+	1030 [label="Topic 1030: 
+percentage
+ memory
+ subsistence
+ 🤔
+ falsely
+ " shape=box]
+	48 -> 1030 [constraint=true]
+	1589 [label="Topic 1589: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	48 -> 1589 [constraint=true]
+	75 [label="Topic 75: 
+drought
+ grape
+ water
+ year
+ california
+ " shape=box]
+	2 -> 75 [constraint=true]
+	121 [label="Topic 121: 
+year
+ california
+ suffer
+ drought
+ harvest
+ " shape=box]
+	75 -> 121 [constraint=true]
+	151 [label="Topic 151: 
+butcher
+ bacon
+ costly
+ cure
+ subtle
+ " shape=box]
+	75 -> 151 [constraint=true]
+	1285 [label="Topic 1285: 
+relationship
+ unique
+ recommend
+ spiritual
+ master
+ " shape=box]
+	75 -> 1285 [constraint=true]
+	1604 [label="Topic 1604: 
+option
+ 🤔
+ family
+ faith
+ fake
+ " shape=box]
+	75 -> 1604 [constraint=true]
+	1655 [label="Topic 1655: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	75 -> 1655 [constraint=true]
+	499 [label="Topic 499: 
+magazine
+ advise
+ invest
+ livestock
+ predict
+ " shape=box]
+	2 -> 499 [constraint=true]
+	858 [label="Topic 858: 
+promotion
+ initially
+ expert
+ audience
+ google
+ " shape=box]
+	499 -> 858 [constraint=true]
+	1125 [label="Topic 1125: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	499 -> 1125 [constraint=true]
+	1660 [label="Topic 1660: 
+percent
+ video
+ quantity
+ farmed
+ land
+ " shape=box]
+	499 -> 1660 [constraint=true]
+	1648 [label="Topic 1648: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	2 -> 1648 [constraint=true]
+	1649 [label="Topic 1649: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1648 -> 1649 [constraint=true]
+	9 [label="Topic 9: 
+level
+ activity
+ world
+ use
+ know
+ " shape=box]
+	1 -> 9 [constraint=true]
+	10 [label="Topic 10: 
+radiation
+ plant
+ ocean
+ scientific
+ cult
+ " shape=box]
+	9 -> 10 [constraint=true]
+	11 [label="Topic 11: 
+reaction
+ chemistry
+ chapter
+ board
+ book
+ " shape=box]
+	10 -> 11 [constraint=true]
+	93 [label="Topic 93: 
+sodium
+ post
+ soup
+ salt
+ journal
+ " shape=box]
+	10 -> 93 [constraint=true]
+	104 [label="Topic 104: 
+carbon
+ change
+ climate
+ temperature
+ co2
+ " shape=box]
+	10 -> 104 [constraint=true]
+	795 [label="Topic 795: 
+exact
+ content
+ senior
+ berkeley
+ agri
+ " shape=box]
+	10 -> 795 [constraint=true]
+	91 [label="Topic 91: 
+world
+ certification
+ party
+ distribution
+ program
+ " shape=box]
+	9 -> 91 [constraint=true]
+	92 [label="Topic 92: 
+fair
+ trade
+ producer
+ project
+ brand
+ " shape=box]
+	91 -> 92 [constraint=true]
+	948 [label="Topic 948: 
+certification
+ hop
+ web
+ develop
+ carolina
+ " shape=box]
+	91 -> 948 [constraint=true]
+	958 [label="Topic 958: 
+teaching
+ center
+ mandate
+ quantity
+ job
+ " shape=box]
+	91 -> 958 [constraint=true]
+	1579 [label="Topic 1579: 
+spite
+ fortunately
+ hmm
+ disrupt
+ associate
+ " shape=box]
+	91 -> 1579 [constraint=true]
+	1668 [label="Topic 1668: 
+degradation
+ ecology
+ mexico
+ canada
+ municipal
+ " shape=box]
+	91 -> 1668 [constraint=true]
+	180 [label="Topic 180: 
+dairy
+ organic
+ producer
+ farmer
+ country
+ " shape=box]
+	9 -> 180 [constraint=true]
+	181 [label="Topic 181: 
+milk
+ cow
+ estrogen
+ federal
+ month
+ " shape=box]
+	180 -> 181 [constraint=true]
+	812 [label="Topic 812: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	180 -> 812 [constraint=true]
+	1407 [label="Topic 1407: 
+feedback
+ email
+ 🤔
+ family
+ faith
+ " shape=box]
+	180 -> 1407 [constraint=true]
+	1275 [label="Topic 1275: 
+mixed
+ device
+ supply
+ ohio
+ object
+ " shape=box]
+	9 -> 1275 [constraint=true]
+	1276 [label="Topic 1276: 
+clay
+ pit
+ material
+ mix
+ filter
+ " shape=box]
+	1275 -> 1276 [constraint=true]
+	1403 [label="Topic 1403: 
+inspire
+ mold
+ farmworker
+ family
+ faith
+ " shape=box]
+	9 -> 1403 [constraint=true]
+	1404 [label="Topic 1404: 
+wash
+ fungus
+ pesticide
+ generally
+ sink
+ " shape=box]
+	1403 -> 1404 [constraint=true]
+	1495 [label="Topic 1495: 
+<email>
+ insight
+ history
+ valid
+ 🤔
+ " shape=box]
+	9 -> 1495 [constraint=true]
+	1618 [label="Topic 1618: 
+sticker
+ goal
+ usda
+ 🤔
+ faith
+ " shape=box]
+	1495 -> 1618 [constraint=true]
+	19 [label="Topic 19: 
+good
+ use
+ make
+ thank
+ organic
+ " shape=box]
+	1 -> 19 [constraint=true]
+	20 [label="Topic 20: 
+egg
+ organic
+ chicken
+ free
+ buy
+ " shape=box]
+	19 -> 20 [constraint=true]
+	21 [label="Topic 21: 
+feed
+ farm
+ factory
+ raise
+ animal
+ " shape=box]
+	20 -> 21 [constraint=true]
+	63 [label="Topic 63: 
+wine
+ organic
+ add
+ grape
+ soil
+ " shape=box]
+	20 -> 63 [constraint=true]
+	86 [label="Topic 86: 
+natural
+ usda
+ flavor
+ white
+ breed
+ " shape=box]
+	20 -> 86 [constraint=true]
+	144 [label="Topic 144: 
+search
+ result
+ page
+ engine
+ content
+ " shape=box]
+	20 -> 144 [constraint=true]
+	628 [label="Topic 628: 
+gmo
+ hipster
+ >
+ gene
+ seed
+ " shape=box]
+	20 -> 628 [constraint=true]
+	798 [label="Topic 798: 
+spinach
+ surface
+ contamination
+ vegetable
+ bacteria
+ " shape=box]
+	20 -> 798 [constraint=true]
+	872 [label="Topic 872: 
+sourcing
+ tie
+ vendor
+ timing
+ wet
+ " shape=box]
+	20 -> 872 [constraint=true]
+	1091 [label="Topic 1091: 
+honeybee
+ md
+ clean
+ neonicotinoid
+ great
+ " shape=box]
+	20 -> 1091 [constraint=true]
+	1217 [label="Topic 1217: 
+production
+ ethanol
+ cost
+ biofuel
+ epa
+ " shape=box]
+	20 -> 1217 [constraint=true]
+	1638 [label="Topic 1638: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	20 -> 1638 [constraint=true]
+	50 [label="Topic 50: 
+fat
+ protein
+ diet
+ carb
+ food
+ " shape=box]
+	19 -> 50 [constraint=true]
+	51 [label="Topic 51: 
+eat
+ spinach
+ body
+ health
+ sugar
+ " shape=box]
+	50 -> 51 [constraint=true]
+	147 [label="Topic 147: 
+tide
+ bacterial
+ prone
+ outbreak
+ foreign
+ " shape=box]
+	50 -> 147 [constraint=true]
+	301 [label="Topic 301: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	50 -> 301 [constraint=true]
+	1055 [label="Topic 1055: 
+almond
+ >
+ article
+ pasteurization
+ cyanide
+ " shape=box]
+	50 -> 1055 [constraint=true]
+	1343 [label="Topic 1343: 
+seed
+ mg
+ 🤔
+ falsely
+ fairly
+ " shape=box]
+	50 -> 1343 [constraint=true]
+	1388 [label="Topic 1388: 
+win
+ attend
+ ground
+ 🤔
+ famine
+ " shape=box]
+	50 -> 1388 [constraint=true]
+	1569 [label="Topic 1569: 
+domain
+ career
+ opportunity
+ everyday
+ fertiliser
+ " shape=box]
+	50 -> 1569 [constraint=true]
+	1628 [label="Topic 1628: 
+recommend
+ 🤔
+ family
+ faith
+ fake
+ " shape=box]
+	50 -> 1628 [constraint=true]
+	1645 [label="Topic 1645: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	50 -> 1645 [constraint=true]
+	61 [label="Topic 61: 
+water
+ organic
+ help
+ feather
+ algae
+ " shape=box]
+	19 -> 61 [constraint=true]
+	62 [label="Topic 62: 
+honey
+ pure
+ forest
+ natural
+ meal
+ " shape=box]
+	61 -> 62 [constraint=true]
+	167 [label="Topic 167: 
+food
+ safety
+ dietary
+ supplement
+ include
+ " shape=box]
+	61 -> 167 [constraint=true]
+	1415 [label="Topic 1415: 
+restaurant
+ certification
+ beware
+ 🤔
+ family
+ " shape=box]
+	61 -> 1415 [constraint=true]
+	1523 [label="Topic 1523: 
+myth
+ misleading
+ independent
+ bother
+ 🤔
+ " shape=box]
+	61 -> 1523 [constraint=true]
+	79 [label="Topic 79: 
+flavor
+ supposedly
+ suddenly
+ hopefully
+ catch
+ " shape=box]
+	19 -> 79 [constraint=true]
+	917 [label="Topic 917: 
+robot
+ inorganic
+ client
+ recognize
+ largely
+ " shape=box]
+	79 -> 917 [constraint=true]
+	1430 [label="Topic 1430: 
+consciousness
+ labeling
+ generous
+ humus
+ invest
+ " shape=box]
+	79 -> 1430 [constraint=true]
+	1528 [label="Topic 1528: 
+pollution
+ consult
+ conscience
+ fertilizer
+ wash
+ " shape=box]
+	79 -> 1528 [constraint=true]
+	1642 [label="Topic 1642: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	79 -> 1642 [constraint=true]
+	1644 [label="Topic 1644: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	79 -> 1644 [constraint=true]
+	1115 [label="Topic 1115: 
+appetite
+ pat
+ point
+ obviously
+ yearly
+ " shape=box]
+	19 -> 1115 [constraint=true]
+	1116 [label="Topic 1116: 
+hard
+ 🤔
+ family
+ faith
+ fake
+ " shape=box]
+	1115 -> 1116 [constraint=true]
+	1392 [label="Topic 1392: 
+horticulture
+ bayer
+ protection
+ dupont
+ basf
+ " shape=box]
+	1115 -> 1392 [constraint=true]
+	1304 [label="Topic 1304: 
+$
+ land
+ depression
+ spare
+ whip
+ " shape=box]
+	19 -> 1304 [constraint=true]
+	1355 [label="Topic 1355: 
+discussion
+ buck
+ table
+ slowly
+ respectful
+ " shape=box]
+	1304 -> 1355 [constraint=true]
+	1471 [label="Topic 1471: 
+marijuana
+ legal
+ cannabis
+ high
+ state
+ " shape=box]
+	1304 -> 1471 [constraint=true]
+	1617 [label="Topic 1617: 
+push
+ biomass
+ warming
+ ecology
+ reveal
+ " shape=box]
+	1304 -> 1617 [constraint=true]
+	29 [label="Topic 29: 
+organic
+ food
+ like
+ use
+ produce
+ " shape=box]
+	1 -> 29 [constraint=true]
+	30 [label="Topic 30: 
+product
+ organic
+ good
+ export
+ company
+ " shape=box]
+	29 -> 30 [constraint=true]
+	31 [label="Topic 31: 
+organic
+ product
+ online
+ food
+ store
+ " shape=box]
+	30 -> 31 [constraint=true]
+	1565 [label="Topic 1565: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	30 -> 1565 [constraint=true]
+	1627 [label="Topic 1627: 
+straight
+ remove
+ economic
+ warning
+ 🤔
+ " shape=box]
+	30 -> 1627 [constraint=true]
+	261 [label="Topic 261: 
+food
+ weight
+ rat
+ just
+ <url>
+ " shape=box]
+	29 -> 261 [constraint=true]
+	967 [label="Topic 967: 
+evidence
+ use
+ <url>
+ bread
+ fallacy
+ " shape=box]
+	261 -> 967 [constraint=true]
+	1072 [label="Topic 1072: 
+ronnie_cummins
+ regeneration
+ consumers
+ tonight
+ stay
+ " shape=box]
+	261 -> 1072 [constraint=true]
+	1357 [label="Topic 1357: 
+consult
+ commodity
+ disease
+ unnecessarily
+ pill
+ " shape=box]
+	261 -> 1357 [constraint=true]
+	1413 [label="Topic 1413: 
+middle
+ east
+ practice
+ terminate
+ council
+ " shape=box]
+	261 -> 1413 [constraint=true]
+	1566 [label="Topic 1566: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	261 -> 1566 [constraint=true]
+	39 [label="Topic 39: 
+monsanto
+ make
+ money
+ organic
+ food
+ " shape=box]
+	1 -> 39 [constraint=true]
+	40 [label="Topic 40: 
+mexico
+ indians
+ sign
+ distribution
+ yard
+ " shape=box]
+	39 -> 40 [constraint=true]
+	1064 [label="Topic 1064: 
+homegrown
+ sustainably
+ pay
+ regenerativeag
+ related
+ " shape=box]
+	40 -> 1064 [constraint=true]
+	1559 [label="Topic 1559: 
+middle
+ exciting
+ genetically
+ sale
+ man
+ " shape=box]
+	40 -> 1559 [constraint=true]
+	246 [label="Topic 246: 
+wine
+ gluten
+ environment
+ pineapple
+ sound
+ " shape=box]
+	39 -> 246 [constraint=true]
+	1288 [label="Topic 1288: 
+wine
+ solution
+ bizarre
+ time
+ aim
+ " shape=box]
+	246 -> 1288 [constraint=true]
+	367 [label="Topic 367: 
+organic
+ approval
+ koch
+ sheep
+ destroy
+ " shape=box]
+	39 -> 367 [constraint=true]
+	1067 [label="Topic 1067: 
+percent
+ sharing
+ acceptance
+ neighbor
+ financially
+ " shape=box]
+	367 -> 1067 [constraint=true]
+	1637 [label="Topic 1637: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	367 -> 1637 [constraint=true]
+	1661 [label="Topic 1661: 
+october
+ series
+ wi
+ safeguard
+ extraction
+ " shape=box]
+	367 -> 1661 [constraint=true]
+	1186 [label="Topic 1186: 
+oil
+ coconut
+ online
+ price
+ valid
+ " shape=box]
+	39 -> 1186 [constraint=true]
+	1187 [label="Topic 1187: 
+teaching
+ meaningful
+ serve
+ ability
+ audience
+ " shape=box]
+	1186 -> 1187 [constraint=true]
+	1360 [label="Topic 1360: 
+blog
+ increase
+ plate
+ big
+ newly
+ " shape=box]
+	1186 -> 1360 [constraint=true]
+	1554 [label="Topic 1554: 
+shop
+ 🤔
+ failure
+ fairly
+ faith
+ " shape=box]
+	1186 -> 1554 [constraint=true]
+	1666 [label="Topic 1666: 
+cooperative
+ regenerate
+ revolution
+ age
+ soap
+ " shape=box]
+	1186 -> 1666 [constraint=true]
+	1662 [label="Topic 1662: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	39 -> 1662 [constraint=true]
+	1663 [label="Topic 1663: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1662 -> 1663 [constraint=true]
+	287 [label="Topic 287: 
+roundup
+ farming
+ shut
+ grape
+ uk
+ " shape=box]
+	1 -> 287 [constraint=true]
+	288 [label="Topic 288: 
+warming
+ earth
+ climate
+ global
+ evidence
+ " shape=box]
+	287 -> 288 [constraint=true]
+	833 [label="Topic 833: 
+soil
+ poison
+ global
+ pesticide
+ warming
+ " shape=box]
+	288 -> 833 [constraint=true]
+	1227 [label="Topic 1227: 
+e.g.
+ growth
+ organically
+ family
+ fake
+ " shape=box]
+	287 -> 1227 [constraint=true]
+	1228 [label="Topic 1228: 
+blog
+ bear
+ prohibit
+ severely
+ 🤔
+ " shape=box]
+	1227 -> 1228 [constraint=true]
+	5 [label="Topic 5: 
+make
+ use
+ organic
+ just
+ food
+ " shape=box]
+	0 -> 5 [constraint=true]
+	6 [label="Topic 6: 
+milk
+ drink
+ aspartame
+ people
+ dairy
+ " shape=box]
+	5 -> 6 [constraint=true]
+	7 [label="Topic 7: 
+milk
+ dairy
+ cow
+ think
+ know
+ " shape=box]
+	6 -> 7 [constraint=true]
+	8 [label="Topic 8: 
+milk
+ raw
+ cow
+ drink
+ dairy
+ " shape=box]
+	7 -> 8 [constraint=true]
+	90 [label="Topic 90: 
+fruit
+ ripen
+ apple
+ banana
+ process
+ " shape=box]
+	7 -> 90 [constraint=true]
+	586 [label="Topic 586: 
+csa
+ bank
+ locate
+ street
+ credit
+ " shape=box]
+	7 -> 586 [constraint=true]
+	797 [label="Topic 797: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	7 -> 797 [constraint=true]
+	1216 [label="Topic 1216: 
+carbon
+ cabinet
+ intention
+ direct
+ significant
+ " shape=box]
+	7 -> 1216 [constraint=true]
+	1511 [label="Topic 1511: 
+cash
+ endorse
+ low
+ respectively
+ accomplish
+ " shape=box]
+	7 -> 1511 [constraint=true]
+	100 [label="Topic 100: 
+mile
+ area
+ neck
+ leafy
+ lucky
+ " shape=box]
+	6 -> 100 [constraint=true]
+	979 [label="Topic 979: 
+south
+ monoculture
+ rainforest
+ familiar
+ faith
+ " shape=box]
+	100 -> 979 [constraint=true]
+	1299 [label="Topic 1299: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	100 -> 1299 [constraint=true]
+	1381 [label="Topic 1381: 
+toy
+ food
+ listing
+ family
+ fake
+ " shape=box]
+	100 -> 1381 [constraint=true]
+	1544 [label="Topic 1544: 
+paleo
+ conference
+ herbicide
+ regional
+ bone
+ " shape=box]
+	100 -> 1544 [constraint=true]
+	1358 [label="Topic 1358: 
+regulation
+ propose
+ reform
+ update
+ twitter
+ " shape=box]
+	6 -> 1358 [constraint=true]
+	1491 [label="Topic 1491: 
+barn
+ |
+ march
+ blue
+ don
+ " shape=box]
+	1358 -> 1491 [constraint=true]
+	1524 [label="Topic 1524: 
+today
+ nope
+ usa
+ reporting
+ familiar
+ " shape=box]
+	6 -> 1524 [constraint=true]
+	1525 [label="Topic 1525: 
+statement
+ 🤔
+ family
+ fake
+ fall
+ " shape=box]
+	1524 -> 1525 [constraint=true]
+	95 [label="Topic 95: 
+waste
+ fuel
+ energy
+ use
+ ethanol
+ " shape=box]
+	5 -> 95 [constraint=true]
+	96 [label="Topic 96: 
+fertilizer
+ year
+ emission
+ cost
+ air
+ " shape=box]
+	95 -> 96 [constraint=true]
+	97 [label="Topic 97: 
+plant
+ material
+ oil
+ water
+ epa
+ " shape=box]
+	96 -> 97 [constraint=true]
+	1490 [label="Topic 1490: 
+explosion
+ opinion
+ location
+ receive
+ difficulty
+ " shape=box]
+	96 -> 1490 [constraint=true]
+	1606 [label="Topic 1606: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	96 -> 1606 [constraint=true]
+	212 [label="Topic 212: 
+genetically
+ sausage
+ seed
+ criterion
+ plant
+ " shape=box]
+	95 -> 212 [constraint=true]
+	754 [label="Topic 754: 
+device
+ amazon
+ light
+ transgenic
+ sunlight
+ " shape=box]
+	212 -> 754 [constraint=true]
+	815 [label="Topic 815: 
+gm
+ label
+ win
+ amendment
+ labelling
+ " shape=box]
+	212 -> 815 [constraint=true]
+	1510 [label="Topic 1510: 
+incentive
+ buy
+ necessity
+ alter
+ hormone
+ " shape=box]
+	212 -> 1510 [constraint=true]
+	1103 [label="Topic 1103: 
+stream
+ 🤔
+ familiar
+ faith
+ fake
+ " shape=box]
+	95 -> 1103 [constraint=true]
+	1556 [label="Topic 1556: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1103 -> 1556 [constraint=true]
+	1650 [label="Topic 1650: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1103 -> 1650 [constraint=true]
+	1397 [label="Topic 1397: 
+luck
+ internet
+ dry
+ intake
+ subject
+ " shape=box]
+	95 -> 1397 [constraint=true]
+	1398 [label="Topic 1398: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1397 -> 1398 [constraint=true]
+	1460 [label="Topic 1460: 
+buck
+ specialize
+ microwave
+ notice
+ element
+ " shape=box]
+	1397 -> 1460 [constraint=true]
+	1659 [label="Topic 1659: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1397 -> 1659 [constraint=true]
+	1515 [label="Topic 1515: 
+pollinator
+ yield
+ agricultural
+ bee
+ rise
+ " shape=box]
+	95 -> 1515 [constraint=true]
+	1516 [label="Topic 1516: 
+issue
+ mask
+ emergency
+ missouri
+ vegetable
+ " shape=box]
+	1515 -> 1516 [constraint=true]
+	115 [label="Topic 115: 
+actually
+ grazing
+ life
+ livestock
+ emission
+ " shape=box]
+	5 -> 115 [constraint=true]
+	116 [label="Topic 116: 
+animal
+ produce
+ change
+ need
+ agriculture
+ " shape=box]
+	115 -> 116 [constraint=true]
+	117 [label="Topic 117: 
+soil
+ <url>
+ livestock
+ carbon
+ plant
+ " shape=box]
+	116 -> 117 [constraint=true]
+	992 [label="Topic 992: 
+et
+ frequently
+ adjust
+ worldwide
+ agribusiness
+ " shape=box]
+	116 -> 992 [constraint=true]
+	235 [label="Topic 235: 
+risk
+ source
+ bay
+ topic
+ major
+ " shape=box]
+	115 -> 235 [constraint=true]
+	608 [label="Topic 608: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	235 -> 608 [constraint=true]
+	1342 [label="Topic 1342: 
+ray
+ lotion
+ cook
+ products
+ deem
+ " shape=box]
+	235 -> 1342 [constraint=true]
+	1383 [label="Topic 1383: 
+notion
+ experience
+ spoil
+ chicken
+ warming
+ " shape=box]
+	235 -> 1383 [constraint=true]
+	1602 [label="Topic 1602: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	235 -> 1602 [constraint=true]
+	1665 [label="Topic 1665: 
+simply
+ jet
+ insecticide
+ 🤔
+ falsely
+ " shape=box]
+	235 -> 1665 [constraint=true]
+	1170 [label="Topic 1170: 
+gmo
+ revolution
+ por
+ celiac
+ study
+ " shape=box]
+	115 -> 1170 [constraint=true]
+	1171 [label="Topic 1171: 
+grain
+ <
+ hole
+ alcohol
+ genocide
+ " shape=box]
+	1170 -> 1171 [constraint=true]
+	1182 [label="Topic 1182: 
+nongmo
+ russia
+ facebook
+ wash
+ photo
+ " shape=box]
+	1170 -> 1182 [constraint=true]
+	1354 [label="Topic 1354: 
+democratic
+ beer
+ alfalfa
+ connection
+ glyphosate
+ " shape=box]
+	1170 -> 1354 [constraint=true]
+	1174 [label="Topic 1174: 
+taste
+ soil
+ preservative
+ georgia
+ rich
+ " shape=box]
+	115 -> 1174 [constraint=true]
+	1175 [label="Topic 1175: 
+hello
+ abstract
+ county
+ vineyard
+ 👍
+ " shape=box]
+	1174 -> 1175 [constraint=true]
+	1279 [label="Topic 1279: 
+cream
+ spider
+ additive
+ poisonous
+ bottle
+ " shape=box]
+	1174 -> 1279 [constraint=true]
+	1549 [label="Topic 1549: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1174 -> 1549 [constraint=true]
+	1587 [label="Topic 1587: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	115 -> 1587 [constraint=true]
+	1588 [label="Topic 1588: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1587 -> 1588 [constraint=true]
+	839 [label="Topic 839: 
+accord
+ finding
+ investigation
+ cal
+ fall
+ " shape=box]
+	5 -> 839 [constraint=true]
+	1580 [label="Topic 1580: 
+suggest
+ vary
+ flora
+ location
+ potent
+ " shape=box]
+	839 -> 1580 [constraint=true]
+	1581 [label="Topic 1581: 
+spell
+ study
+ helpful
+ hospital
+ worthy
+ " shape=box]
+	1580 -> 1581 [constraint=true]
+	1640 [label="Topic 1640: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	839 -> 1640 [constraint=true]
+	1641 [label="Topic 1641: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1640 -> 1641 [constraint=true]
+	1420 [label="Topic 1420: 
+brand
+ probiotic
+ 🤔
+ fair
+ faith
+ " shape=box]
+	5 -> 1420 [constraint=true]
+	1445 [label="Topic 1445: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1420 -> 1445 [constraint=true]
+	1555 [label="Topic 1555: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1445 -> 1555 [constraint=true]
+	1594 [label="Topic 1594: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1420 -> 1594 [constraint=true]
+	1595 [label="Topic 1595: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1594 -> 1595 [constraint=true]
+	1456 [label="Topic 1456: 
+trade
+ growth
+ long
+ logo
+ appear
+ " shape=box]
+	5 -> 1456 [constraint=true]
+	1457 [label="Topic 1457: 
+specific
+ strain
+ number
+ sticker
+ minute
+ " shape=box]
+	1456 -> 1457 [constraint=true]
+	1458 [label="Topic 1458: 
+smell
+ hipster
+ probiotic
+ wikipedia
+ cite
+ " shape=box]
+	1457 -> 1458 [constraint=true]
+	1557 [label="Topic 1557: 
+certification
+ fair
+ agency
+ control
+ institute
+ " shape=box]
+	1456 -> 1557 [constraint=true]
+	1558 [label="Topic 1558: 
+monsanto
+ cart
+ crook
+ bank
+ household
+ " shape=box]
+	1557 -> 1558 [constraint=true]
+	1571 [label="Topic 1571: 
+constant
+ organize
+ significantly
+ standard
+ 🤔
+ " shape=box]
+	1557 -> 1571 [constraint=true]
+	1592 [label="Topic 1592: 
+inc.
+ certify
+ trade
+ certificate
+ choose
+ " shape=box]
+	1557 -> 1592 [constraint=true]
+	1625 [label="Topic 1625: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1456 -> 1625 [constraint=true]
+	1626 [label="Topic 1626: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1625 -> 1626 [constraint=true]
+	1504 [label="Topic 1504: 
+hunger
+ fiber
+ present
+ river
+ cent
+ " shape=box]
+	5 -> 1504 [constraint=true]
+	1505 [label="Topic 1505: 
+fuel
+ allow
+ art
+ question
+ questionable
+ " shape=box]
+	1504 -> 1505 [constraint=true]
+	1531 [label="Topic 1531: 
+profitable
+ export
+ room
+ pen
+ product
+ " shape=box]
+	1505 -> 1531 [constraint=true]
+	1582 [label="Topic 1582: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1505 -> 1582 [constraint=true]
+	1590 [label="Topic 1590: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1505 -> 1590 [constraint=true]
+	1664 [label="Topic 1664: 
+farmer
+ 🤔
+ familiar
+ fairly
+ faith
+ " shape=box]
+	1505 -> 1664 [constraint=true]
+	15 [label="Topic 15: 
+make
+ people
+ organic
+ just
+ food
+ " shape=box]
+	0 -> 15 [constraint=true]
+	16 [label="Topic 16: 
+good
+ know
+ natural
+ food
+ just
+ " shape=box]
+	15 -> 16 [constraint=true]
+	17 [label="Topic 17: 
+grow
+ egg
+ plant
+ certification
+ vegetable
+ " shape=box]
+	16 -> 17 [constraint=true]
+	18 [label="Topic 18: 
+food
+ flour
+ prison
+ corn
+ fungus
+ " shape=box]
+	17 -> 18 [constraint=true]
+	47 [label="Topic 47: 
+kosher
+ requirement
+ slaughter
+ rule
+ battery
+ " shape=box]
+	17 -> 47 [constraint=true]
+	60 [label="Topic 60: 
+<url>
+ herbivore
+ carnivore
+ diet
+ disease
+ " shape=box]
+	17 -> 60 [constraint=true]
+	175 [label="Topic 175: 
+coffee
+ trade
+ fair
+ price
+ farmer
+ " shape=box]
+	17 -> 175 [constraint=true]
+	1286 [label="Topic 1286: 
+hunger
+ cultivation
+ n
+ 🤔
+ fake
+ " shape=box]
+	17 -> 1286 [constraint=true]
+	1475 [label="Topic 1475: 
+aquaponic
+ space
+ require
+ farming
+ tract
+ " shape=box]
+	17 -> 1475 [constraint=true]
+	1507 [label="Topic 1507: 
+products
+ village
+ agency
+ eco
+ project
+ " shape=box]
+	17 -> 1507 [constraint=true]
+	45 [label="Topic 45: 
+salt
+ carbon
+ organic
+ molecule
+ mean
+ " shape=box]
+	16 -> 45 [constraint=true]
+	46 [label="Topic 46: 
+organic
+ compound
+ polar
+ water
+ solvent
+ " shape=box]
+	45 -> 46 [constraint=true]
+	58 [label="Topic 58: 
+natural
+ cure
+ money
+ people
+ doctor
+ " shape=box]
+	16 -> 58 [constraint=true]
+	59 [label="Topic 59: 
+medicine
+ want
+ science
+ c
+ people
+ " shape=box]
+	58 -> 59 [constraint=true]
+	1527 [label="Topic 1527: 
+imagine
+ backyard
+ fresh
+ family
+ faith
+ " shape=box]
+	58 -> 1527 [constraint=true]
+	1552 [label="Topic 1552: 
+dig
+ engage
+ 🤔
+ fair
+ faith
+ " shape=box]
+	58 -> 1552 [constraint=true]
+	77 [label="Topic 77: 
+contrast
+ rely
+ agriculture
+ biodiversity
+ grazing
+ " shape=box]
+	16 -> 77 [constraint=true]
+	364 [label="Topic 364: 
+pesticide
+ utilization
+ bug
+ benefit
+ advantage
+ " shape=box]
+	77 -> 364 [constraint=true]
+	1192 [label="Topic 1192: 
+history
+ arise
+ import
+ industrialization
+ holistic
+ " shape=box]
+	77 -> 1192 [constraint=true]
+	231 [label="Topic 231: 
+soy
+ single
+ carbon
+ accept
+ unknown
+ " shape=box]
+	16 -> 231 [constraint=true]
+	1240 [label="Topic 1240: 
+context
+ trend
+ rodale
+ primary
+ hmmm
+ " shape=box]
+	231 -> 1240 [constraint=true]
+	1386 [label="Topic 1386: 
+researcher
+ dollar
+ ge
+ standard
+ compile
+ " shape=box]
+	231 -> 1386 [constraint=true]
+	1509 [label="Topic 1509: 
+database
+ chemistry
+ retailer
+ synthesis
+ alternative
+ " shape=box]
+	231 -> 1509 [constraint=true]
+	925 [label="Topic 925: 
+india
+ goodness
+ lab
+ amish
+ regard
+ " shape=box]
+	16 -> 925 [constraint=true]
+	1164 [label="Topic 1164: 
+strawberry
+ bangalore
+ delhi
+ lab
+ division
+ " shape=box]
+	925 -> 1164 [constraint=true]
+	1521 [label="Topic 1521: 
+ad
+ family
+ faith
+ fake
+ fall
+ " shape=box]
+	16 -> 1521 [constraint=true]
+	1522 [label="Topic 1522: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1521 -> 1522 [constraint=true]
+	1570 [label="Topic 1570: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1521 -> 1570 [constraint=true]
+	42 [label="Topic 42: 
+store
+ pay
+ work
+ target
+ know
+ " shape=box]
+	15 -> 42 [constraint=true]
+	43 [label="Topic 43: 
+walmart
+ shop
+ business
+ store
+ local
+ " shape=box]
+	42 -> 43 [constraint=true]
+	44 [label="Topic 44: 
+$
+ walmart
+ employee
+ good
+ wal_mart
+ " shape=box]
+	43 -> 44 [constraint=true]
+	145 [label="Topic 145: 
+practice
+ law
+ license
+ city
+ practitioner
+ " shape=box]
+	43 -> 145 [constraint=true]
+	1265 [label="Topic 1265: 
+gardener
+ contamination
+ chance
+ soil
+ compost
+ " shape=box]
+	43 -> 1265 [constraint=true]
+	1493 [label="Topic 1493: 
+film
+ release
+ paper
+ moore
+ michael
+ " shape=box]
+	43 -> 1493 [constraint=true]
+	1584 [label="Topic 1584: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	43 -> 1584 [constraint=true]
+	443 [label="Topic 443: 
+article
+ read
+ healthy
+ intolerant
+ carrageenan
+ " shape=box]
+	42 -> 443 [constraint=true]
+	1109 [label="Topic 1109: 
+perennial
+ field
+ annual
+ agro
+ regenerate
+ " shape=box]
+	443 -> 1109 [constraint=true]
+	1477 [label="Topic 1477: 
+soy
+ page
+ cancer
+ asian
+ oca
+ " shape=box]
+	443 -> 1477 [constraint=true]
+	54 [label="Topic 54: 
+produce
+ include
+ butter
+ page
+ public
+ " shape=box]
+	15 -> 54 [constraint=true]
+	214 [label="Topic 214: 
+result
+ pathogen
+ demand
+ review
+ varied
+ " shape=box]
+	54 -> 214 [constraint=true]
+	215 [label="Topic 215: 
+compost
+ manure
+ parasite
+ human
+ neem
+ " shape=box]
+	214 -> 215 [constraint=true]
+	1112 [label="Topic 1112: 
+location
+ error
+ gardening
+ fertile
+ method
+ " shape=box]
+	214 -> 1112 [constraint=true]
+	1277 [label="Topic 1277: 
+conflict
+ study
+ point
+ scientific
+ bias
+ " shape=box]
+	214 -> 1277 [constraint=true]
+	1497 [label="Topic 1497: 
+click
+ adopt
+ series
+ unsustainable
+ brazil
+ " shape=box]
+	214 -> 1497 [constraint=true]
+	1323 [label="Topic 1323: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	54 -> 1323 [constraint=true]
+	1402 [label="Topic 1402: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1323 -> 1402 [constraint=true]
+	1620 [label="Topic 1620: 
+i.e.
+ pool
+ co2
+ creature
+ gmo
+ " shape=box]
+	54 -> 1620 [constraint=true]
+	1621 [label="Topic 1621: 
+simply
+ travel
+ want
+ build
+ plow
+ " shape=box]
+	1620 -> 1621 [constraint=true]
+	1147 [label="Topic 1147: 
+gmo
+ brazil
+ food
+ world
+ monsanto
+ " shape=box]
+	15 -> 1147 [constraint=true]
+	1260 [label="Topic 1260: 
+like
+ bet
+ taste
+ ge
+ shell
+ " shape=box]
+	1147 -> 1260 [constraint=true]
+	1347 [label="Topic 1347: 
+generation
+ sun
+ 🤔
+ family
+ fake
+ " shape=box]
+	1260 -> 1347 [constraint=true]
+	1548 [label="Topic 1548: 
+annie
+ buy
+ product
+ organic
+ sell
+ " shape=box]
+	1260 -> 1548 [constraint=true]
+	1461 [label="Topic 1461: 
+cause
+ starve
+ saying
+ universe
+ decide
+ " shape=box]
+	15 -> 1461 [constraint=true]
+	1462 [label="Topic 1462: 
+requirement
+ ethanol
+ run
+ click
+ element
+ " shape=box]
+	1461 -> 1462 [constraint=true]
+	1463 [label="Topic 1463: 
+mad
+ hydrogen
+ obama
+ carrot
+ earth
+ " shape=box]
+	1462 -> 1463 [constraint=true]
+	1514 [label="Topic 1514: 
+consult
+ chemically
+ cheer
+ farm
+ fare
+ " shape=box]
+	1462 -> 1514 [constraint=true]
+	1518 [label="Topic 1518: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	15 -> 1518 [constraint=true]
+	1519 [label="Topic 1519: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1518 -> 1519 [constraint=true]
+	1520 [label="Topic 1520: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1519 -> 1520 [constraint=true]
+	25 [label="Topic 25: 
+high
+ wonder
+ grape
+ local
+ mineral
+ " shape=box]
+	0 -> 25 [constraint=true]
+	26 [label="Topic 26: 
+soluble
+ agriculture
+ sustainable
+ restore
+ poison
+ " shape=box]
+	25 -> 26 [constraint=true]
+	27 [label="Topic 27: 
+child
+ brain
+ oil
+ body
+ apply
+ " shape=box]
+	26 -> 27 [constraint=true]
+	242 [label="Topic 242: 
+nervous
+ movement
+ attention
+ muscle
+ time
+ " shape=box]
+	27 -> 242 [constraint=true]
+	761 [label="Topic 761: 
+shape
+ nature
+ quora
+ thought
+ context
+ " shape=box]
+	27 -> 761 [constraint=true]
+	108 [label="Topic 108: 
+limit
+ strong
+ organically
+ supermarket
+ budget
+ " shape=box]
+	26 -> 108 [constraint=true]
+	1444 [label="Topic 1444: 
+ice_cream
+ ben_jerry
+ carry
+ sell
+ original
+ " shape=box]
+	108 -> 1444 [constraint=true]
+	1619 [label="Topic 1619: 
+default
+ necessarily
+ 🤔
+ fairly
+ fake
+ " shape=box]
+	108 -> 1619 [constraint=true]
+	1431 [label="Topic 1431: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	26 -> 1431 [constraint=true]
+	1545 [label="Topic 1545: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1431 -> 1545 [constraint=true]
+	1550 [label="Topic 1550: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	26 -> 1550 [constraint=true]
+	1551 [label="Topic 1551: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1550 -> 1551 [constraint=true]
+	1272 [label="Topic 1272: 
+overall
+ biodiversity
+ manufacture
+ activist
+ mango
+ " shape=box]
+	25 -> 1272 [constraint=true]
+	1273 [label="Topic 1273: 
+essential
+ en
+ clean
+ advertise
+ content
+ " shape=box]
+	1272 -> 1273 [constraint=true]
+	1274 [label="Topic 1274: 
+cat
+ event
+ security
+ exciting
+ crave
+ " shape=box]
+	1273 -> 1274 [constraint=true]
+	1287 [label="Topic 1287: 
+tomato
+ la
+ del
+ appearance
+ size
+ " shape=box]
+	1273 -> 1287 [constraint=true]
+	1367 [label="Topic 1367: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1273 -> 1367 [constraint=true]
+	1543 [label="Topic 1543: 
+delay
+ business
+ beverage
+ advertising
+ initiative
+ " shape=box]
+	1273 -> 1543 [constraint=true]
+	1339 [label="Topic 1339: 
+alternative
+ cool
+ fail
+ yoghurt
+ water
+ " shape=box]
+	1272 -> 1339 [constraint=true]
+	1340 [label="Topic 1340: 
+pot
+ mud
+ make
+ 🤔
+ fairly
+ " shape=box]
+	1339 -> 1340 [constraint=true]
+	1656 [label="Topic 1656: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1272 -> 1656 [constraint=true]
+	1657 [label="Topic 1657: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1656 -> 1657 [constraint=true]
+	1427 [label="Topic 1427: 
+grower
+ consumer
+ famine
+ fake
+ fall
+ " shape=box]
+	25 -> 1427 [constraint=true]
+	1440 [label="Topic 1440: 
+cautious
+ 🤔
+ familiar
+ faith
+ fake
+ " shape=box]
+	1427 -> 1440 [constraint=true]
+	1530 [label="Topic 1530: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1440 -> 1530 [constraint=true]
+	1651 [label="Topic 1651: 
+write
+ california
+ chemical
+ toxic
+ claim
+ " shape=box]
+	1440 -> 1651 [constraint=true]
+	1561 [label="Topic 1561: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	25 -> 1561 [constraint=true]
+	1562 [label="Topic 1562: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1561 -> 1562 [constraint=true]
+	1563 [label="Topic 1563: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1562 -> 1563 [constraint=true]
+	35 [label="Topic 35: 
+organic
+ food
+ use
+ market
+ like
+ " shape=box]
+	0 -> 35 [constraint=true]
+	36 [label="Topic 36: 
+usda
+ standard
+ day
+ healthy
+ el
+ " shape=box]
+	35 -> 36 [constraint=true]
+	37 [label="Topic 37: 
+berkeley
+ diet
+ policy
+ conversion
+ bike
+ " shape=box]
+	36 -> 37 [constraint=true]
+	38 [label="Topic 38: 
+national
+ npop
+ set
+ certification
+ association
+ " shape=box]
+	37 -> 38 [constraint=true]
+	675 [label="Topic 675: 
+caloric
+ ok
+ intake
+ faith
+ fall
+ " shape=box]
+	37 -> 675 [constraint=true]
+	710 [label="Topic 710: 
+book
+ differentiate
+ risk
+ iron
+ self
+ " shape=box]
+	37 -> 710 [constraint=true]
+	131 [label="Topic 131: 
+write
+ science
+ expensive
+ reach
+ self
+ " shape=box]
+	35 -> 131 [constraint=true]
+	1371 [label="Topic 1371: 
+manure
+ priority
+ readily
+ faster
+ fair
+ " shape=box]
+	131 -> 1371 [constraint=true]
+	1376 [label="Topic 1376: 
+advertise
+ manufacture
+ customer
+ widely
+ conventional
+ " shape=box]
+	1371 -> 1376 [constraint=true]
+	1390 [label="Topic 1390: 
+headline
+ inability
+ downvot
+ family
+ fake
+ " shape=box]
+	131 -> 1390 [constraint=true]
+	1391 [label="Topic 1391: 
+replace
+ /r
+ retard
+ pseudo
+ 🤔
+ " shape=box]
+	1390 -> 1391 [constraint=true]
+	1630 [label="Topic 1630: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1390 -> 1630 [constraint=true]
+	1480 [label="Topic 1480: 
+packaging
+ viable
+ rare
+ unlike
+ 🤔
+ " shape=box]
+	131 -> 1480 [constraint=true]
+	1481 [label="Topic 1481: 
+require
+ 🤔
+ failure
+ fairly
+ faith
+ " shape=box]
+	1480 -> 1481 [constraint=true]
+	1623 [label="Topic 1623: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	131 -> 1623 [constraint=true]
+	1624 [label="Topic 1624: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1623 -> 1624 [constraint=true]
+	157 [label="Topic 157: 
+engine
+ blog
+ use
+ organic
+ make
+ " shape=box]
+	35 -> 157 [constraint=true]
+	362 [label="Topic 362: 
+america
+ compose
+ 🤔
+ familiar
+ faith
+ " shape=box]
+	157 -> 362 [constraint=true]
+	1267 [label="Topic 1267: 
+meaning
+ membership
+ fungus
+ entity
+ ag
+ " shape=box]
+	362 -> 1267 [constraint=true]
+	409 [label="Topic 409: 
+pollutant
+ use
+ need
+ drinking
+ bottled
+ " shape=box]
+	157 -> 409 [constraint=true]
+	535 [label="Topic 535: 
+sharing
+ great
+ familiar
+ faith
+ fake
+ " shape=box]
+	409 -> 535 [constraint=true]
+	554 [label="Topic 554: 
+water
+ plastic
+ filter
+ drink
+ tap
+ " shape=box]
+	409 -> 554 [constraint=true]
+	990 [label="Topic 990: 
+company
+ grocer
+ bob
+ stop
+ education
+ " shape=box]
+	409 -> 990 [constraint=true]
+	1583 [label="Topic 1583: 
+money
+ executive
+ public
+ credit
+ action
+ " shape=box]
+	409 -> 1583 [constraint=true]
+	1643 [label="Topic 1643: 
+generate
+ power
+ awareness
+ solve
+ capitalism
+ " shape=box]
+	409 -> 1643 [constraint=true]
+	533 [label="Topic 533: 
+search
+ traffic
+ content
+ link
+ result
+ " shape=box]
+	157 -> 533 [constraint=true]
+	534 [label="Topic 534: 
+sprout
+ batch
+ field
+ seeds
+ soak
+ " shape=box]
+	533 -> 534 [constraint=true]
+	871 [label="Topic 871: 
+cell
+ create
+ copy
+ achieve
+ chloride
+ " shape=box]
+	533 -> 871 [constraint=true]
+	1045 [label="Topic 1045: 
+tobacco
+ nicotine
+ claim
+ chart
+ deadly
+ " shape=box]
+	533 -> 1045 [constraint=true]
+	1396 [label="Topic 1396: 
+pasta
+ mouth
+ load
+ famine
+ fall
+ " shape=box]
+	533 -> 1396 [constraint=true]
+	1613 [label="Topic 1613: 
+danger
+ care
+ situation
+ 🤔
+ fairly
+ " shape=box]
+	533 -> 1613 [constraint=true]
+	224 [label="Topic 224: 
+fish
+ article
+ read
+ website
+ sell
+ " shape=box]
+	35 -> 224 [constraint=true]
+	243 [label="Topic 243: 
+california
+ round
+ access
+ area
+ 🤔
+ " shape=box]
+	224 -> 243 [constraint=true]
+	1053 [label="Topic 1053: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	243 -> 1053 [constraint=true]
+	609 [label="Topic 609: 
+predict
+ mixture
+ exist
+ resistance
+ come
+ " shape=box]
+	224 -> 609 [constraint=true]
+	782 [label="Topic 782: 
+influence
+ genetic
+ scale
+ behavior
+ parent
+ " shape=box]
+	609 -> 782 [constraint=true]
+	1328 [label="Topic 1328: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	609 -> 1328 [constraint=true]
+	1639 [label="Topic 1639: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	609 -> 1639 [constraint=true]
+	923 [label="Topic 923: 
+yeah
+ old
+ sunflower
+ dissolve
+ downright
+ " shape=box]
+	224 -> 923 [constraint=true]
+	936 [label="Topic 936: 
+fuck
+ net
+ 🤔
+ famine
+ fall
+ " shape=box]
+	923 -> 936 [constraint=true]
+	1400 [label="Topic 1400: 
+n
+ 🤔
+ famine
+ fake
+ fall
+ " shape=box]
+	923 -> 1400 [constraint=true]
+	1412 [label="Topic 1412: 
+competitor
+ markets
+ chain
+ giant
+ sprouts
+ " shape=box]
+	923 -> 1412 [constraint=true]
+	1603 [label="Topic 1603: 
+wal_mart
+ protest
+ suspicious
+ annual
+ index
+ " shape=box]
+	923 -> 1603 [constraint=true]
+	930 [label="Topic 930: 
+et_al
+ hop
+ little
+ forth
+ season
+ " shape=box]
+	224 -> 930 [constraint=true]
+	1476 [label="Topic 1476: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	930 -> 1476 [constraint=true]
+	1082 [label="Topic 1082: 
+fertilizer
+ level
+ weed
+ limited
+ wash
+ " shape=box]
+	224 -> 1082 [constraint=true]
+	1083 [label="Topic 1083: 
+mercury
+ alive
+ seafood
+ sequester
+ guarantee
+ " shape=box]
+	1082 -> 1083 [constraint=true]
+	1417 [label="Topic 1417: 
+hoe
+ tool
+ amazing
+ hoop
+ air
+ " shape=box]
+	1082 -> 1417 [constraint=true]
+	1292 [label="Topic 1292: 
+nut
+ information
+ mercola
+ amazon
+ prohibit
+ " shape=box]
+	224 -> 1292 [constraint=true]
+	1293 [label="Topic 1293: 
+brazil
+ thing
+ nuts
+ export
+ site
+ " shape=box]
+	1292 -> 1293 [constraint=true]
+	1646 [label="Topic 1646: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	224 -> 1646 [constraint=true]
+	1647 [label="Topic 1647: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1646 -> 1647 [constraint=true]
+	295 [label="Topic 295: 
+country
+ tiny
+ area
+ crowd
+ world
+ " shape=box]
+	35 -> 295 [constraint=true]
+	548 [label="Topic 548: 
+valley
+ billion
+ potential
+ niche
+ menu
+ " shape=box]
+	295 -> 548 [constraint=true]
+	1483 [label="Topic 1483: 
+grab
+ compare
+ mcdonald
+ assure
+ 🤔
+ " shape=box]
+	548 -> 1483 [constraint=true]
+	1349 [label="Topic 1349: 
+resort
+ pollute
+ family
+ faith
+ fake
+ " shape=box]
+	295 -> 1349 [constraint=true]
+	1542 [label="Topic 1542: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1349 -> 1542 [constraint=true]
+	1564 [label="Topic 1564: 
+ultimately
+ family
+ faith
+ fake
+ fall
+ " shape=box]
+	1349 -> 1564 [constraint=true]
+	1600 [label="Topic 1600: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	295 -> 1600 [constraint=true]
+	1601 [label="Topic 1601: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1600 -> 1601 [constraint=true]
+	377 [label="Topic 377: 
+wear
+ trade
+ energy
+ relieve
+ able
+ " shape=box]
+	35 -> 377 [constraint=true]
+	1028 [label="Topic 1028: 
+soil
+ holistic
+ start
+ philosophy
+ american
+ " shape=box]
+	377 -> 1028 [constraint=true]
+	1029 [label="Topic 1029: 
+woo
+ biodynamic
+ seed
+ metal
+ structure
+ " shape=box]
+	1028 -> 1029 [constraint=true]
+	1379 [label="Topic 1379: 
+recycled
+ green
+ eco
+ family
+ fake
+ " shape=box]
+	377 -> 1379 [constraint=true]
+	1380 [label="Topic 1380: 
+fair
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1379 -> 1380 [constraint=true]
+	1526 [label="Topic 1526: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1379 -> 1526 [constraint=true]
+	1667 [label="Topic 1667: 
+soon
+ 🤔
+ faith
+ fake
+ fall
+ " shape=box]
+	1379 -> 1667 [constraint=true]
+	1540 [label="Topic 1540: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	377 -> 1540 [constraint=true]
+	1541 [label="Topic 1541: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1540 -> 1541 [constraint=true]
+	421 [label="Topic 421: 
+soybean
+ sicker
+ daughter
+ slave
+ chain
+ " shape=box]
+	35 -> 421 [constraint=true]
+	1089 [label="Topic 1089: 
+pharma
+ roundup
+ virtually
+ prevention
+ greedy
+ " shape=box]
+	421 -> 1089 [constraint=true]
+	1325 [label="Topic 1325: 
+produce
+ residue
+ cure
+ roundup
+ cattle
+ " shape=box]
+	1089 -> 1325 [constraint=true]
+	1633 [label="Topic 1633: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	421 -> 1633 [constraint=true]
+	1634 [label="Topic 1634: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1633 -> 1634 [constraint=true]
+	642 [label="Topic 642: 
+dietary
+ health
+ food
+ metabolic
+ presumably
+ " shape=box]
+	35 -> 642 [constraint=true]
+	1040 [label="Topic 1040: 
+study
+ evidence
+ nutritional
+ high
+ conscious
+ " shape=box]
+	642 -> 1040 [constraint=true]
+	1041 [label="Topic 1041: 
+fly
+ diet
+ organically
+ insect
+ effect
+ " shape=box]
+	1040 -> 1041 [constraint=true]
+	1195 [label="Topic 1195: 
+berry
+ caffeine
+ response
+ delete
+ informed
+ " shape=box]
+	1040 -> 1195 [constraint=true]
+	1654 [label="Topic 1654: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1040 -> 1654 [constraint=true]
+	1077 [label="Topic 1077: 
+observation
+ replacement
+ vs.
+ big
+ 🤔
+ " shape=box]
+	642 -> 1077 [constraint=true]
+	1224 [label="Topic 1224: 
+motivation
+ sport
+ pressure
+ employee
+ social
+ " shape=box]
+	1077 -> 1224 [constraint=true]
+	1508 [label="Topic 1508: 
+sulfur
+ tea
+ 🤔
+ family
+ fake
+ " shape=box]
+	1077 -> 1508 [constraint=true]
+	1502 [label="Topic 1502: 
+course
+ practice
+ 👍
+ food
+ mass
+ " shape=box]
+	642 -> 1502 [constraint=true]
+	1658 [label="Topic 1658: 
+soil
+ reason
+ 😊
+ 🤔
+ familiar
+ " shape=box]
+	1502 -> 1658 [constraint=true]
+	1573 [label="Topic 1573: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	35 -> 1573 [constraint=true]
+	1574 [label="Topic 1574: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1573 -> 1574 [constraint=true]
+	1575 [label="Topic 1575: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1574 -> 1575 [constraint=true]
+	65 [label="Topic 65: 
+use
+ organic
+ natural
+ free
+ chemical
+ " shape=box]
+	0 -> 65 [constraint=true]
+	66 [label="Topic 66: 
+product
+ skin
+ line
+ healing
+ chemical
+ " shape=box]
+	65 -> 66 [constraint=true]
+	67 [label="Topic 67: 
+herb
+ amazon
+ company
+ associate
+ people
+ " shape=box]
+	66 -> 67 [constraint=true]
+	68 [label="Topic 68: 
+skin
+ organic
+ harvest
+ ingredient
+ care
+ " shape=box]
+	67 -> 68 [constraint=true]
+	166 [label="Topic 166: 
+tax
+ board
+ court
+ section
+ shall
+ " shape=box]
+	67 -> 166 [constraint=true]
+	1382 [label="Topic 1382: 
+fake
+ switzerland
+ 🤔
+ family
+ fall
+ " shape=box]
+	67 -> 1382 [constraint=true]
+	1513 [label="Topic 1513: 
+egg
+ pan
+ wide
+ hot
+ man
+ " shape=box]
+	67 -> 1513 [constraint=true]
+	1652 [label="Topic 1652: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	67 -> 1652 [constraint=true]
+	119 [label="Topic 119: 
+guy
+ interesting
+ blue
+ naturally
+ source
+ " shape=box]
+	66 -> 119 [constraint=true]
+	419 [label="Topic 419: 
+p
+ fertilizer
+ k
+ n
+ t
+ " shape=box]
+	119 -> 419 [constraint=true]
+	639 [label="Topic 639: 
+international
+ smoothie
+ regeneration
+ wait
+ weather
+ " shape=box]
+	119 -> 639 [constraint=true]
+	982 [label="Topic 982: 
+fermentation
+ ferment
+ break
+ bacteria
+ pickle
+ " shape=box]
+	119 -> 982 [constraint=true]
+	1352 [label="Topic 1352: 
+twitter
+ consumers
+ toxin
+ analogy
+ train
+ " shape=box]
+	119 -> 1352 [constraint=true]
+	187 [label="Topic 187: 
+international
+ save
+ governmental
+ manage
+ comprise
+ " shape=box]
+	65 -> 187 [constraint=true]
+	558 [label="Topic 558: 
+organisation
+ government
+ talk
+ small
+ international
+ " shape=box]
+	187 -> 558 [constraint=true]
+	1468 [label="Topic 1468: 
+example
+ structure
+ country
+ include
+ rights
+ " shape=box]
+	558 -> 1468 [constraint=true]
+	1596 [label="Topic 1596: 
+globe
+ disaster
+ management
+ diverse
+ 🤔
+ " shape=box]
+	187 -> 1596 [constraint=true]
+	1597 [label="Topic 1597: 
+wildlife
+ regenerativeag
+ movement
+ resistance
+ 🤔
+ " shape=box]
+	1596 -> 1597 [constraint=true]
+	1607 [label="Topic 1607: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	187 -> 1607 [constraint=true]
+	1608 [label="Topic 1608: 
+use
+ 🤔
+ familiar
+ fairly
+ faith
+ " shape=box]
+	1607 -> 1608 [constraint=true]
+	228 [label="Topic 228: 
+public
+ free
+ odd
+ concept
+ certified
+ " shape=box]
+	65 -> 228 [constraint=true]
+	270 [label="Topic 270: 
+breeding
+ combine
+ harvesting
+ pasture
+ revolutionary
+ " shape=box]
+	228 -> 270 [constraint=true]
+	271 [label="Topic 271: 
+chicken
+ hen
+ bird
+ cage
+ peck
+ " shape=box]
+	270 -> 271 [constraint=true]
+	1532 [label="Topic 1532: 
+technology
+ cognitive
+ progress
+ collect
+ bury
+ " shape=box]
+	270 -> 1532 [constraint=true]
+	1537 [label="Topic 1537: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	270 -> 1537 [constraint=true]
+	1450 [label="Topic 1450: 
+mutually
+ reason
+ famine
+ fake
+ fall
+ " shape=box]
+	228 -> 1450 [constraint=true]
+	1451 [label="Topic 1451: 
+exclusive
+ oca
+ 🤔
+ famine
+ fall
+ " shape=box]
+	1450 -> 1451 [constraint=true]
+	336 [label="Topic 336: 
+lettuce
+ perdue
+ pick
+ california
+ pollute
+ " shape=box]
+	65 -> 336 [constraint=true]
+	337 [label="Topic 337: 
+salt
+ kill
+ arable
+ luxury
+ link
+ " shape=box]
+	336 -> 337 [constraint=true]
+	1414 [label="Topic 1414: 
+starvation
+ section
+ broken
+ mark
+ falsely
+ " shape=box]
+	337 -> 1414 [constraint=true]
+	1484 [label="Topic 1484: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	337 -> 1484 [constraint=true]
+	1653 [label="Topic 1653: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	337 -> 1653 [constraint=true]
+	536 [label="Topic 536: 
+depend
+ scenario
+ field
+ electronic
+ 🤔
+ " shape=box]
+	336 -> 536 [constraint=true]
+	911 [label="Topic 911: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	536 -> 911 [constraint=true]
+	1399 [label="Topic 1399: 
+truck
+ hour
+ iceberg
+ load
+ arrive
+ " shape=box]
+	536 -> 1399 [constraint=true]
+	1485 [label="Topic 1485: 
+farm
+ pound
+ model
+ trail
+ card
+ " shape=box]
+	336 -> 1485 [constraint=true]
+	1486 [label="Topic 1486: 
+creek
+ 🤔
+ faith
+ fake
+ fall
+ " shape=box]
+	1485 -> 1486 [constraint=true]
+	1512 [label="Topic 1512: 
+popcorn
+ guilty
+ 🤔
+ family
+ fake
+ " shape=box]
+	1485 -> 1512 [constraint=true]
+	1593 [label="Topic 1593: 
+president
+ biodiversity
+ joel_salatin
+ phrase
+ month
+ " shape=box]
+	1485 -> 1593 [constraint=true]
+	406 [label="Topic 406: 
+produce
+ mold
+ fit
+ conspiracy
+ fish
+ " shape=box]
+	65 -> 406 [constraint=true]
+	891 [label="Topic 891: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	406 -> 891 [constraint=true]
+	1553 [label="Topic 1553: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	891 -> 1553 [constraint=true]
+	1296 [label="Topic 1296: 
+box
+ half
+ old
+ collective
+ hyperbole
+ " shape=box]
+	406 -> 1296 [constraint=true]
+	1297 [label="Topic 1297: 
+low
+ cost
+ failure
+ fairly
+ faith
+ " shape=box]
+	1296 -> 1297 [constraint=true]
+	1336 [label="Topic 1336: 
+hydroponic
+ version
+ /r
+ prime
+ weird
+ " shape=box]
+	1296 -> 1336 [constraint=true]
+	1560 [label="Topic 1560: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1296 -> 1560 [constraint=true]
+	1614 [label="Topic 1614: 
+shape
+ 🤔
+ familiar
+ fairly
+ faith
+ " shape=box]
+	1296 -> 1614 [constraint=true]
+	1424 [label="Topic 1424: 
+upper
+ equivalent
+ yield
+ massive
+ link
+ " shape=box]
+	65 -> 1424 [constraint=true]
+	1425 [label="Topic 1425: 
+group
+ ring
+ unnatural
+ carbon
+ alcohol
+ " shape=box]
+	1424 -> 1425 [constraint=true]
+	1426 [label="Topic 1426: 
+functional
+ atom
+ carbon
+ chain
+ refer
+ " shape=box]
+	1425 -> 1426 [constraint=true]
+	1498 [label="Topic 1498: 
+insecticide
+ versus
+ meta_analysis
+ and/or
+ understand
+ " shape=box]
+	1425 -> 1498 [constraint=true]
+	1635 [label="Topic 1635: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1424 -> 1635 [constraint=true]
+	1636 [label="Topic 1636: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1635 -> 1636 [constraint=true]
+	1499 [label="Topic 1499: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	65 -> 1499 [constraint=true]
+	1598 [label="Topic 1598: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1499 -> 1598 [constraint=true]
+	1599 [label="Topic 1599: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1598 -> 1599 [constraint=true]
+	1576 [label="Topic 1576: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	65 -> 1576 [constraint=true]
+	1577 [label="Topic 1577: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1576 -> 1577 [constraint=true]
+	1578 [label="Topic 1578: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1577 -> 1578 [constraint=true]
+	183 [label="Topic 183: 
+organic
+ usda
+ label
+ guideline
+ good
+ " shape=box]
+	0 -> 183 [constraint=true]
+	184 [label="Topic 184: 
+thomas
+ basis
+ +
+ approve
+ bee
+ " shape=box]
+	183 -> 184 [constraint=true]
+	323 [label="Topic 323: 
+farmers
+ bizarre
+ waste
+ completely
+ action
+ " shape=box]
+	184 -> 323 [constraint=true]
+	351 [label="Topic 351: 
+health
+ protocol
+ training
+ program
+ stretch
+ " shape=box]
+	323 -> 351 [constraint=true]
+	1213 [label="Topic 1213: 
+contract
+ hectare
+ print
+ likely
+ urgent
+ " shape=box]
+	323 -> 1213 [constraint=true]
+	1536 [label="Topic 1536: 
+disaster
+ colony_collapse
+ significantly
+ ag
+ measure
+ " shape=box]
+	323 -> 1536 [constraint=true]
+	1616 [label="Topic 1616: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	323 -> 1616 [constraint=true]
+	1122 [label="Topic 1122: 
+remain
+ doubt
+ hippy
+ correspond
+ check
+ " shape=box]
+	184 -> 1122 [constraint=true]
+	1447 [label="Topic 1447: 
+present
+ industrial
+ language
+ chemistry
+ civilization
+ " shape=box]
+	1122 -> 1447 [constraint=true]
+	1535 [label="Topic 1535: 
+walmart
+ program
+ obesity
+ similar
+ school
+ " shape=box]
+	1122 -> 1535 [constraint=true]
+	1487 [label="Topic 1487: 
+contact
+ manure
+ distribute
+ spice
+ regulation
+ " shape=box]
+	184 -> 1487 [constraint=true]
+	1488 [label="Topic 1488: 
+stringent
+ disagreement
+ fertilizer
+ site
+ ingredient
+ " shape=box]
+	1487 -> 1488 [constraint=true]
+	1529 [label="Topic 1529: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1487 -> 1529 [constraint=true]
+	1591 [label="Topic 1591: 
+chennai
+ ingredient
+ father
+ advice
+ contact
+ " shape=box]
+	1487 -> 1591 [constraint=true]
+	1546 [label="Topic 1546: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	184 -> 1546 [constraint=true]
+	1547 [label="Topic 1547: 
+peak
+ news
+ rainforest
+ poster
+ 🤔
+ " shape=box]
+	1546 -> 1547 [constraint=true]
+	1585 [label="Topic 1585: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1546 -> 1585 [constraint=true]
+	651 [label="Topic 651: 
+fiction
+ joke
+ epidemic
+ ceo
+ united
+ " shape=box]
+	183 -> 651 [constraint=true]
+	1362 [label="Topic 1362: 
+november
+ western
+ cultivate
+ fiber
+ biodiversity
+ " shape=box]
+	651 -> 1362 [constraint=true]
+	1605 [label="Topic 1605: 
+today
+ indigenous
+ 🤔
+ faith
+ fake
+ " shape=box]
+	1362 -> 1605 [constraint=true]
+	1622 [label="Topic 1622: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1362 -> 1622 [constraint=true]
+	1629 [label="Topic 1629: 
+gov
+ yes
+ fast
+ 🤔
+ familiar
+ " shape=box]
+	1362 -> 1629 [constraint=true]
+	1533 [label="Topic 1533: 
+altogether
+ adulterate
+ wallet
+ oca
+ certify
+ " shape=box]
+	651 -> 1533 [constraint=true]
+	1534 [label="Topic 1534: 
+requirement
+ ability
+ superior
+ bs
+ tout
+ " shape=box]
+	1533 -> 1534 [constraint=true]
+	1538 [label="Topic 1538: 
+b12
+ heart
+ read
+ click
+ facts
+ " shape=box]
+	651 -> 1538 [constraint=true]
+	1539 [label="Topic 1539: 
+alzheimer
+ disease
+ clone
+ killer
+ completely
+ " shape=box]
+	1538 -> 1539 [constraint=true]
+	645 [label="Topic 645: 
+start
+ drug
+ nutrition
+ crop
+ yay
+ " shape=box]
+	0 -> 645 [constraint=true]
+	646 [label="Topic 646: 
+chemical
+ ad
+ topic
+ campaign
+ education
+ " shape=box]
+	645 -> 646 [constraint=true]
+	1047 [label="Topic 1047: 
+seed
+ root
+ 🤔
+ falsely
+ faith
+ " shape=box]
+	646 -> 1047 [constraint=true]
+	1063 [label="Topic 1063: 
+sit
+ onion
+ previous
+ 🤔
+ falsely
+ " shape=box]
+	1047 -> 1063 [constraint=true]
+	1466 [label="Topic 1466: 
+nature
+ blame
+ federal
+ ignorance
+ bring
+ " shape=box]
+	646 -> 1466 [constraint=true]
+	1467 [label="Topic 1467: 
+wisdom
+ pharma
+ victory
+ intelligence
+ superior
+ " shape=box]
+	1466 -> 1467 [constraint=true]
+	1489 [label="Topic 1489: 
+mcdonald
+ chipotle
+ article
+ famine
+ fall
+ " shape=box]
+	1466 -> 1489 [constraint=true]
+	1615 [label="Topic 1615: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1466 -> 1615 [constraint=true]
+	1567 [label="Topic 1567: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	646 -> 1567 [constraint=true]
+	1568 [label="Topic 1568: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1567 -> 1568 [constraint=true]
+	1631 [label="Topic 1631: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	646 -> 1631 [constraint=true]
+	1632 [label="Topic 1632: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1631 -> 1632 [constraint=true]
+	1609 [label="Topic 1609: 
+join
+ regenerative
+ everyday
+ 🤔
+ family
+ " shape=box]
+	0 -> 1609 [constraint=true]
+	1610 [label="Topic 1610: 
+unhealthy
+ 🤔
+ family
+ faith
+ fake
+ " shape=box]
+	1609 -> 1610 [constraint=true]
+	1611 [label="Topic 1611: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1610 -> 1611 [constraint=true]
+	1612 [label="Topic 1612: 
+🤔
+ familiar
+ fairly
+ faith
+ fake
+ " shape=box]
+	1611 -> 1612 [constraint=true]
+}

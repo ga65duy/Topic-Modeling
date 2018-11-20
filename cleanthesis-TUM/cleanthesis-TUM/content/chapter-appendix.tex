@@ -1,0 +1,248 @@
+% !TEX root = ../my-thesis.tex
+%
+\chapter{Descriptive Statistics of the Dataset}
+\label{app:descriptiv_stats}
+\begin{figure}[h]
+	\begin{center}
+		%
+		\subfloat[Number of Articles per Type]{%
+			\includegraphics[width=0.5\textwidth]{gfx/descriptive_statistics/Number_of_articles_per_type.png}
+		}%
+		\subfloat[Number of Comments per Type]{%
+			\includegraphics[width=0.5\textwidth]{gfx/descriptive_statistics/Number_of_comments_per_type.png}
+		}\\ %  ------- End of the first row ----------------------%
+		\subfloat[Distribution of English articles per year]{%
+			\includegraphics[width=0.5\textwidth]{gfx/descriptive_statistics/Number_of_english_articles_per_year_and_type.png}
+		}%
+		\subfloat[Distribution of German articles per year]{%
+			\includegraphics[width=0.5\textwidth]{gfx/descriptive_statistics/Number_of_Germna_articles_per_year_and_type.png}
+		}%
+		%
+	\end{center}
+	\caption{Descriptive Statistics for all datasets}
+	\label{fig:descriptive_stats}
+\end{figure}
+
+\section{Detailed Statistics of all Sources}
+% English Editorial
+\begin{sidewaystable}
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		Source           & Total articles & Relevant articles & \% rel. articles & Avg. article length\footnotemark[1] & Rel. art. w/ cmnt. & \% rel. art. w/ cmnt. \\ \midrule
+		usatoday         &             95 &                61 &            64.21 &                 303 &                 15 &                 24.59 \\
+		nytimes          &            438 &               327 &            74.66 &                 528 &                 99 &                 30.28 \\
+		nypost           &            106 &                33 &            31.13 &                 377 &                  0 &                  0.00 \\
+		washingtonpost   &           1563 &               489 &            31.29 &                 480 &                285 &                 58.28 \\
+		latimes          &           1522 &               270 &            17.74 &                 419 &                  8 &                  2.96 \\
+		chicagotribune   &           2283 &               572 &            25.05 &                 420 &                 39 &                  6.82 \\
+		huffingtonpost   &            880 &               668 &            75.91 &                 479 &                  0 &                  0.00 \\
+		organicauthority &             66 &                43 &            65.15 &                 626 &                  0 &                  0.00 \\ \bottomrule
+	\end{tabular}
+	\caption{Article statistics for English editorial data} 
+	\begin{tabular}{lrrrrrrr}
+		\toprule
+		Source           & Total comments & Relevant comments & \% rel. cmnt. & Root cmnt. & \% root cmnt. & Avg. \# cmnt. & Avg. cmnt. length\footnotemark[1] \\ \midrule
+		usatoday         &            259 &               195 &         75.29 &        103 &         52.82 &             3 &                17 \\
+		nytimes          &          16128 &             11576 &         71.78 &       7353 &         63.52 &            35 &                40 \\
+		nypost           &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		washingtonpost   &          84669 &             14875 &         17.57 &       6667 &         44.82 &            30 &                24 \\
+		latimes          &            374 &                14 &          3.74 &         12 &         85.71 &             0 &                34 \\
+		chicagotribune   &            281 &               154 &         54.80 &        131 &         85.06 &             0 &                19 \\
+		huffingtonpost   &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		organicauthority &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\ \bottomrule
+	\end{tabular}
+	
+	\caption{Comment statistics for English editorial data} 
+\end{sidewaystable}
+
+% English forums
+\begin{sidewaystable}
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		Source         & Total articles & Relevant articles & \% rel. articles & Avg. article length\footnotemark[1] & Rel. art. w/ cmnt. & \% rel. art. w/ cmnt. \\ \midrule
+		reddit         &            256 &               225 &            87.89 &                  49 &                190 &                 84.44 \\
+		usmessageboard &            382 &                61 &            15.97 &                   0 &                 61 &                100.00 \\
+		cafemom        &             88 &                26 &            29.55 &                 251 &                 26 &                100.00 \\
+		quora          &           1703 &              1497 &            87.90 &                   5 &               1304 &                 87.11 \\
+		fb             &           5035 &              1467 &            29.14 &                  23 &               1355 &                 92.37 \\ \bottomrule
+	\end{tabular}
+	
+	\caption{Article statistics for English forum data} 
+	\begin{tabular}{lrrrrrrr}
+		\toprule
+		Source         & Total comments & Relevant comments & \% rel. cmnt. & Root cmnt. & \% root cmnt. & Avg. \# cmnt. & Avg. cmnt. length\footnotemark[1] \\ \midrule
+		reddit         &           9291 &              8392 &         90.32 &       1574 &         18.76 &            37 &                25 \\
+		usmessageboard &          78303 &              1982 &          2.53 &       1254 &         63.27 &            32 &                43 \\
+		cafemom        &           2206 &               352 &         15.96 &        280 &         79.55 &            13 &                30 \\
+		quora          &           9606 &              8699 &         90.56 &       5229 &         60.11 &             5 &                46 \\
+		fb             &         299126 &             81660 &         27.30 &      64183 &         78.60 &            55 &                11 \\ \bottomrule
+	\end{tabular}
+	\caption{Comment statistics for English forum data} 
+\end{sidewaystable}
+
+\begin{sidewaystable}
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		Source             & Total articles & Relevant articles & \% rel. articles & Avg. article length\footnotemark[1] & Rel. art. w/ cmnt. & \% rel. art. w/ cmnt. \\ \midrule
+		spiegel            &            468 &               152 &            32.48 &                 376 &                 61 &                 40.13 \\
+		zeit               &            154 &                62 &            40.26 &                 461 &                 35 &                 56.45 \\
+		welt               &            729 &               392 &            53.77 &                 323 &                 35 &                  8.93 \\
+		taz                &           2458 &              1406 &            57.20 &                 255 &                249 &                 17.71 \\
+		tagesspiegel       &            625 &               278 &            44.48 &                 279 &                 41 &                 14.75 \\
+		handelsblatt       &            567 &               286 &            50.44 &                 302 &                 65 &                 22.73 \\
+		freitag            &             16 &                 7 &            43.75 &                 678 &                  5 &                 71.43 \\
+		tagesschau         &             61 &                17 &            27.87 &                 202 &                 17 &                100.00 \\
+		br                 &            191 &                93 &            48.69 &                 297 &                 26 &                 27.96 \\
+		wdr                &             68 &                37 &            54.41 &                 241 &                  0 &                  0.00 \\
+		swr                &            164 &                82 &            50.00 &                 207 &                  0 &                  0.00 \\
+		ndr                &             18 &                 5 &            27.78 &                 209 &                  0 &                  0.00 \\
+		derstandard        &           1092 &               646 &            59.16 &                 231 &                529 &                 81.89 \\
+		diepresse          &            304 &               152 &            50.00 &                 230 &                100 &                 65.79 \\
+		kurier             &            287 &               165 &            57.49 &                 199 &                 88 &                 53.33 \\
+		nachrichtenat      &            254 &               134 &            52.76 &                 198 &                 75 &                 55.97 \\
+		salzburgcom        &            154 &                93 &            60.39 &                 177 &                  0 &                  0.00 \\
+		krone              &             97 &                31 &            31.96 &                 143 &                  0 &                  0.00 \\
+		tagesanzeiger      &            187 &                32 &            17.11 &                 171 &                 17 &                 53.12 \\
+		nzz                &            316 &               108 &            34.18 &                 338 &                 17 &                 15.74 \\
+		aargauer           &            110 &                46 &            41.82 &                 221 &                 17 &                 36.96 \\
+		luzernzeitung      &            105 &                55 &            52.38 &                 217 &                  0 &                  0.00 \\
+		srf                &            147 &                85 &            57.82 &                 194 &                 56 &                 65.88 \\
+		forum\_ernaehrung  &             18 &                 3 &            16.67 &                 339 &                  0 &                  0.00 \\
+		heise              &             33 &                17 &            51.52 &                 479 &                 17 &                100.00 \\
+		eatsmarter         &            300 &               100 &            33.33 &                 176 &                 35 &                 35.00 \\
+		huffingtonpost\_de &            293 &                94 &            32.08 &                 248 &                  0 &                  0.00 \\
+		waz                &            744 &               207 &            27.82 &                 193 &                 68 &                 32.85 \\
+		merkur             &            393 &               243 &            61.83 &                 209 &                 69 &                 28.40 \\
+		rp                 &            604 &               267 &            44.21 &                 204 &                103 &                 38.58 \\
+		focus              &            777 &               397 &            51.09 &                 176 &                154 &                 38.79 \\
+		campact            &             61 &                23 &            37.70 &                 224 &                 23 &                100.00 \\ \bottomrule
+	\end{tabular}
+	\caption{Article statistics for German editorial data} 
+\end{sidewaystable}
+
+\begin{sidewaystable}	
+	\begin{tabular}{lrrrrrrr}
+		\toprule
+		Source             & Total comments & Relevant comments & \% rel. cmnt. & Root cmnt. & \% root cmnt. & Avg. \# cmnt. & Avg. cmnt. length\footnotemark[1] \\ \midrule
+		spiegel            &          62860 &             21551 &         34.28 &       5863 &         27.21 &           141 &                48 \\
+		zeit               &           8496 &              2977 &         35.04 &       1279 &         42.96 &            48 &                32 \\
+		welt               &           1448 &               528 &         36.46 &        316 &         59.85 &             1 &                21 \\
+		taz                &           5537 &              2608 &         47.10 &       1310 &         50.23 &             1 &                28 \\
+		tagesspiegel       &           3535 &              1279 &         36.18 &       1279 &        100.00 &             4 &                36 \\
+		handelsblatt       &            923 &               295 &         31.96 &        222 &         75.25 &             1 &                28 \\
+		freitag            &            129 &                65 &         50.39 &         33 &         50.77 &             9 &                34 \\
+		tagesschau         &           4377 &               841 &         19.21 &        841 &        100.00 &            49 &                32 \\
+		br                 &            386 &               343 &         88.86 &        220 &         64.14 &             3 &                26 \\
+		wdr                &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		swr                &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		ndr                &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		derstandard        &          80715 &             50790 &         62.93 &      12152 &         23.93 &            78 &                15 \\
+		diepresse          &           3015 &              1796 &         59.57 &        891 &         49.61 &            11 &                22 \\
+		kurier             &            870 &               471 &         54.14 &        308 &         65.39 &             2 &                17 \\
+		nachrichtenat      &           1992 &               678 &         34.04 &        310 &         45.72 &             5 &                14 \\
+		salzburgcom        &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		krone              &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		tagesanzeiger      &           4872 &              1139 &         23.38 &        664 &         58.30 &            35 &                18 \\
+		nzz                &            622 &               162 &         26.05 &        101 &         62.35 &             1 &                32 \\
+		aargauer           &            397 &               262 &         65.99 &        122 &         46.56 &             5 &                18 \\
+		luzernzeitung      &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		srf                &           1477 &               941 &         63.71 &        652 &         69.29 &            11 &                20 \\
+		forum\_ernaehrung  &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		heise              &           3636 &              1835 &         50.47 &        335 &         18.26 &           107 &                53 \\
+		eatsmarter         &           1179 &               162 &         13.74 &        146 &         90.12 &             1 &                30 \\
+		huffingtonpost\_de &              0 &                 0 &          0.00 &          0 &          0.00 &             0 &                 0 \\
+		waz                &           1827 &               459 &         25.12 &        327 &         71.24 &             2 &                25 \\
+		merkur             &            699 &               347 &         49.64 &        194 &         55.91 &             1 &                15 \\
+		rp                 &           1808 &               822 &         45.46 &        822 &        100.00 &             3 &                35 \\
+		focus              &           5806 &              2477 &         42.66 &       2123 &         85.71 &             6 &                24 \\
+		campact            &           2577 &               687 &         26.66 &        518 &         75.40 &            29 &                30 \\ \bottomrule
+	\end{tabular}
+	\caption{Comment statistics for German editorial data} 
+\end{sidewaystable}
+
+\begin{sidewaystable}
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		Source             & Total articles & Relevant articles & \% rel. articles & Avg. article length\footnotemark[1] & Rel. art. w/ cmnt. & \% rel. art. w/ cmnt. \\ \midrule
+		reddit\_de         &             83 &                44 &            53.01 &                   3 &                 33 &                 75.00 \\
+		gutefrage          &            547 &               396 &            72.39 &                  17 &                396 &                100.00 \\
+		werweisswas        &             33 &                27 &            81.82 &                  30 &                 26 &                 96.30 \\
+		glamour            &              3 &                 2 &            66.67 &                  58 &                  2 &                100.00 \\
+		webkoch            &              4 &                 3 &            75.00 &                 221 &                  2 &                 66.67 \\
+		chefkoch           &            248 &               150 &            60.48 &                  54 &                150 &                100.00 \\
+		paradisi           &             18 &                18 &           100.00 &                  19 &                 18 &                100.00 \\
+		kleiderkreisel     &             69 &                24 &            34.78 &                  50 &                 24 &                100.00 \\
+		biooekoforum       &              1 &                 1 &           100.00 &                  19 &                  1 &                100.00 \\
+		bfriendsBrigitte   &             20 &                11 &            55.00 &                  56 &                 11 &                100.00 \\
+		schule-und-familie &              2 &                 2 &           100.00 &                  32 &                  1 &                 50.00 \\ \bottomrule
+	\end{tabular}
+	
+	\caption{Article statistics for German forum data} 
+	\begin{tabular}{lrrrrrrr}
+		\toprule
+		Source             & Total comments & Relevant comments & \% rel. cmnt. & Root cmnt. & \% root cmnt. & Avg. \# cmnt. & Avg. cmnt. length\footnotemark[1] \\ \midrule
+		reddit\_de         &           1665 &               488 &         29.31 &        138 &         28.28 &            11 &                16 \\
+		gutefrage          &           6005 &              4100 &         68.28 &       1898 &         46.29 &            10 &                19 \\
+		werweisswas        &            241 &               195 &         80.91 &        195 &        100.00 &             7 &                39 \\
+		glamour            &            287 &               188 &         65.51 &        188 &        100.00 &            94 &                29 \\
+		webkoch            &             34 &                34 &        100.00 &         34 &        100.00 &            11 &                22 \\
+		chefkoch           &           9804 &              5750 &         58.65 &       5750 &        100.00 &            38 &                36 \\
+		paradisi           &             63 &                63 &        100.00 &         63 &        100.00 &             3 &                17 \\
+		kleiderkreisel     &           4831 &              1255 &         25.98 &        854 &         68.05 &            52 &                18 \\
+		biooekoforum       &             15 &                15 &        100.00 &         15 &        100.00 &            15 &                23 \\
+		bfriendsBrigitte   &           2898 &               740 &         25.53 &        740 &        100.00 &            67 &                37 \\
+		schule-und-familie &             28 &                28 &        100.00 &         28 &        100.00 &            14 &                31 \\ \bottomrule
+	\end{tabular}	
+	\caption{Comment statistics for German forum data} 
+\end{sidewaystable}
+\footnotetext[1]{The average number of tokens after lemmatizing and stop word removal.}
+\section{JSON Storage Schema}
+\label{sec:appendix:json}
+\begin{center}
+	\begin{listing}
+		\begin{minted}[linenos,tabsize=3,breaklines]{json}
+			{
+				"article_title":"article title",
+				"article_author":[
+				{
+					"article_author_id":"123456789",
+					"article_author_name":"author name"
+				}
+				],
+				"article_time":"2015-10-17 20:02:54",
+				"article_text":"article text",
+				"article_source":"news source",
+				"comments":[
+				{
+					"comment_id":"123456789",
+					"comment_author": {
+						"comment_author_id":"45678",
+						"comment_author_name":"author name",
+					},
+					"comment_time":"2015-10-20 04:17:17",
+					"comment_text":"comment text",
+					"comment_rating":-15.0,
+					"comment_title":"example title"
+				},
+				{
+					"comment_id":"987654321",
+					"comment_author":{
+						"comment_author_id":"12345",
+						"comment_author_name":"author name"
+					},
+					"comment_time":"2015-10-19 19:16:33",
+					"comment_text":"comment text",
+					"comment_replyTo":"123456789",
+					"comment_rating":6.0
+				}
+				],
+				"search_query":"organic farming",
+				"article_url":"https://example.url",
+				"resource_type":"editorial | blog | forum",
+				"article_rating":5.0
+			}
+		\end{minted}
+		\caption{JSON Storage Schema}
+		\label{jsonschema}
+	\end{listing}
+\end{center}

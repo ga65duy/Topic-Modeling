@@ -1,0 +1,233 @@
+// Topics
+digraph {
+	0 [label="organic
+ food
+ use
+ good
+ pesticide
+ " shape=box]
+	1 [label="food
+ eat
+ people
+ good
+ year
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="eat
+ diet
+ fat
+ milk
+ sugar
+ " shape=box]
+	1 -> 2 [constraint=true]
+	9 [label="foods
+ store
+ price
+ amazon
+ good
+ " shape=box]
+	1 -> 9 [constraint=true]
+	115 [label="medjool
+ date
+ waterpenny
+ liberally
+ slather
+ " shape=box]
+	1 -> 115 [constraint=true]
+	3 [label="food
+ /><br
+ >
+ chemical
+ government
+ " shape=box]
+	0 -> 3 [constraint=true]
+	4 [label="gmo
+ food
+ crop
+ label
+ monsanto
+ " shape=box]
+	3 -> 4 [constraint=true]
+	12 [label="grow
+ garden
+ time
+ fresh
+ like
+ " shape=box]
+	3 -> 12 [constraint=true]
+	43 [label="rice
+ sri
+ root
+ dry
+ aus
+ " shape=box]
+	3 -> 43 [constraint=true]
+	75 [label="water
+ carbon
+ biochar
+ soil
+ biomass
+ " shape=box]
+	3 -> 75 [constraint=true]
+	86 [label="wine
+ winemaker
+ winery
+ quite
+ list
+ " shape=box]
+	3 -> 86 [constraint=true]
+	89 [label="freezer
+ chicken
+ hoard
+ editor
+ forum
+ " shape=box]
+	3 -> 89 [constraint=true]
+	104 [label="plastic
+ bird
+ krill
+ bag
+ cat
+ " shape=box]
+	3 -> 104 [constraint=true]
+	114 [label="bread
+ past
+ gender
+ mike
+ free
+ " shape=box]
+	3 -> 114 [constraint=true]
+	117 [label="bee
+ frog
+ specie
+ pail
+ win
+ " shape=box]
+	3 -> 117 [constraint=true]
+	5 [label="day
+ $
+ dry
+ green
+ old
+ " shape=box]
+	0 -> 5 [constraint=true]
+	37 [label="diaper
+ disposable
+ cotton
+ use
+ cloth_diaper
+ " shape=box]
+	5 -> 37 [constraint=true]
+	41 [label="foods
+ texas
+ market
+ mile
+ heb
+ " shape=box]
+	5 -> 41 [constraint=true]
+	103 [label="$
+ biofuel
+ wife
+ engine
+ cheese
+ " shape=box]
+	5 -> 103 [constraint=true]
+	7 [label="wine
+ make
+ know
+ label
+ good
+ " shape=box]
+	0 -> 7 [constraint=true]
+	8 [label="county
+ soccer
+ land
+ farm
+ field
+ " shape=box]
+	7 -> 8 [constraint=true]
+	40 [label="deal
+ <url>
+ cyber
+ monday
+ >
+ " shape=box]
+	7 -> 40 [constraint=true]
+	47 [label="food
+ eat
+ /><br
+ child
+ healthy
+ " shape=box]
+	7 -> 47 [constraint=true]
+	50 [label="potato
+ grow
+ sprout
+ beetle
+ city
+ " shape=box]
+	7 -> 50 [constraint=true]
+	56 [label="word
+ rectangle
+ square
+ molecule
+ arsenic
+ " shape=box]
+	7 -> 56 [constraint=true]
+	74 [label="mayo
+ just
+ mayonnaise
+ egg
+ product
+ " shape=box]
+	7 -> 74 [constraint=true]
+	77 [label="advertising
+ authority
+ false
+ kimchi
+ acne
+ " shape=box]
+	7 -> 77 [constraint=true]
+	13 [label="soil
+ waste
+ vegetable
+ sewage
+ biosolid
+ " shape=box]
+	0 -> 13 [constraint=true]
+	49 [label="local
+ seed
+ feature
+ bee
+ barbara
+ " shape=box]
+	13 -> 49 [constraint=true]
+	64 [label="milk
+ raw
+ drink
+ pasteurize
+ cow
+ " shape=box]
+	13 -> 64 [constraint=true]
+	79 [label="farming
+ conventional
+ yield
+ energy
+ environmental
+ " shape=box]
+	13 -> 79 [constraint=true]
+	80 [label="<url>
+ >
+ technology
+ <
+ target=\"_blank\"
+ " shape=box]
+	13 -> 80 [constraint=true]
+	118 [label="china
+ organics’
+ leadership
+ popoff
+ shark
+ " shape=box]
+	13 -> 118 [constraint=true]
+}

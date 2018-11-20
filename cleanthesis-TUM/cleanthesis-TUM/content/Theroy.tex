@@ -1,0 +1,79 @@
+\chapter{Methodology}
+%TODO
+In this chapter the basic principles for the following chapters will be explained.
+The Section \ref{sec:docrep} describes how documents can be numerically represented. Section \ref{sec:topicmodel} then will introduce the three Topic Models \ac{LDA}, \ac{NMF} and \ac{HLDA} which are used in this thesis.
+
+\section{Document representation}
+\label{sec:docrep}
+
+\subsection{Bag of Words}
+The Bag of Words \ac{BoW} model serves as a numerical representation of a document, which is used as input for further \ac{NLP} tasks.
+It represents the document simply by the counts for each word. The grammar and the ordering of the words are ignored, so some information is lost. The document \textit{John likes organic but Mary doesn't} and the document {Mary likes organic but John doesn't} have the same \ac{BoW} representation although these differ in context. Nevertheless, similar \ac{BoW} imply similar document content (\cite{Manning2008}). 
+
+\subsection{Tf-Idf Weighting}
+Only considering the absolute term frequency ($tf_{t,d}$) of words is not the best measure to make differentiations between documents, because not all terms are equally important. 
+The term \textit{organic} appears in  224 of 239 articles in the New York Times, obviously this term can not be considered as a stop word, however it is not suitable to differentiate the articles. Therefore the effect of the frequent words is reduced by the \textit{inverse document frequency}:
+\begin{equation}
+	idf_{d,t} = log\dfrac{N_{d}}{df_{d,t}}
+\end{equation}
+%$$ idf_{d,t} = log\dfrac{N_{d}}{df_{d,t}} $$
+$N_{d}$ is the number of all documents in a corpus, while $df_{d,t}$ is the number of documents that contain the single term.\\
+Based on the term frequency $tf_{t,d}$ and the inverse document frequency $idf_{d,t}$ we introduce the \textit{\ac{tfidf}}: 
+
+\begin{equation}
+tf-idf_{d,t} = tf_{t,d} * idf_{t,d}
+\end{equation}
+%$$ tf-idf_{d,t} = tf_{t,d} * idf_{t,d}$$
+
+The \ac{tfidf} weighting has the highest score when the term occurs frequently within a small amount of documents. The score is lower when the term occurs rarely or too often in many documents (\cite{Jurafsky2009}).
+
+\subsection{Vector space model}
+The representation of documents in the same vector space is known as the vector space model. This was originally introduced for \ac{IR} operations like scoring documents on a query, document classification or clustering \cite{Salton1975}.\\
+The vector space model forms with the documents \textit{$D_{i}$} and all unique terms \textit{$T_{j}$} the document term matrix \textit{C}. Each row of \textit{C} corresponds every single document of the corpus and each column the single unique terms. In \textit{$C_{ij}$} the weightings either as term frequency or \ac{tfidf} for each term over all documents is stored. \\
+In Table \ref{tab:doc_term_lda} the term frequency and in Table \ref{tab:doc_term_nmf}  \ac{tfidf} is calculated from three sample documents: \textit{Doc 1: Organic is healthier then conventional food}, \textit{Doc 2: I buy organic} and \textit{Doc 3: Organic is wasted money}.
+In this thesis both topic modeling algorithms take the document term matrix as input, but with different weightings. For \ac{LDA} the term frequency and for \ac{NMF} the \ac{tfidf} weighting  is used.\\
+\begin{table}[h]
+	\begin{tabular}{lcccccccccc}
+		\toprule
+		& organic & is & healthier & then & conventional & food & i &buy& wasted  & money \\ \midrule
+	Doc1 & 1 	& 1  &      1      &  1   & 1 			 & 1  	& 0 &0  &  0   	&  0  \\
+	Doc2 & 1 	& 0  &      0      &  0   & 0 			 & 0  	& 1 &1  &  1   	&  0  \\
+	Doc3 & 1 	& 1  &      0      &  0   & 0 			 & 0  	& 0 &0  &  1    &  1   \\ \bottomrule
+	\end{tabular}
+	\caption[Sample term frequency matrix]{Document term matrix with term-frequency weighting as used by \ac{LDA}.}
+	\label{tab:doc_term_lda}
+\end{table}	
+%TODO umrechnen
+\begin{table}[h]
+	\begin{tabular}{lllllllllll}
+		\toprule
+		& organic & is & healthier & then & conventional & food & i &buy& wasted  & money \\ \midrule
+	Doc1 & 0 	& 0.45  &   0.45      &  0.45   &  	0		 & 0.34  	& 0 &0.27  &  0.45   	&  0  \\
+	Doc2 & 0.65 	& 0  &      0      &  0   & 0.65			 & 0  	& 0 &0.39  &  0   	&  0  \\
+	Doc3 & 0 	& 0  &      0      &  0   & 0 			 & 0 .44 	& 0.58 &0.34  &  0    &  0.58   \\ \bottomrule
+	\end{tabular}
+	\caption[Sample \ac{tfidf} matrix]{Document term matrix with \ac{tfidf} weighting as used by \ac{NMF}.}
+	\label{tab:doc_term_nmf}
+\end{table}
+
+
+\section{Topic Modeling}
+\label{sec:topicmodel}
+Every day large amounts of information are collected and become available. The vast quantities of data make it difficult to access those information we are looking for. Therefore we need methods that help us to organize, summarize and understand large collections of data.\\
+Topic Modeling is used to process large collections efficiently.It helps to discover hidden themes or rather topics of document collections. A topic is a multinomial distribution over all words in a corpus. Of course the probabilities over each word are different. 
+
+
+
+\subsection{Latent Dirichlet Allocation}
+
+
+
+
+\subsection{Non negative Matrix Factorization}
+
+
+
+
+\subsection{Hierarchical Latent Dirichlet Allocation}
+
+

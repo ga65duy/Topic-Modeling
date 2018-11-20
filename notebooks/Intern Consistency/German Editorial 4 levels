@@ -1,0 +1,1578 @@
+// Topics
+digraph {
+	0 [label="Topic 0: 
+produkt
+ lebensmittel
+ bio
+ kunde
+ gemüse
+ " shape=box]
+	1 [label="Topic 1: 
+tier
+ hof
+ eiern
+ fleisch
+ huhn
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="Topic 2: 
+bio
+ prozent
+ lebensmittel
+ landwirtschaft
+ ökologisch
+ " shape=box]
+	1 -> 2 [constraint=true]
+	3 [label="Topic 3: 
+deutschland
+ eiern
+ pestizid
+ deutsch
+ kontrolle
+ " shape=box]
+	2 -> 3 [constraint=true]
+	4 [label="Topic 4: 
+prozent
+ bauer
+ euro
+ landwirtschaft
+ deutschland
+ " shape=box]
+	3 -> 4 [constraint=true]
+	14 [label="Topic 14: 
+wer­den
+ ber­lin
+ pro­duk­te
+ kön­nen
+ jah­ren
+ " shape=box]
+	3 -> 14 [constraint=true]
+	24 [label="Topic 24: 
+polizei
+ vergiften
+ hennenberg
+ brungs
+ täter
+ " shape=box]
+	3 -> 24 [constraint=true]
+	53 [label="Topic 53: 
++
+ hans
+ perchlorat
+ margarine
+ metzger
+ " shape=box]
+	3 -> 53 [constraint=true]
+	149 [label="Topic 149: 
+holzmann
+ girmann
+ letten
+ gärtnerei
+ bad_heilbrunn
+ " shape=box]
+	3 -> 149 [constraint=true]
+	159 [label="Topic 159: 
+|
+ scharun
+ redaktion
+ wdr
+ theresa
+ " shape=box]
+	3 -> 159 [constraint=true]
+	187 [label="Topic 187: 
+bier
+ tee
+ brauerei
+ lammsbräu
+ brauen
+ " shape=box]
+	3 -> 187 [constraint=true]
+	349 [label="Topic 349: 
+einkaufsführer
+ schwarzer
+ sanierung
+ reparatur
+ holeksa
+ " shape=box]
+	3 -> 349 [constraint=true]
+	456 [label="Topic 456: 
+labeling
+ natürliches
+ gebündelt
+ qualitätseinbußen
+ bio-hinweis
+ " shape=box]
+	3 -> 456 [constraint=true]
+	500 [label="Topic 500: 
+schenkel
+ nitrit
+ kapplermühle
+ feldfrüchten
+ herkunftssiegel
+ " shape=box]
+	3 -> 500 [constraint=true]
+	612 [label="Topic 612: 
+ugly
+ hauser
+ stockhammer
+ werber-rat
+ mirjam
+ " shape=box]
+	3 -> 612 [constraint=true]
+	693 [label="Topic 693: 
+alban
+ milupa
+ vki
+ mogelpackungen
+ schutzatmosphäre
+ " shape=box]
+	3 -> 693 [constraint=true]
+	703 [label="Topic 703: 
+marinello
+ thiermeyer
+ wahlvorstand
+ chip
+ didi
+ " shape=box]
+	3 -> 703 [constraint=true]
+	771 [label="Topic 771: 
+wagner
+ pühringer
+ solinger
+ agroscope
+ schauer
+ " shape=box]
+	3 -> 771 [constraint=true]
+	780 [label="Topic 780: 
+habbel
+ bosseln
+ geb.
+ stammvater
+ cobbenrode
+ " shape=box]
+	3 -> 780 [constraint=true]
+	799 [label="Topic 799: 
+eck
+ gockelhahn
+ kraulen
+ leserartikel
+ weideschweine
+ " shape=box]
+	3 -> 799 [constraint=true]
+	804 [label="Topic 804: 
+halmanseder
+ gebäckwaren
+ eifreie
+ grunzmobil
+ auslisten
+ " shape=box]
+	3 -> 804 [constraint=true]
+	12 [label="Topic 12: 
+paraguay
+ bpa
+ lüttwitz
+ erheblich
+ pflanzenkost
+ " shape=box]
+	2 -> 12 [constraint=true]
+	201 [label="Topic 201: 
+marzinzik
+ anne
+ broer
+ meigen
+ herret
+ " shape=box]
+	12 -> 201 [constraint=true]
+	601 [label="Topic 601: 
+rübenzucker
+ feindlich
+ myclimate
+ verjüngung
+ bekämpfenswert
+ " shape=box]
+	12 -> 601 [constraint=true]
+	722 [label="Topic 722: 
+eiermacher
+ gehirn
+ lasern
+ proband
+ halo-effekt
+ " shape=box]
+	12 -> 722 [constraint=true]
+	725 [label="Topic 725: 
+apfelchips
+ südtirol
+ demmelmair
+ kaufbelege
+ kund*innen
+ " shape=box]
+	12 -> 725 [constraint=true]
+	728 [label="Topic 728: 
+meier
+ thalheim
+ bill
+ buono
+ sarah
+ " shape=box]
+	12 -> 728 [constraint=true]
+	790 [label="Topic 790: 
+biofruit_gmbh
+ spritzig
+ category-management
+ beschaffungspreisen
+ grünleger
+ " shape=box]
+	12 -> 790 [constraint=true]
+	796 [label="Topic 796: 
+braunau
+ landhendl
+ ortner
+ holler
+ sieberer
+ " shape=box]
+	12 -> 796 [constraint=true]
+	22 [label="Topic 22: 
+ethoxyquin
+ färben
+ superfoods
+ quast
+ biene
+ " shape=box]
+	2 -> 22 [constraint=true]
+	23 [label="Topic 23: 
+fischen
+ wwf
+ lachs
+ aquakultur
+ msc
+ " shape=box]
+	22 -> 23 [constraint=true]
+	296 [label="Topic 296: 
+kraillinger
+ lüst
+ strohmeyer
+ wochenmarktes
+ mittfünfziger
+ " shape=box]
+	22 -> 296 [constraint=true]
+	361 [label="Topic 361: 
+salami
+ farbe
+ eigelb
+ cholesterin
+ räuchern
+ " shape=box]
+	22 -> 361 [constraint=true]
+	591 [label="Topic 591: 
+ledern
+ eu-bio-label
+ waschbär
+ kolaric
+ pütz
+ " shape=box]
+	22 -> 591 [constraint=true]
+	734 [label="Topic 734: 
+apfelsorte
+ kellerhans
+ kirchengast
+ blindverkostung
+ reitbauer
+ " shape=box]
+	22 -> 734 [constraint=true]
+	740 [label="Topic 740: 
+food-coop
+ vorratskammer
+ franckkistl
+ bio-erdäpfel
+ glasner
+ " shape=box]
+	22 -> 740 [constraint=true]
+	778 [label="Topic 778: 
+haxler
+ thalhammer
+ grundschule
+ grabenstraße
+ koch
+ " shape=box]
+	22 -> 778 [constraint=true]
+	801 [label="Topic 801: 
+wehrt
+ farbspiel
+ xanten
+ ernährungssünden
+ pastinake
+ " shape=box]
+	22 -> 801 [constraint=true]
+	32 [label="Topic 32: 
+hummel
+ puls
+ annemarie
+ landkost-ei
+ moretti
+ " shape=box]
+	2 -> 32 [constraint=true]
+	33 [label="Topic 33: 
+sicon
+ referenzdosis
+ hochegger
+ buwog-
+ macho
+ " shape=box]
+	32 -> 33 [constraint=true]
+	114 [label="Topic 114: 
+easy
+ ■_betr.
+ shia
+ su
+ spd
+ " shape=box]
+	32 -> 114 [constraint=true]
+	154 [label="Topic 154: 
+singert
+ teut
+ ebeling
+ crussow
+ henze
+ " shape=box]
+	32 -> 154 [constraint=true]
+	180 [label="Topic 180: 
+flavonoide
+ schlaganfall
+ wettbewerbsrichtern
+ amaranth
+ verarbeitungsanlagen
+ " shape=box]
+	32 -> 180 [constraint=true]
+	493 [label="Topic 493: 
+licht
+ zelle
+ biophotonen
+ popp
+ lichtquanten
+ " shape=box]
+	32 -> 493 [constraint=true]
+	528 [label="Topic 528: 
+schnee
+ möbeln
+ magner
+ bambus
+ piste
+ " shape=box]
+	32 -> 528 [constraint=true]
+	630 [label="Topic 630: 
+josef_umathum
+ ariane
+ umathum
+ selbsttest
+ nix
+ " shape=box]
+	32 -> 630 [constraint=true]
+	718 [label="Topic 718: 
+go
+ acrylamid
+ elektrogeräte
+ heijn
+ elektrogeräten
+ " shape=box]
+	32 -> 718 [constraint=true]
+	760 [label="Topic 760: 
+tress
+ jette
+ bull
+ joop
+ sitting
+ " shape=box]
+	32 -> 760 [constraint=true]
+	776 [label="Topic 776: 
+wenzel
+ fließbändern
+ fleischkauf
+ riedl
+ bio-hundefutter
+ " shape=box]
+	32 -> 776 [constraint=true]
+	793 [label="Topic 793: 
+köstlinger
+ welser
+ hommage
+ hofinger
+ vollsortiment
+ " shape=box]
+	32 -> 793 [constraint=true]
+	794 [label="Topic 794: 
+grützmacher
+ busch-stockfisch
+ trump
+ peiting
+ geschmacksempfinden
+ " shape=box]
+	32 -> 794 [constraint=true]
+	477 [label="Topic 477: 
+cadmium
+ verschlimmbessern
+ glyphosat
+ menhard
+ br24
+ " shape=box]
+	2 -> 477 [constraint=true]
+	478 [label="Topic 478: 
+öko-kleidung
+ wasserfest
+ öko-mode
+ sonnenmilch
+ renaissance
+ " shape=box]
+	477 -> 478 [constraint=true]
+	502 [label="Topic 502: 
+anthrachinon
+ tee
+ gefunden
+ superfoods
+ novak
+ " shape=box]
+	477 -> 502 [constraint=true]
+	534 [label="Topic 534: 
+arsen
+ reiswaffeln
+ vollkornreis
+ 500gdm
+ basmati-reis
+ " shape=box]
+	477 -> 534 [constraint=true]
+	699 [label="Topic 699: 
+b-ware
+ fehlerfrei
+ rheinischer
+ schönheitsmängeln
+ eu-norm
+ " shape=box]
+	477 -> 699 [constraint=true]
+	758 [label="Topic 758: 
+sexy
+ thiel
+ evu
+ tiertransport
+ schweitzer
+ " shape=box]
+	477 -> 758 [constraint=true]
+	775 [label="Topic 775: 
+marktschwärmerei
+ gemüsekisten
+ biodeutsch
+ otmar
+ hoflieferanten
+ " shape=box]
+	477 -> 775 [constraint=true]
+	809 [label="Topic 809: 
+biosanica
+ nätscher
+ sund
+ startups
+ bio-apfelchips
+ " shape=box]
+	477 -> 809 [constraint=true]
+	644 [label="Topic 644: 
+wam
+ lena
+ zelt
+ kundin
+ dreckig
+ " shape=box]
+	2 -> 644 [constraint=true]
+	692 [label="Topic 692: 
+lin
+ geschmacksstoffen
+ billig-klamotten
+ äußern
+ borkiger
+ " shape=box]
+	644 -> 692 [constraint=true]
+	731 [label="Topic 731: 
+gourmetmagazin
+ kopfschüttelnd
+ tasten
+ gewächstunnel
+ begegnungsprojekt
+ " shape=box]
+	644 -> 731 [constraint=true]
+	803 [label="Topic 803: 
+voh
+ kugeln
+ canina
+ ines
+ steglitz
+ " shape=box]
+	644 -> 803 [constraint=true]
+	9 [label="Topic 9: 
+schweiz
+ schweizer
+ analog
+ suisse
+ digital
+ " shape=box]
+	1 -> 9 [constraint=true]
+	10 [label="Topic 10: 
+mandarine
+ gemüsehändlerin
+ dorfbewohner
+ otto
+ thal
+ " shape=box]
+	9 -> 10 [constraint=true]
+	247 [label="Topic 247: 
+stadler
+ faschinger
+ linzer
+ müli
+ stents
+ " shape=box]
+	10 -> 247 [constraint=true]
+	408 [label="Topic 408: 
+vollmer
+ löwenzahn
+ ludger
+ yamina
+ merzougui
+ " shape=box]
+	10 -> 408 [constraint=true]
+	702 [label="Topic 702: 
+hövener
+ tagesanzeiger
+ rewe-bio
+ brunnbauer
+ sb-theke
+ " shape=box]
+	10 -> 702 [constraint=true]
+	797 [label="Topic 797: 
+sprungmann
+ hühnerdorf
+ wagrainer
+ gitti
+ weberlandl
+ " shape=box]
+	10 -> 797 [constraint=true]
+	282 [label="Topic 282: 
+sunny
+ milchbrei
+ alete
+ gefälscht
+ urinproben
+ " shape=box]
+	9 -> 282 [constraint=true]
+	350 [label="Topic 350: 
+sonne
+ muhr
+ azofarbstoffe
+ schlickhof
+ roehl
+ " shape=box]
+	282 -> 350 [constraint=true]
+	431 [label="Topic 431: 
+hipp
+ babybrei
+ claus_hipp
+ bandit
+ gemälde
+ " shape=box]
+	282 -> 431 [constraint=true]
+	646 [label="Topic 646: 
+brodowin
+ flade
+ ökodorf_brodowin
+ immergrün
+ naturschützer
+ " shape=box]
+	282 -> 646 [constraint=true]
+	715 [label="Topic 715: 
+kindl
+ nachrichtendienste
+ ökokiste
+ frenkenberger
+ gentechnologie
+ " shape=box]
+	282 -> 715 [constraint=true]
+	786 [label="Topic 786: 
+produktionsunternehmen
+ zusammensetzung
+ agrosolution
+ vermarktungsschiene
+ doe
+ " shape=box]
+	282 -> 786 [constraint=true]
+	810 [label="Topic 810: 
+ausstellung
+ geretsried
+ seehamer
+ teufelsgraben
+ galerie
+ " shape=box]
+	282 -> 810 [constraint=true]
+	753 [label="Topic 753: 
+willmann
+ jabs
+ abtransportieren
+ hackfleischtest
+ artgerechten
+ " shape=box]
+	9 -> 753 [constraint=true]
+	754 [label="Topic 754: 
+dittmann
+ reichold
+ jabs
+ timm
+ antipasti
+ " shape=box]
+	753 -> 754 [constraint=true]
+	19 [label="Topic 19: 
+konsument
+ prozent
+ österreicher
+ bio
+ ökologisch
+ " shape=box]
+	1 -> 19 [constraint=true]
+	20 [label="Topic 20: 
+mineralöl
+ glanzl
+ götz
+ bohacek
+ altpapier
+ " shape=box]
+	19 -> 20 [constraint=true]
+	21 [label="Topic 21: 
+fuchsfleisch
+ eselfleisch
+ fleischprodukte
+ walmart
+ dna-test
+ " shape=box]
+	20 -> 21 [constraint=true]
+	52 [label="Topic 52: 
+ölen
+ olivenöl
+ pak
+ weichmacher
+ walnussöl
+ " shape=box]
+	20 -> 52 [constraint=true]
+	63 [label="Topic 63: 
+gröbly
+ absolventen
+ koch
+ rhein-waal
+ student
+ " shape=box]
+	20 -> 63 [constraint=true]
+	86 [label="Topic 86: 
+christine
+ stockumer_hofmarkt
+ behmenburg
+ raffenberg
+ kerz
+ " shape=box]
+	20 -> 86 [constraint=true]
+	153 [label="Topic 153: 
+foodwatch
+ hefeextrakt
+ glutamat
+ aromen
+ geschmacksverstärker
+ " shape=box]
+	20 -> 153 [constraint=true]
+	174 [label="Topic 174: 
+lutz
+ wulksfelde
+ westebbe
+ freisinger
+ lächeln
+ " shape=box]
+	20 -> 174 [constraint=true]
+	442 [label="Topic 442: 
+trantenrother
+ wittener
+ fipronil
+ en-kreis
+ schulze-poll
+ " shape=box]
+	20 -> 442 [constraint=true]
+	443 [label="Topic 443: 
+starbucks
+ besiedeln
+ la-mrsa
+ pollen
+ nai
+ " shape=box]
+	20 -> 443 [constraint=true]
+	642 [label="Topic 642: 
+zweinutzung
+ thyssenbrücke
+ straßenbahn
+ engpass
+ abendstunden
+ " shape=box]
+	20 -> 642 [constraint=true]
+	691 [label="Topic 691: 
+scherpel
+ kaffees
+ local
+ modrig-muffig
+ 1880er
+ " shape=box]
+	20 -> 691 [constraint=true]
+	735 [label="Topic 735: 
+frittieren
+ weltlich
+ eu-kommission
+ nachrichtenagentur
+ goldmann
+ " shape=box]
+	20 -> 735 [constraint=true]
+	772 [label="Topic 772: 
+armes
+ rettenbacher
+ catering
+ tischlein
+ bio-catering
+ " shape=box]
+	20 -> 772 [constraint=true]
+	795 [label="Topic 795: 
+fleischwurst
+ fremdwasser
+ schinkenwurst
+ fleischqualität
+ unbeobachtet
+ " shape=box]
+	20 -> 795 [constraint=true]
+	61 [label="Topic 61: 
+biene
+ zinners
+ hähnchenkeulen
+ franziskus
+ eichstätt
+ " shape=box]
+	19 -> 61 [constraint=true]
+	147 [label="Topic 147: 
+kirche
+ stiftung
+ vermont
+ vermonter
+ staatsleistungen
+ " shape=box]
+	61 -> 147 [constraint=true]
+	499 [label="Topic 499: 
+neuburger
+ ulrichsberg
+ pokorny
+ produktsparten
+ betriebshalle
+ " shape=box]
+	61 -> 499 [constraint=true]
+	551 [label="Topic 551: 
+lebensmittelmarkt
+ menschenbild
+ alp-
+ sks
+ betriebsrestaurant
+ " shape=box]
+	61 -> 551 [constraint=true]
+	672 [label="Topic 672: 
+motte
+ seide
+ öko-chic
+ schneefall
+ loud
+ " shape=box]
+	61 -> 672 [constraint=true]
+	748 [label="Topic 748: 
+bonhoff
+ schürmann
+ tierwohlpreis
+ machange
+ sole
+ " shape=box]
+	61 -> 748 [constraint=true]
+	783 [label="Topic 783: 
+moosinning
+ billesberger
+ assembly
+ ovalhalle
+ bio-siegels
+ " shape=box]
+	61 -> 783 [constraint=true]
+	127 [label="Topic 127: 
+walter
+ adelwarth
+ butenland
+ rügenwalder
+ hormonell
+ " shape=box]
+	19 -> 127 [constraint=true]
+	169 [label="Topic 169: 
+lunzer
+ brunner
+ schultes
+ lugar
+ bayr
+ " shape=box]
+	127 -> 169 [constraint=true]
+	231 [label="Topic 231: 
+ried
+ gadermaier
+ bio-erdbeeren
+ eberschwanger
+ koblstatt
+ " shape=box]
+	127 -> 231 [constraint=true]
+	237 [label="Topic 237: 
+dole
+ ananas
+ schanzenhof
+ plantage
+ fernández
+ " shape=box]
+	127 -> 237 [constraint=true]
+	302 [label="Topic 302: 
+verheyen
+ bio-fertiggerichte
+ dinkel-keimbrot
+ mayer
+ unzubereitetes
+ " shape=box]
+	127 -> 302 [constraint=true]
+	354 [label="Topic 354: 
+waizenegger
+ mohren
+ gutshof
+ gasthaus
+ seebauer
+ " shape=box]
+	127 -> 354 [constraint=true]
+	509 [label="Topic 509: 
+vock
+ esther
+ pouletfleisch
+ lukas
+ gerdes
+ " shape=box]
+	127 -> 509 [constraint=true]
+	519 [label="Topic 519: 
+tierschutzombudsstelle
+ kantonalen
+ pfote
+ warenhaus
+ grossteil
+ " shape=box]
+	127 -> 519 [constraint=true]
+	766 [label="Topic 766: 
+diesenreiter
+ unverschwendet
+ überschuß
+ cornelia
+ windhab
+ " shape=box]
+	127 -> 766 [constraint=true]
+	769 [label="Topic 769: 
+feiern
+ regionales
+ sp
+ vollziehen
+ online-formular
+ " shape=box]
+	127 -> 769 [constraint=true]
+	811 [label="Topic 811: 
+￼
+ gaukeln
+ gattin
+ gattis
+ gatto
+ " shape=box]
+	127 -> 811 [constraint=true]
+	327 [label="Topic 327: 
+mäusekot
+ behörde
+ vergiftung
+ bioszene
+ kantonale
+ " shape=box]
+	19 -> 327 [constraint=true]
+	469 [label="Topic 469: 
+einfrieren
+ detailhändler
+ deckel
+ zugvögel
+ tiefstpreisen
+ " shape=box]
+	327 -> 469 [constraint=true]
+	600 [label="Topic 600: 
+lvr-klinik
+ dachau
+ burkhard
+ jahresbericht
+ ernstzunehmendes
+ " shape=box]
+	327 -> 600 [constraint=true]
+	738 [label="Topic 738: 
+hecker
+ olching
+ picture
+ abwischen
+ maximale
+ " shape=box]
+	327 -> 738 [constraint=true]
+	785 [label="Topic 785: 
+lutter
+ köhne
+ kornmühle
+ herner
+ seri
+ " shape=box]
+	327 -> 785 [constraint=true]
+	29 [label="Topic 29: 
+pcb
+ ratgeber
+ bpa
+ nanogramm
+ grießhammer
+ " shape=box]
+	1 -> 29 [constraint=true]
+	30 [label="Topic 30: 
+glyphosat
+ malta
+ whitewave
+ koscher
+ bio-unternehmen
+ " shape=box]
+	29 -> 30 [constraint=true]
+	543 [label="Topic 543: 
+leberkäse
+ erwin_fellner
+ fleischhauer
+ leber
+ leberkäs-semmel
+ " shape=box]
+	30 -> 543 [constraint=true]
+	668 [label="Topic 668: 
+strolz
+ altendorfer
+ vavriks
+ seeham
+ neos
+ " shape=box]
+	30 -> 668 [constraint=true]
+	690 [label="Topic 690: 
+steineshoff
+ heißener
+ hot
+ hühnerstalls
+ verdorben
+ " shape=box]
+	30 -> 690 [constraint=true]
+	747 [label="Topic 747: 
+dreßler
+ spargelbauern
+ huth
+ nienburg
+ brandenberger
+ " shape=box]
+	30 -> 747 [constraint=true]
+	752 [label="Topic 752: 
+eu-beamten
+ herrmannsdorfer
+ schwarz-rosa
+ handelsfirmen
+ eu-bericht
+ " shape=box]
+	30 -> 752 [constraint=true]
+	770 [label="Topic 770: 
+hnat
+ lengauer
+ freeganer
+ sommerfest
+ esoteriker
+ " shape=box]
+	30 -> 770 [constraint=true]
+	791 [label="Topic 791: 
+grocholl
+ co-emissionen
+ kadavertonne
+ co-label
+ co-fußabdruck
+ " shape=box]
+	30 -> 791 [constraint=true]
+	69 [label="Topic 69: 
+schweizer
+ biologisch
+ leser
+ schweiz
+ wissenschaftler
+ " shape=box]
+	1 -> 69 [constraint=true]
+	70 [label="Topic 70: 
+gesamtnote
+ nutella
+ zitrusfrucht
+ friederike
+ sprosse
+ " shape=box]
+	69 -> 70 [constraint=true]
+	158 [label="Topic 158: 
+nuß
+ vollmilch
+ erkens
+ gemahlen
+ haselnusskerne
+ " shape=box]
+	70 -> 158 [constraint=true]
+	357 [label="Topic 357: 
+mcb
+ mcdonald_’s
+ burger
+ mcdonald_'s
+ beeck
+ " shape=box]
+	70 -> 357 [constraint=true]
+	800 [label="Topic 800: 
+maffay
+ huxdorff
+ gemüse-regalen
+ höherpreisige
+ schwimmer
+ " shape=box]
+	70 -> 800 [constraint=true]
+	177 [label="Topic 177: 
+glyphosat
+ mandarine
+ zitrusfrucht
+ wittmann
+ kernlos
+ " shape=box]
+	69 -> 177 [constraint=true]
+	178 [label="Topic 178: 
+weinen
+ winzer
+ traube
+ weingut
+ flasche
+ " shape=box]
+	177 -> 178 [constraint=true]
+	249 [label="Topic 249: 
+fuchs
+ schwarzbergerhof
+ gleber
+ wall
+ alex_stranig
+ " shape=box]
+	177 -> 249 [constraint=true]
+	432 [label="Topic 432: 
+widerrufen
+ hölle
+ landkost-anwalt
+ freilandprodukten
+ zuständig
+ " shape=box]
+	177 -> 432 [constraint=true]
+	569 [label="Topic 569: 
+ampfer
+ schreyer
+ bioland-beraterin
+ anleger
+ schleip
+ " shape=box]
+	177 -> 569 [constraint=true]
+	720 [label="Topic 720: 
+brigitte
+ möhring
+ tanja_bus
+ höhscheid
+ süheyla
+ " shape=box]
+	177 -> 720 [constraint=true]
+	779 [label="Topic 779: 
+kamber
+ lichtblick
+ produktionsanlage
+ verfüttert
+ biogas
+ " shape=box]
+	177 -> 779 [constraint=true]
+	471 [label="Topic 471: 
+harles_jentzsch
+ nanogramm
+ gesetzeslücke
+ rumpf
+ uetersen
+ " shape=box]
+	69 -> 471 [constraint=true]
+	798 [label="Topic 798: 
+uetersen
+ siegfried
+ futterfettproben
+ nachweis
+ körperfett
+ " shape=box]
+	471 -> 798 [constraint=true]
+	687 [label="Topic 687: 
+aschmann
+ splinter
+ süddeutsche
+ punkenhofers
+ verboten
+ " shape=box]
+	69 -> 687 [constraint=true]
+	704 [label="Topic 704: 
+vollkornbrot
+ yes
+ randschichten
+ extrem
+ maßen
+ " shape=box]
+	687 -> 704 [constraint=true]
+	713 [label="Topic 713: 
+globi
+ punkenhofer
+ weitersfelden
+ norddeutschland
+ badesalz
+ " shape=box]
+	687 -> 713 [constraint=true]
+	727 [label="Topic 727: 
+e.leclerc
+ conad
+ touchiert
+ hansuli
+ einkaufsallianz
+ " shape=box]
+	687 -> 727 [constraint=true]
+	749 [label="Topic 749: 
+raadts
+ jackett
+ kalkar
+ grieth
+ arbenz
+ " shape=box]
+	687 -> 749 [constraint=true]
+	774 [label="Topic 774: 
+hedi
+ döpper
+ tartex
+ ernüchternden
+ minus-25-prozent-aktionen
+ " shape=box]
+	687 -> 774 [constraint=true]
+	806 [label="Topic 806: 
+bucher
+ schweiz
+ muri
+ kissingen
+ käfig-haltung
+ " shape=box]
+	1 -> 806 [constraint=true]
+	807 [label="Topic 807: 
+harass
+ deck
+ tischlein
+ schreiber
+ selbstbedienungsladen
+ " shape=box]
+	806 -> 807 [constraint=true]
+	808 [label="Topic 808: 
+suter
+ geflügelprodukte
+ betreffen
+ grösse
+ lebensmittelprüfungen
+ " shape=box]
+	807 -> 808 [constraint=true]
+	5 [label="Topic 5: 
+tier
+ landwirtschaft
+ bauer
+ huhn
+ eiern
+ " shape=box]
+	0 -> 5 [constraint=true]
+	6 [label="Topic 6: 
+grafik
+ ökosoziales
+ hutner
+ diskutieren
+ forum
+ " shape=box]
+	5 -> 6 [constraint=true]
+	7 [label="Topic 7: 
+ddr
+ dorfen
+ wellers
+ fundstücke
+ semerad
+ " shape=box]
+	6 -> 7 [constraint=true]
+	160 [label="Topic 160: 
+schüler
+ waldorfschule
+ klasse
+ steiner
+ schule
+ " shape=box]
+	7 -> 160 [constraint=true]
+	570 [label="Topic 570: 
+durchschnittsnote
+ klicken
+ next
+ read
+ erstaunen
+ " shape=box]
+	7 -> 570 [constraint=true]
+	175 [label="Topic 175: 
+beistoffe
+ raupe
+ leu
+ bn
+ desinfektionsmittel
+ " shape=box]
+	6 -> 175 [constraint=true]
+	473 [label="Topic 473: 
+heinrich_tiemann
+ panade
+ hühnerei
+ beachtung
+ society
+ " shape=box]
+	175 -> 473 [constraint=true]
+	641 [label="Topic 641: 
+garn
+ bazzoli
+ lochinger
+ siemens
+ mülheim
+ " shape=box]
+	175 -> 641 [constraint=true]
+	652 [label="Topic 652: 
+testladen
+ grundanliegen
+ sda
+ kulturinitiativen
+ alnatura-migros
+ " shape=box]
+	175 -> 652 [constraint=true]
+	671 [label="Topic 671: 
+oskierski
+ champignon
+ gehrig
+ aufsichtsratschef
+ sky
+ " shape=box]
+	175 -> 671 [constraint=true]
+	15 [label="Topic 15: 
+eiern
+ tier
+ fleisch
+ landwirtschaft
+ fipronil
+ " shape=box]
+	0 -> 15 [constraint=true]
+	16 [label="Topic 16: 
+landwirtschaft
+ oön
+ ernährung
+ studie
+ boden
+ " shape=box]
+	15 -> 16 [constraint=true]
+	17 [label="Topic 17: 
+brings
+ hcb
+ geschirr
+ kärnten
+ rené
+ " shape=box]
+	16 -> 17 [constraint=true]
+	18 [label="Topic 18: 
+schneidern
+ kunststoff
+ gmbh
+ biokunststoffe
+ nachwachsend_rohstoff
+ " shape=box]
+	17 -> 18 [constraint=true]
+	60 [label="Topic 60: 
+daniel
+ schmitz
+ simone
+ mahler
+ bochum
+ " shape=box]
+	17 -> 60 [constraint=true]
+	172 [label="Topic 172: 
+sprinz
+ ungenügend
+ kaugummi
+ erythrosin
+ aspartam
+ " shape=box]
+	17 -> 172 [constraint=true]
+	700 [label="Topic 700: 
+wick
+ kochmarie
+ willich
+ marktreif
+ agrarwissenschaftler
+ " shape=box]
+	17 -> 700 [constraint=true]
+	782 [label="Topic 782: 
+holub
+ halsbandsittichen
+ vorbildregion
+ ministerium
+ sittich
+ " shape=box]
+	17 -> 782 [constraint=true]
+	45 [label="Topic 45: 
+fürstenhof
+ klaffl
+ rasim
+ schönleitner
+ irmi
+ " shape=box]
+	16 -> 45 [constraint=true]
+	344 [label="Topic 344: 
+charles
+ prinz
+ fürst
+ leitl
+ langenburg
+ " shape=box]
+	45 -> 344 [constraint=true]
+	680 [label="Topic 680: 
+berchtold
+ frieling
+ schierz
+ ulla
+ sina
+ " shape=box]
+	45 -> 680 [constraint=true]
+	694 [label="Topic 694: 
+popcorn
+ schmit
+ bio-popcorn
+ erzeugerzusammenschluss
+ sepplashof
+ " shape=box]
+	45 -> 694 [constraint=true]
+	742 [label="Topic 742: 
+cremer
+ heußinger
+ wiesemann
+ wyler
+ reserve-antibiotika
+ " shape=box]
+	45 -> 742 [constraint=true]
+	746 [label="Topic 746: 
+tiefkühlfach
+ fundgrube
+ gaudiono
+ gatterhaltung
+ gatterwild
+ " shape=box]
+	45 -> 746 [constraint=true]
+	757 [label="Topic 757: 
+schober
+ willi
+ kamp
+ ewald
+ fressmentalität
+ " shape=box]
+	45 -> 757 [constraint=true]
+	792 [label="Topic 792: 
+brakula
+ uwe
+ bramfelder
+ böhm
+ modisches
+ " shape=box]
+	45 -> 792 [constraint=true]
+	58 [label="Topic 58: 
+gramm_trafo
+ salzen
+ biene
+ kartoffelchips
+ chip
+ " shape=box]
+	16 -> 58 [constraint=true]
+	165 [label="Topic 165: 
+betroffen
+ mindesthaltbarkeitsdatum
+ vorsorglich
+ rückruf
+ zurückrufen
+ " shape=box]
+	58 -> 165 [constraint=true]
+	575 [label="Topic 575: 
+münchner
+ spangenberg
+ schnecke
+ rupert
+ feinschmecker
+ " shape=box]
+	58 -> 575 [constraint=true]
+	737 [label="Topic 737: 
+arte-doku
+ häni
+ bienenstock
+ bienenbestände
+ bebber
+ " shape=box]
+	58 -> 737 [constraint=true]
+	744 [label="Topic 744: 
+bräuer
+ rewe-group
+ sahara
+ innenbereich
+ saarn
+ " shape=box]
+	58 -> 744 [constraint=true]
+	759 [label="Topic 759: 
+israel
+ elysander
+ sattmacher
+ salzen
+ sauerkraut
+ " shape=box]
+	58 -> 759 [constraint=true]
+	225 [label="Topic 225: 
+thumfart
+ pestizid
+ eco-veg-siegel
+ überschreitung
+ nora
+ " shape=box]
+	16 -> 225 [constraint=true]
+	226 [label="Topic 226: 
+ml
+ hinsch
+ kosmetikprodukte
+ natron
+ peeling
+ " shape=box]
+	225 -> 226 [constraint=true]
+	545 [label="Topic 545: 
+bio-fest
+ kräutergarten
+ piff
+ elterntiere
+ weiterverhandelt
+ " shape=box]
+	225 -> 545 [constraint=true]
+	653 [label="Topic 653: 
+gecko
+ reptil
+ fabienne
+ safenwil
+ krautstiel-packung
+ " shape=box]
+	225 -> 653 [constraint=true]
+	724 [label="Topic 724: 
+haselnuss-soufflé
+ vermissen
+ aida
+ puddingpulver
+ bio-nahrungsmittel
+ " shape=box]
+	225 -> 724 [constraint=true]
+	745 [label="Topic 745: 
+valet
+ wildvögel
+ nutzgeflügel
+ zuger
+ salmonella
+ " shape=box]
+	225 -> 745 [constraint=true]
+	781 [label="Topic 781: 
+frost
+ kappel
+ kamerun
+ noba
+ kamga
+ " shape=box]
+	225 -> 781 [constraint=true]
+	802 [label="Topic 802: 
+herrmann
+ germann
+ wild
+ wallberg
+ wiessee
+ " shape=box]
+	225 -> 802 [constraint=true]
+	805 [label="Topic 805: 
+gössinger
+ wühlen
+ mästen
+ herumtoben
+ behutsam
+ " shape=box]
+	225 -> 805 [constraint=true]
+	54 [label="Topic 54: 
+bestand
+ bern
+ grucking
+ gesünder
+ idel
+ " shape=box]
+	15 -> 54 [constraint=true]
+	55 [label="Topic 55: 
+grünen-bundestagsfraktion
+ hengst
+ strich
+ bäuerinnentag
+ verfrühen
+ " shape=box]
+	54 -> 55 [constraint=true]
+	521 [label="Topic 521: 
+iwan
+ tiramisu
+ vitalstoffe
+ vortrag
+ partei
+ " shape=box]
+	55 -> 521 [constraint=true]
+	706 [label="Topic 706: 
+knieli
+ michaela
+ wachteleiern
+ sud
+ lecithingehalt
+ " shape=box]
+	55 -> 706 [constraint=true]
+	761 [label="Topic 761: 
+erntenetzwerk
+ jezler
+ ungepflücktes
+ -helfer
+ süsskartoffeln
+ " shape=box]
+	55 -> 761 [constraint=true]
+	784 [label="Topic 784: 
+piratenpartei
+ bundestag
+ belastungsfaktor
+ trüppchen
+ politisch
+ " shape=box]
+	55 -> 784 [constraint=true]
+	787 [label="Topic 787: 
+pilz
+ labore
+ gemäss
+ eu-warnsystem
+ wildpilze
+ " shape=box]
+	54 -> 787 [constraint=true]
+	788 [label="Topic 788: 
+ökomonitoring
+ werdendes
+ nicht-biolebensmittel
+ dauergrünland
+ walpen
+ " shape=box]
+	787 -> 788 [constraint=true]
+}
