@@ -1,31 +1,40 @@
-import polyglot
 from nltk.corpus import wordnet as wn
 import numpy as np
-import pandas as pd
-from itertools import permutations, combinations
+from itertools import combinations
 from collections import defaultdict
 import operator
-from src.models import topic_models as tm
+from nltk.corpus import wordnet_ic
 
 class Wordnet(object):
 
-    def calc_similarity_between_synsets(self, similarity_fun, syn1, syn2):
-        """
-        Calculate the similarities with the similarityfunctions from wordnet
+    def __init__(self):
+        self.brown_ic = wordnet_ic.ic('ic-brown.dat')
+        self.semcor_ic = wordnet_ic.ic('ic-semcor.dat')
 
-        :param similarity_fun: path_similarity(range between 0 and 1, 1 represents identity) or lch_similarity
-        :type string
-        :param syn1: synset for a word
-        :param syn2: synsets for a word
-        :type wordnet.Synset
-        :return: similarity of the two word-synsets, value between 0 and 1
-        """
-        if similarity_fun == "path_similarity":
-            return syn1.path_similarity(syn2)
-        elif similarity_fun =="lch_similarity":
-            return syn1.lch_similarity(syn2)
-        else:
-            raise Exception ("similarity"+similarity_fun+" not supported")
+    def calc_similarity_between_synsets(self, similarity_fun, syn1, syn2):
+            """
+            Calculate the similarities with the similarityfunctions from wordnet
+
+            :param similarity_fun: path_similarity(range between 0 and 1, 1 represents identity) or lch_similarity
+            :type string
+            :param syn1: synset for a word
+            :param syn2: synsets for a word
+            :type wordnet.Synset
+            :return: similarity of the two word-synsets, value between 0 and 1
+            """
+
+            if similarity_fun == "path_similarity":
+                return syn1.path_similarity(syn2)
+            elif similarity_fun =="lch_similarity":
+                return syn1.lch_similarity(syn2)
+            elif similarity_fun =="res_similarity":
+                return syn1.res_similarity(syn2, self.brown_ic)
+            elif similarity_fun == "jcn_similarity":
+                return syn1.jcn_similarity(syn2, self.brown_ic)
+            elif similarity_fun == "lin_similarity":
+                return syn1.lin_similarity(syn2, self.semcor_ic)
+            else:
+                raise Exception ("similarity"+similarity_fun+" not supported")
 
     def calc_similarity_between_words(self, similarity_fun, word1, word2):
         '''
@@ -92,23 +101,51 @@ class Wordnet(object):
             labels = self.get_label_for_topic(topic, similarity_fun)
             sorted_labels = sorted(labels.items(), key=operator.itemgetter(1), reverse=True)
             if values:
-                result.append( sorted_labels[:num_labels])
+                result.append(sorted_labels[:num_labels])
             else:
                 result.append([h for h, s in sorted_labels][:num_labels])
         return result
 
 if __name__ =='__main__':
-    topics = [
-        ['plant', 'table', "chair", 'tree'],
-        ['cat', 'dog', 'farmer']
-    ]
-    tl = Wordnet()
-    list = [['cat', 'horse', 'cow', 'farmer']]
+    # topics = [
+    #     ['plant', 'table', "chair", 'tree'],
+    #     ['cat', 'dog', 'farmer']
+    # ]
+    # tl = Wordnet()
+    # list = [['cat', 'horse', 'cow', 'farmer']]
+    # tm = tm.TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
+    # print(tm.get_topics())
+    # lables = tl.get_topic_labels(tm.get_topics(5),"path_similarity")
+    # print(tm.get_topics(5))
+    # print(lables)
+    import sys
+
+    sys.path.append("../..")
+    from src.Automati_Topic_Labeling_Wordnet.extrinsic_topic_labler import ExtrensicTopicLabeler
+    from src.Automati_Topic_Labeling_Wordnet.wordnet_embeddings import Wordnet
+    from src.Automati_Topic_Labeling_Wordnet.polyglot_embeddings import get_topic_labels as pl
+    from src.models import topic_models as tm
+    from src.Automati_Topic_Labeling_Wordnet.topic_embedding import words_for_topics as wt
+
     tm = tm.TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
-    print(tm.get_topics())
-    lables = tl.get_topic_labels(tm.get_topics(5),"path_similarity")
-    print(tm.get_topics(5))
-    print(lables)
+    topics = tm.get_topics()
+    topics_df = tm.get_topics_dataframe()
+    e = ExtrensicTopicLabeler()
+    labels = e.get_topic_labels(topics, values=False)
+    new_topics = wt(topics, 3)
+    labels_preprocessed = e.get_topic_labels(new_topics, values=False)
+    ### take only the best label
+    llist = []
+    for ll in labels:
+        llist.append(ll[0])
+    llpre = []
+    for ll in labels_preprocessed:
+        llpre.append(ll[0])
+    combined_df = e.combine_topic_and_labels(topics_df, llist)
+    combined_df['preprocessed_labels'] = llpre
+
+
+
 
 
 

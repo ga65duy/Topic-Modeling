@@ -7,7 +7,7 @@ from itertools import chain
 from src.models import topic_models as tm
 """
     Select the words out of a topic which have the smallest distance to each other. 
-    This kind of preprocessing shall imporve the topic labelling.
+    This kind of preprocessing shall improve the topic labelling.
 
 """
 #embeddings = Embedding.load("D:/Bachelorarbeit/Projekte/polyglot_data/embeddings2/en/embeddings_pkl.tar.bz2")

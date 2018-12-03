@@ -101,6 +101,7 @@ class ExtrensicTopicLabeler(object):
 
 if __name__ == '__main__':
     e = ExtrensicTopicLabeler()
-    tm = tm.TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
-    topics = tm.get_topics()
-    print(e.get_topic_labels(topics))
+    print(e.get_hypernyms_for_single_word('cat'))
+    #tm = tm.TopicModel.load("topic_models/lda/ENED_lda_english_editorial_articles_130.pkl")
+    #topics = tm.get_topics()
+    #print(e.get_topic_labels(topics))
