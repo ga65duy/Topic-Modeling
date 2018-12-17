@@ -131,5 +131,3 @@ class Coherence(object):
         return vec
 
 
-if __name__ == '__main__':
-    pass

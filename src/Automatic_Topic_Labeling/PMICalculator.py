@@ -2,7 +2,17 @@ import numpy as np
 from scipy.sparse import issparse
 
 import logging
+"""
+Reference:
+---------------------
+Qiaozhu Mei, Xuehua Shen, Chengxiang Zhai,
+Automatic Labeling of Multinomial Topic Models, 2007
 
+implementation was taken from "https://github.com/xiaohan2012/chowmein/tree/master/chowmein" and have been adopted to our data.
+Following we changed in the given implementation:
+    We used our vectoriter, our preprocessing and applied POS-Tagging and stored it in the json, too.
+    Additionally, we prefiltered our datasets and throw out all words which had a smaller length then 3.
+"""
 logging.basicConfig(level=logging.DEBUG)
 
 
@@ -85,7 +95,6 @@ class PMICalculator(object):
         numpy.ndarray: #word x #label
             the pmi matrix
         """
-        #fit_transform bei lda transform ansonsten fittransform
         d2w = self._d2w_vect.transform(map(lambda sent: ' '.join(sent),
                                                docs))
 

@@ -1,6 +1,5 @@
 from nltk.corpus import wordnet as wn
 import operator
-from src.models import topic_models as tm
 
 
 class ExtrensicTopicLabeler(object):
@@ -74,14 +73,6 @@ class ExtrensicTopicLabeler(object):
             else:
                 result.append([h for h, s in sorted_hypernyms][:num])
         return result
-
-    # def print_topic_labels(self, topics):
-    #     labels = self.get_topic_labels(topics)
-    #     for i, label in enumerate(labels):
-    #         print('Topic {}:'.format(i))
-    #         print([t for t,c in label])
-
-    # create dataframe topics and lables
 
     def combine_topic_and_labels(self, topics_df, lables):
         """

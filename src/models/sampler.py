@@ -6,6 +6,11 @@ from numpy.random import RandomState
 
 import numpy as np
 
+"""
+The following implementation was taken from "https://github.com/joewandy/hlda" and was adapten on our data. The implementation 
+leans on "Hierarchical Topic Models and
+the Nested Chinese Restaurant Process" from Blei
+"""
 
 class NCRPNode(object):
 

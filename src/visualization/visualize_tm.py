@@ -1,15 +1,7 @@
-
-
-import os
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import pyLDAvis
-from src.models.topic_models import TopicModel
-import src.data.data_loader as dl
-from src.features.vectorizer import Vectorizer
-#from src.definitions import REPORT_DIR
 import pandas as pd
 import operator
 import random
@@ -55,7 +47,6 @@ def get_top_topics_for_documents(document_topic_matrix, num_top_topics=None, thr
     for doc_id in documents:
         document_row = document_topic_matrix[doc_id, :]
 
-        # Sort topics descending by probability
         topics_ids_sorted = np.argsort(document_row)[::-1]
         if threshold_passed:
             probabilites_sorted = document_row[topics_ids_sorted]
@@ -375,13 +366,6 @@ def plot_pyldavis(topic_model, document_topic_matrix, document_term_matrix, file
     prepared_data = pyLDAvis.prepare(topic_token_matrix, document_topic_matrix, document_lengths, id2word,
                                      term_frequencies, sort_topics=False, **kwargs)
 
-    #if file:
-        #base_path = os.path.join(REPORT_DIR, 'figures/pyLDAvis')
-        #pa = os.path.join(base_path, file)
-        #with open(pa, 'w') as f:
-         #pyLDAvis.save_html(prepared_data, f)
-    #else:
-    #    pyLDAvis.show(prepared_data)
 
 
 def get_word_intrusion_dataframe(topic_model, num_top_tokens=5):
@@ -409,7 +393,6 @@ def get_word_intrusion_dataframe(topic_model, num_top_tokens=5):
     intruders_df = topics_df.assign(intruder=intruders)
     intruders_df2= intruders_df.copy()
 
-        # Ugly workaround by converting DataFrame to lists and then back to DataFrame but shuffling the DataFrame does not work.
     intruders_df.columns = [i for i in range(num_top_tokens + 1)]
     intruders_list = intruders_df.values.tolist()
     intruders_shuffled = []
@@ -458,10 +441,6 @@ def plot_training_convergence(topic_models, method, dataset, log=False, path=Non
         plt.yscale('log')
 
     plt.title(dataset)
-
-    #if path:
-        #plt.savefig(os.path.join(REPORT_DIR, 'figures/training', method, path))
-    #else:
     plt.show()
 
 def plot_coherence_values(topic_models, range_topics, dataset, path=None):
@@ -565,21 +544,4 @@ def plot_document_counts_per_run(topic_models, doc_topic_matrices, range_topics,
     plt.ylabel('Number of Documents')
     plt.bar(x_ticks, doc_sums, color='gray')
     plt.xticks(x_ticks, range_topics)
-    #plt.savefig(os.path.join(REPORT_DIR, 'figures/training', path), bbox_inches='tight')
     plt.show()
-
-if __name__ == '__main__':
-    data = dl.get_articles_by_type('english', 'editorial', metadata=['article_title', 'article_source'])
-    texts = data['article_texts']
-    titles = data['article_title']
-    sources = data['article_source']
-    for tid, title in enumerate(titles):
-        print(tid, sources[tid], title)
-
-    vec = Vectorizer('tf', texts, max_df=0.9, min_df=5, max_features=1500)
-    document_term_matrix = vec.get_document_token_matrix(texts)
-    token2id = vec.get_id2token_mapping()
-
-    model = TopicModel.load('lda', 'LDA_en_editorial_topic50_alphaAuto_passes30_iterations200.pkl')
-    document_topic_matrix = model.get_document_topic_matrix(document_term_matrix)
-    plot_document_topic_histogram(document_topic_matrix, 1678, 'What?! Fish Can\'t Be Organic?')

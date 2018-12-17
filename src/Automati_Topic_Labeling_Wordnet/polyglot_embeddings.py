@@ -101,16 +101,6 @@ def get_topic_labels(topics, num_labels=1, values=False):
             result.append([h for h, s in sorted_labels][:num_labels])
     return result
 
-
-# def make_similariy_matrix(self, topic, similarity_fun):
-#     topic_words_ln = len(topic)
-#     matrix = pd.DataFrame(columns=[topic], index=[topic])
-#     for i in range(topic_words_ln):
-#         for j in range(topic_words_ln):
-#             matrix.iloc[i, j] = self.calc_similarity_between_words(similarity_fun, topic[i], topic[j])
-#     return matrix
-
-
 if __name__ == "__main__":
     topics = [
         ['plant', 'table', "chair", 'tree'],

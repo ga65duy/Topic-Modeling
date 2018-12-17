@@ -134,7 +134,6 @@ if __name__ =='__main__':
     labels = e.get_topic_labels(topics, values=False)
     new_topics = wt(topics, 3)
     labels_preprocessed = e.get_topic_labels(new_topics, values=False)
-    ### take only the best label
     llist = []
     for ll in labels:
         llist.append(ll[0])

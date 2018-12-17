@@ -2,7 +2,17 @@ import nltk
 from toolz.itertoolz import get
 from nltk.collocations import BigramCollocationFinder
 from toolz.functoolz import partial
+"""
+Reference:
+---------------------
+Qiaozhu Mei, Xuehua Shen, Chengxiang Zhai,
+Automatic Labeling of Multinomial Topic Models, 2007
 
+implementation was taken from "https://github.com/xiaohan2012/chowmein/tree/master/chowmein" and have been adopted to our data.
+Following we changed in the given implementation:
+    We used our vectoriter, our preprocessing and applied POS-Tagging and stored it in the json, too.
+    Additionally, we prefiltered our datasets and throw out all words which had a smaller length then 3.
+"""
 
 class BigramLabelFinder(object):
     def __init__(self, measure='pmi',

@@ -4,7 +4,7 @@ pkl_list = ["topic_models/lda/DEED_lda_german_editorial_articles_190.pkl","topic
 
 def ranked_dataframe(df,new_column,ranking,ascending = False):
     dfn = df.copy()
-    dfn.insert(len(dfn.columns), 'score', ranking)
+    dfn.insert(len(dfn.columns), 'theta', ranking)
     dfn.insert(len(dfn.columns), "alpha", new_column)
     dfn = dfn.sort_values(by=['score'], ascending=ascending)
     dfn = dfn.reindex(columns=(['score'] + list([a for a in dfn.columns if a != 'score'])))

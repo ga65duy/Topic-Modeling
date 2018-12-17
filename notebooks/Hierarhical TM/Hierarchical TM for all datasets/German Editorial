@@ -1,0 +1,968 @@
+// Topics
+digraph {
+	0 [label="landwirtschaft
+ bauer
+ tier
+ stehen
+ jed
+ " shape=box]
+	1 [label="prozent
+ bio
+ produkt
+ deutschland
+ euro
+ " shape=box]
+	0 -> 1 [constraint=true]
+	2 [label="eiern
+ betrieb
+ deutschland
+ tier
+ niedersachsen
+ " shape=box]
+	1 -> 2 [constraint=true]
+	3 [label="fischen
+ glyphosat
+ pestizid
+ lachs
+ finden
+ " shape=box]
+	1 -> 3 [constraint=true]
+	6 [label="aldi
+ filiale
+ platzen
+ unternehmen
+ whole_foods
+ " shape=box]
+	1 -> 6 [constraint=true]
+	7 [label="kunde
+ gemüse
+ produkt
+ supermarkt
+ obst
+ " shape=box]
+	1 -> 7 [constraint=true]
+	8 [label="dm
+ alnatura
+ gurke
+ deutschland
+ unternehmen
+ " shape=box]
+	1 -> 8 [constraint=true]
+	9 [label="<url>
+ hof
+ brot
+ euro
+ leben
+ " shape=box]
+	1 -> 9 [constraint=true]
+	11 [label="huhn
+ eiern
+ lotte
+ henne
+ legen
+ " shape=box]
+	1 -> 11 [constraint=true]
+	22 [label="orange
+ weinen
+ bhutan
+ tabak
+ schmidt
+ " shape=box]
+	1 -> 22 [constraint=true]
+	38 [label="pestizid
+ <url>
+ kupfer
+ licht
+ stoff
+ " shape=box]
+	1 -> 38 [constraint=true]
+	39 [label="basic
+ schwarz-gruppe
+ brungs
+ müller
+ schweisfurth
+ " shape=box]
+	1 -> 39 [constraint=true]
+	45 [label="schweizer
+ coop
+ schweiz
+ suisse
+ migros
+ " shape=box]
+	1 -> 45 [constraint=true]
+	48 [label="schweisfurth
+ ttip
+ oön
+ reiter
+ haerlin
+ " shape=box]
+	1 -> 48 [constraint=true]
+	52 [label="bäumen
+ fläche
+ wald
+ christbäume
+ weihnachtsbäume
+ " shape=box]
+	1 -> 52 [constraint=true]
+	61 [label="sorte
+ linda
+ topinambur
+ schulz
+ erhalten
+ " shape=box]
+	1 -> 61 [constraint=true]
+	62 [label="eiern
+ tier
+ huhn
+ legehenne
+ küken
+ " shape=box]
+	1 -> 62 [constraint=true]
+	63 [label="eisen
+ fair
+ trend
+ schmecken
+ bergmeister
+ " shape=box]
+	1 -> 63 [constraint=true]
+	69 [label="meier
+ gemüse
+ parzelle
+ ddt
+ ernten
+ " shape=box]
+	1 -> 69 [constraint=true]
+	74 [label="tier
+ stall
+ grütter
+ eickhoff
+ geflügel
+ " shape=box]
+	1 -> 74 [constraint=true]
+	76 [label="sekem
+ helmy
+ abouleish
+ wüste
+ gurke
+ " shape=box]
+	1 -> 76 [constraint=true]
+	78 [label="eiern
+ peta
+ vorwurf
+ verkaufen
+ betroffen
+ " shape=box]
+	1 -> 78 [constraint=true]
+	89 [label="leute
+ vermont
+ vermonter
+ hochschule
+ agribusiness
+ " shape=box]
+	1 -> 89 [constraint=true]
+	90 [label="konsum
+ solawi
+ nagy
+ und
+ weiter
+ " shape=box]
+	1 -> 90 [constraint=true]
+	96 [label="olivenöl
+ kunde
+ kiste
+ italien
+ brot
+ " shape=box]
+	1 -> 96 [constraint=true]
+	98 [label="huhn
+ tier
+ eiern
+ stall
+ hülsermann
+ " shape=box]
+	1 -> 98 [constraint=true]
+	103 [label="aigner
+ cioloş
+ grüne
+ eu
+ agrarpolitik
+ " shape=box]
+	1 -> 103 [constraint=true]
+	107 [label="ttip
+ österreich
+ rupprechter
+ usa
+ unternehmen
+ " shape=box]
+	1 -> 107 [constraint=true]
+	109 [label="österreichisch
+ kantine
+ mitarbeiter
+ koplin
+ fertiggericht
+ " shape=box]
+	1 -> 109 [constraint=true]
+	110 [label="schwein
+ hof
+ burchhardt
+ scharun
+ becker
+ " shape=box]
+	1 -> 110 [constraint=true]
+	111 [label="mcdonald_'s
+ walter
+ antibiotika
+ unternehmen
+ ulrich_walter
+ " shape=box]
+	1 -> 111 [constraint=true]
+	115 [label="huhn
+ schultz
+ erkens
+ hahn
+ 's
+ " shape=box]
+	1 -> 115 [constraint=true]
+	123 [label="assaf
+ daniel
+ simone
+ arbeiter
+ jan
+ " shape=box]
+	1 -> 123 [constraint=true]
+	124 [label="wien
+ grabmann
+ umstieg
+ zessner
+ austria
+ " shape=box]
+	1 -> 124 [constraint=true]
+	128 [label="mhd
+ buttern
+ greenpeace
+ kaller
+ singen
+ " shape=box]
+	1 -> 128 [constraint=true]
+	4 [label="prozent
+ bio
+ produkt
+ deutschland
+ lebensmittel
+ " shape=box]
+	0 -> 4 [constraint=true]
+	5 [label="produkt
+ lebensmittel
+ pestizid
+ gemüse
+ enthalten
+ " shape=box]
+	4 -> 5 [constraint=true]
+	10 [label="weinen
+ winzer
+ traube
+ hektar
+ weingut
+ " shape=box]
+	4 -> 10 [constraint=true]
+	12 [label="eiern
+ naturkosmetik
+ färben
+ enthalten
+ produkt
+ " shape=box]
+	4 -> 12 [constraint=true]
+	14 [label="hektar
+ ananas
+ preisen
+ bauer
+ dole
+ " shape=box]
+	4 -> 14 [constraint=true]
+	15 [label="schüler
+ kind
+ stadt
+ wetterau
+ waldorfschule
+ " shape=box]
+	4 -> 15 [constraint=true]
+	16 [label="glyphosat
+ kirche
+ pestizid
+ staatsleistungen
+ agrarindustrie
+ " shape=box]
+	4 -> 16 [constraint=true]
+	19 [label="unternehmen
+ alnatura
+ basic
+ mitarbeiter
+ euro
+ " shape=box]
+	4 -> 19 [constraint=true]
+	26 [label="grüne
+ grün
+ partei
+ künast
+ spd
+ " shape=box]
+	4 -> 26 [constraint=true]
+	35 [label="bier
+ brauerei
+ reinheitsgebot
+ wasser
+ lammsbräu
+ " shape=box]
+	4 -> 35 [constraint=true]
+	43 [label="wirtschaftskammer
+ halal
+ produkt
+ oberösterreich
+ muslim
+ " shape=box]
+	4 -> 43 [constraint=true]
+	46 [label="weinen
+ strohmeier
+ rössler
+ salzburg
+ hektar
+ " shape=box]
+	4 -> 46 [constraint=true]
+	50 [label="bremen
+ wasser
+ stickstoff
+ stiftung
+ grundwasser
+ " shape=box]
+	4 -> 50 [constraint=true]
+	51 [label="gemeinde
+ lochen
+ pestizid
+ vinschgau
+ wimmer
+ " shape=box]
+	4 -> 51 [constraint=true]
+	53 [label="schweiz
+ schweizer
+ betrieb
+ bio
+ suisse
+ " shape=box]
+	4 -> 53 [constraint=true]
+	54 [label="huhn
+ gans
+ eiern
+ betreiben
+ stall
+ " shape=box]
+	4 -> 54 [constraint=true]
+	56 [label="produkt
+ frischen
+ euro
+ test
+ ergebnis
+ " shape=box]
+	4 -> 56 [constraint=true]
+	58 [label="china
+ peking
+ bauer
+ =
+ mitglied
+ " shape=box]
+	4 -> 58 [constraint=true]
+	60 [label="projekt
+ kinshofer
+ ökomodellregion
+ öko-modellregion
+ landkreis
+ " shape=box]
+	4 -> 60 [constraint=true]
+	65 [label="+
+ bauernverband
+ schleswig-holstein
+ hektar
+ minister
+ " shape=box]
+	4 -> 65 [constraint=true]
+	68 [label="bayer
+ <url>
+ brunner
+ bayerisch
+ freistaat
+ " shape=box]
+	4 -> 68 [constraint=true]
+	71 [label="ertrag
+ biologisch
+ forscher
+ boden
+ konventionell
+ " shape=box]
+	4 -> 71 [constraint=true]
+	91 [label="konsum
+ genth
+ grün
+ deutlich
+ sparen
+ " shape=box]
+	4 -> 91 [constraint=true]
+	112 [label="stiftung
+ regiofair
+ bipa
+ sievers
+ harles_jentzsch
+ " shape=box]
+	4 -> 112 [constraint=true]
+	131 [label="hacklinger
+ klaus
+ hendricks
+ schneidern
+ schomaker
+ " shape=box]
+	4 -> 131 [constraint=true]
+	138 [label="huber
+ waizenegger
+ mohren
+ nordkorea
+ franziska
+ " shape=box]
+	4 -> 138 [constraint=true]
+	139 [label="götz
+ gouda
+ brandsma
+ willi
+ eifel
+ " shape=box]
+	4 -> 139 [constraint=true]
+	20 [label="prozent
+ euro
+ bio
+ deutschland
+ ökologisch
+ " shape=box]
+	0 -> 20 [constraint=true]
+	21 [label="hamburg
+ ktg_agrar
+ ktg
+ unternehmen
+ hofreiter
+ " shape=box]
+	20 -> 21 [constraint=true]
+	23 [label="lidl
+ discounter
+ aldi
+ produkt
+ stecken
+ " shape=box]
+	20 -> 23 [constraint=true]
+	27 [label="<url>
+ wien
+ schwein
+ essen
+ wienern
+ " shape=box]
+	20 -> 27 [constraint=true]
+	28 [label="milch
+ preisen
+ valentin_thurn
+ christian
+ dlg
+ " shape=box]
+	20 -> 28 [constraint=true]
+	30 [label="österreich
+ berlakovich
+ nikolaus_berlakovich
+ <url>
+ minister
+ " shape=box]
+	20 -> 30 [constraint=true]
+	33 [label="biene
+ neuland
+ pestizid
+ imkern
+ honig
+ " shape=box]
+	20 -> 33 [constraint=true]
+	36 [label="€
+ bkk
+ regional
+ bundesweit
+ kasse
+ " shape=box]
+	20 -> 36 [constraint=true]
+	37 [label="kartoffel
+ <url>
+ hof
+ erlach
+ stockumer_hofmarkt
+ " shape=box]
+	20 -> 37 [constraint=true]
+	42 [label="schweizer
+ hubert
+ apfelchips
+ schweiz
+ zucker
+ " shape=box]
+	20 -> 42 [constraint=true]
+	66 [label="baumwolle
+ kleidung
+ textilien
+ fair
+ siegeln
+ " shape=box]
+	20 -> 66 [constraint=true]
+	67 [label="spargel
+ ■
+ niedersachsen
+ ble
+ alte
+ " shape=box]
+	20 -> 67 [constraint=true]
+	70 [label="biofach
+ ukraine
+ bremen
+ messen
+ vivaness
+ " shape=box]
+	20 -> 70 [constraint=true]
+	75 [label="hamm
+ messen
+ heldenmarkt
+ hallen
+ ökoprodukte
+ " shape=box]
+	20 -> 75 [constraint=true]
+	93 [label="gülle
+ bolten
+ niederlande
+ düngen
+ dünger
+ " shape=box]
+	20 -> 93 [constraint=true]
+	97 [label="apfel
+ gemüse
+ pilz
+ tomate
+ obst
+ " shape=box]
+	20 -> 97 [constraint=true]
+	99 [label="hiß
+ aktionär
+ regionalwert
+ aktiengesellschaft
+ christian
+ " shape=box]
+	20 -> 99 [constraint=true]
+	108 [label="co
+ gemüse
+ <url>
+ apfel
+ emission
+ " shape=box]
+	20 -> 108 [constraint=true]
+	119 [label="gemüse
+ essen
+ wam
+ kartoffel
+ kochen
+ " shape=box]
+	20 -> 119 [constraint=true]
+	122 [label="urin
+ taz
+ ■_betr.
+ düngemittel
+ ungarn
+ " shape=box]
+	20 -> 122 [constraint=true]
+	126 [label="keimen
+ tragler
+ hammer
+ salmonellen
+ oön
+ " shape=box]
+	20 -> 126 [constraint=true]
+	130 [label="forschung
+ mironov
+ direktvermarkter
+ regierungsprogramm
+ regioplan
+ " shape=box]
+	20 -> 130 [constraint=true]
+	132 [label="josef_umathum
+ standard
+ ariane
+ umathum
+ bio-ferm
+ " shape=box]
+	20 -> 132 [constraint=true]
+	133 [label="dhem
+ frau
+ pfaller
+ dorf
+ brigitte
+ " shape=box]
+	20 -> 133 [constraint=true]
+	24 [label="prozent
+ bio
+ produkt
+ euro
+ deutschland
+ " shape=box]
+	0 -> 24 [constraint=true]
+	25 [label="wer­den
+ ber­lin
+ pro­duk­te
+ kön­nen
+ jah­ren
+ " shape=box]
+	24 -> 25 [constraint=true]
+	29 [label="weinen
+ weingut
+ winzer
+ willi_klinger
+ qualität
+ " shape=box]
+	24 -> 29 [constraint=true]
+	31 [label="wild
+ mcb
+ fleisch
+ jäger
+ mcdonald_’s
+ " shape=box]
+	24 -> 31 [constraint=true]
+	32 [label="bauer
+ direktzahlungen
+ landwirtschaft
+ hans_weiss
+ franke
+ " shape=box]
+	24 -> 32 [constraint=true]
+	34 [label="nachhaltig
+ unternehmen
+ deutsche
+ lohas
+ konsum
+ " shape=box]
+	24 -> 34 [constraint=true]
+	40 [label="usa
+ kaugummi
+ verpackung
+ lunzer
+ hcb
+ " shape=box]
+	24 -> 40 [constraint=true]
+	41 [label="verpackung
+ kunststoff
+ rohstoff
+ verwenden
+ abbaubar
+ " shape=box]
+	24 -> 41 [constraint=true]
+	44 [label="kuh
+ stall
+ hof
+ brodowin
+ fläche
+ " shape=box]
+	24 -> 44 [constraint=true]
+	47 [label="pferdefleisch
+ hatje
+ biomilch
+ pferd
+ hans_hinrich
+ " shape=box]
+	24 -> 47 [constraint=true]
+	49 [label="eiern
+ hof
+ gemüse
+ produkt
+ kartoffel
+ " shape=box]
+	24 -> 49 [constraint=true]
+	55 [label="italien
+ italienisch
+ tonne
+ behörde
+ firma
+ " shape=box]
+	24 -> 55 [constraint=true]
+	57 [label="ernten
+ heuer
+ winzer
+ österreich
+ boden
+ " shape=box]
+	24 -> 57 [constraint=true]
+	59 [label="coop
+ migros
+ schweiz
+ grossverteiler
+ zürcher
+ " shape=box]
+	24 -> 59 [constraint=true]
+	64 [label="bio
+ dm
+ alnatura
+ schwein
+ rehn
+ " shape=box]
+	24 -> 64 [constraint=true]
+	72 [label="marokko
+ rewe
+ gemüse
+ plastik
+ verpacken
+ " shape=box]
+	24 -> 72 [constraint=true]
+	73 [label="foodwatch
+ produkt
+ bode
+ enthalten
+ verbraucher
+ " shape=box]
+	24 -> 73 [constraint=true]
+	77 [label="lampert
+ standard
+ niggli
+ biolandbau
+ spiegel
+ " shape=box]
+	24 -> 77 [constraint=true]
+	79 [label="tier
+ wesjohann
+ huhn
+ spiegel
+ meyer
+ " shape=box]
+	24 -> 79 [constraint=true]
+	82 [label="syngenta
+ antrag
+ michlits
+ forschung
+ graf
+ " shape=box]
+	24 -> 82 [constraint=true]
+	92 [label="standard
+ zoubek
+ rupprechter
+ nrw
+ vegan
+ " shape=box]
+	24 -> 92 [constraint=true]
+	100 [label="tüv
+ nachhaltig
+ ktg
+ franzsander
+ handeln
+ " shape=box]
+	24 -> 100 [constraint=true]
+	101 [label="sonnleitner
+ theresa
+ leiders
+ generation
+ neuburger
+ " shape=box]
+	24 -> 101 [constraint=true]
+	113 [label="the
+ studie
+ and
+ of
+ antioxidantien
+ " shape=box]
+	24 -> 113 [constraint=true]
+	114 [label="getreidesorten
+ jacobs
+ carsten
+ westhof
+ kontrollieren
+ " shape=box]
+	24 -> 114 [constraint=true]
+	116 [label="lehmann
+ permakultur
+ singert
+ teut
+ ■_betr.
+ " shape=box]
+	24 -> 116 [constraint=true]
+	118 [label="helmut_dungler
+ äthiopien
+ bcs
+ benzing
+ beschwerde
+ " shape=box]
+	24 -> 118 [constraint=true]
+	120 [label="arvay
+ buchen
+ supermarkt
+ fast
+ slow_food
+ " shape=box]
+	24 -> 120 [constraint=true]
+	121 [label="brot
+ brasilien
+ bäcker
+ mehl
+ orange
+ " shape=box]
+	24 -> 121 [constraint=true]
+	125 [label="brandenburg
+ standard
+ drexel
+ adeg
+ volksbegehren
+ " shape=box]
+	24 -> 125 [constraint=true]
+	135 [label="christian
+ wenzel
+ ausbildung
+ schüler
+ wucherpfennig
+ " shape=box]
+	24 -> 135 [constraint=true]
+	137 [label="plagge
+ berg
+ gstir
+ seebacher
+ berchtold
+ " shape=box]
+	24 -> 137 [constraint=true]
+	140 [label="habbel
+ johann
+ buhr
+ bosseln
+ kirche
+ " shape=box]
+	24 -> 140 [constraint=true]
+	80 [label="prozent
+ bio
+ produkt
+ deutschland
+ ökologisch
+ " shape=box]
+	0 -> 80 [constraint=true]
+	81 [label="slow_food
+ stall
+ braun
+ scheitz
+ lohmeier
+ " shape=box]
+	80 -> 81 [constraint=true]
+	83 [label="nachhaltig
+ kaffee
+ unternehmen
+ siegeln
+ grün
+ " shape=box]
+	80 -> 83 [constraint=true]
+	88 [label="insekt
+ schweiz
+ substanz
+ pestizid
+ coop
+ " shape=box]
+	80 -> 88 [constraint=true]
+	105 [label="kirsche
+ gleber
+ rewe
+ fuchs
+ fell
+ " shape=box]
+	80 -> 105 [constraint=true]
+	106 [label="biene
+ insekt
+ kibbuz
+ siller
+ israel
+ " shape=box]
+	80 -> 106 [constraint=true]
+	117 [label="nestlé
+ löwenstein
+ ernähren
+ kaffee
+ niebel
+ " shape=box]
+	80 -> 117 [constraint=true]
+	84 [label="prozent
+ produkt
+ bio
+ lebensmittel
+ euro
+ " shape=box]
+	0 -> 84 [constraint=true]
+	85 [label="<url>
+ nachhaltigkeit
+ buchen
+ reise
+ brunner
+ " shape=box]
+	84 -> 85 [constraint=true]
+	86 [label="netto
+ |
+ wdr
+ weißwurst
+ wurst
+ " shape=box]
+	84 -> 86 [constraint=true]
+	87 [label="hipp
+ martin
+ claus_hipp
+ kirche
+ bodensee
+ " shape=box]
+	84 -> 87 [constraint=true]
+	94 [label="blaue_engel
+ siegeln
+ label
+ arla
+ qs
+ " shape=box]
+	84 -> 94 [constraint=true]
+	95 [label="georg_schweisfurth
+ tagwerk
+ welt
+ digital
+ genossenschaft
+ " shape=box]
+	84 -> 95 [constraint=true]
+	102 [label="garnele
+ münchen
+ schmid
+ münchner
+ bayer
+ " shape=box]
+	84 -> 102 [constraint=true]
+	104 [label="aldi
+ billa
+ markt
+ geschäft
+ lidl
+ " shape=box]
+	84 -> 104 [constraint=true]
+	127 [label="ferkeln
+ töten
+ steiermark
+ kürbiskernöl
+ buchinger
+ " shape=box]
+	84 -> 127 [constraint=true]
+	129 [label="datum
+ schmidt
+ rukwied
+ beere
+ kamber
+ " shape=box]
+	84 -> 129 [constraint=true]
+	134 [label="zitrone
+ zitrusfrucht
+ orange
+ frucht
+ schalen
+ " shape=box]
+	84 -> 134 [constraint=true]
+	136 [label="karner
+ eltern
+ bnn
+ biodeutsch
+ heldberg
+ " shape=box]
+	84 -> 136 [constraint=true]
+}

@@ -9,7 +9,7 @@ https://en.wikipedia.org/wiki/Fleiss%27_kappa
 
 def set_of_labels(df, column):
     """
-    All lables from the domain expertds in a set
+    All lables from the domain experts in a set
 
     :param df: dataframe with topics and labels
     :type dataframe

@@ -1,10 +1,9 @@
 from src.models.topic_models import TopicModel
-from src.helper import pkl_list
 import matplotlib.pyplot as plt
 from src.Intern_Consistency.hLda_jenson_shannon import jensen_shannon
 import numpy as np
 import pandas as pd
-from  scipy.stats import entropy
+from scipy.stats import entropy
 
 """
 Calculate the Similatities for the same levels of a tree with Jenson Shannon for the Topic Models
@@ -25,7 +24,7 @@ def get_alphas(model_pkl):
         alphas = np.around(topicmodel.model.alpha,decimals = 3)
     return topicmodel,alphas
 
-def plot_alphas_per_model(model_pkl, sorted = True):
+def plot_alphas_per_model(model_pkl,title,limit_x, sorted = True):
     """
     The alphas are plotted in a graph. It can be sorted according to the topic number or the alpha value.
 
@@ -36,23 +35,34 @@ def plot_alphas_per_model(model_pkl, sorted = True):
     """
     tm,alphas = get_alphas(model_pkl)
 
-    plt.title("Alphas for {}".format(model_pkl[:(len(model_pkl)) - 4]))
+    plt.title("Alphas for {}".format(title))
     plt.xlabel('Topics')
     plt.ylabel('Alpha')
 
     if sorted:
         indices = np.argsort(alphas)[::-1]
         sorted_a = alphas[indices]
-        plt.xticks([], [])
-        plt.bar(range(0, len(sorted_a)), sorted_a, 0.3)
+        if limit_x <= 50:
+            plt.bar(range(0, len(sorted_a)), sorted_a, 0.3)
+            plt.xticks(range(0,len(indices)), indices, rotation=90)
+            plt.ylim(0, max(sorted_a) + 1)
+            plt.xlim(-1, limit_x)
+        else:
+            plt.xticks([], [])
+            plt.fill_between(range(0, len(indices)), sorted_a)
+        plt.ylim(0, max(alphas) + 0.01)
+
     else:
         plt.bar(range(0, len(alphas)), alphas, 0.3)
+    path =title.replace(" ","_")
+    plt.savefig("D:\\Bachelorarbeit\\Thesis\\cleanthesis-TUM\\cleanthesis-TUM\\gfx\\Alphas\\{}_{}.pdf".format(path,limit_x),
+                bbox_inches='tight')
     plt.show()
     #plt.savefig("test.png",bbox_inches = "tight")
 
 def plot_sim_of_phi_matrix(model_pkl, sorted = True):
     """
-    Shows the topics and there similarities (calculatet with 1- Jenson Shannon matrix)
+    Shows the topics and their similarities (calculatet with 1- Jenson Shannon matrix)
     If sorted is true the similarities are sorted descending and a tuple with (topic, similarity) is in every row
     Plot the similarity (1-jensonshannon()) between all topics
 
@@ -151,7 +161,7 @@ def get_entropy(model_pkl):
         res.append(entropy_per_row)
     return res
 
-def plot_entropy(model_pkl, sorted = True):
+def plot_entropy(model_pkl, title, limit_x, sorted = True):
     """
     The entropies per topic are plotted in a graph
 
@@ -163,22 +173,51 @@ def plot_entropy(model_pkl, sorted = True):
     entropy = get_entropy(model_pkl)
     entropy = np.array(entropy)
 
-    plt.title("Entropy for {}".format(model_pkl[:(len(model_pkl)) - 4]))
+    #plt.title("Entropy for {}".format(model_pkl[:(len(model_pkl)) - 4]))
+    plt.title("Entropy for {}".format(title))
     plt.xlabel('Topics')
     plt.ylabel('Entropy')
 
     if sorted:
         indices = np.argsort(entropy)[::-1]
         sorted_e = entropy[indices]
-        plt.xticks([],[])
-        plt.bar(range(0, len(sorted_e)), sorted_e, 0.3)
+        if limit_x <= 50:
+            plt.bar(range(0, len(entropy)), sorted_e, 0.3)
+            plt.xticks(range(0,len(indices)), indices, rotation=90)
+            plt.xlim(-1, limit_x)
+        else:
+            plt.xticks([], [])
+            plt.fill_between(range(0, len(indices)), sorted_e)
+        plt.ylim(0, max(sorted_e) + 1)
     else:
         plt.bar(range(0, len(entropy)), entropy, 0.3)
         #plt.xticks(range(0, len(entropy)),range(0, len(entropy)), rotation=45)
-    plt.show()
         # plt.savefig("test.png",bbox_inches = "tight")
+    path = title.replace(" ","_")
+    plt.savefig("D:\\Bachelorarbeit\\Thesis\\cleanthesis-TUM\\cleanthesis-TUM\\gfx\\Entropy\\{}{}.pdf".format(path,limit_x), bbox_inches='tight')
+    plt.show()
 
+def plot_alphas_and_entropy(alpha,tm,title):
+    """
 
+    :param alpha: list of calculated alphas
+    :param tm: string pkl
+    :param title: title for the plot
+    :return: Plot with alpha and entropy
+    """
+    plt.title("Correlation between alpha and entropy for \n{}".format(title))
+    plt.xlabel("Alpha")
+    plt.ylabel('Entropy')
+    e190 = get_entropy(tm)
+    fit = np.polyfit(alpha, e190, 1)
+    fit_fn = np.poly1d(fit)
+    print(fit_fn)
+
+    plt.plot(alpha, e190, 'yo', alpha, fit_fn(alpha), "black")
+    plt.plot(alpha, e190, "ro")
+    path = title.replace(" ", "_")
+    #plt.savefig("D:\\Bachelorarbeit\\Thesis\\cleanthesis-TUM\\cleanthesis-TUM\\gfx\\Correlation\\{}.pdf".format(path),
+    #            bbox_inches='tight')
 if __name__ == "__main__":
     t140 = "intern_consistency/topic_models/lda_german_editorial_articles_140.pkl"
-    plot_entropy(t140)
+    plot_entropy(t140,"tit")
